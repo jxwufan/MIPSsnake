@@ -1,0 +1,1 @@
+vhdtdtfi -lang verilog -prj MIPSAPP -o E:/code/hardware/MIPSAPP/clkdiv.tfi -lib work E:/code/hardware/MIPSAPP//clkdiv.v -module clkdiv -template D:/Xilinx/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror 

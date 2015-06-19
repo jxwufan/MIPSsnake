@@ -1,0 +1,15 @@
+
+
+
+// Instantiate the module
+vga_640x480 instance_name (
+    .clk(clk), 
+    .clr(clr), 
+    .hsync(hsync), 
+    .vsync(vsync), 
+    .x(x), 
+    .y(y), 
+    .vidon(vidon)
+    );
+
+

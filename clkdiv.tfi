@@ -1,0 +1,13 @@
+
+
+
+// Instantiate the module
+clkdiv instance_name (
+    .mclk(mclk), 
+    .clr(clr), 
+    .clk25(clk25), 
+    .clk10ms(clk10ms), 
+    .clk190(clk190)
+    );
+
+

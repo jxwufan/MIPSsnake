@@ -1,0 +1,20 @@
+
+
+
+// Instantiate the module
+BUS instance_name (
+    .mem_w(mem_w), 
+    .cpu2bus(cpu2bus), 
+    .cpu_address(cpu_address), 
+    .vram2bus(vram2bus), 
+    .ram2bus(ram2bus), 
+    .ram_w(ram_w), 
+    .vram_w(vram_w), 
+    .bus2cpu(bus2cpu), 
+    .bus2ram(bus2ram), 
+    .bus2vram(bus2vram), 
+    .ram_address(ram_address), 
+    .vram_address(vram_address)
+    );
+
+

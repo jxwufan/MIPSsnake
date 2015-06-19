@@ -1,0 +1,1 @@
+vhdtdtfi -lang verilog -prj MIPSAPP -o E:/code/hardware/MIPSAPP/BUS.tfi -lib work E:/code/hardware/MIPSAPP//BUS.v -module BUS -template D:/Xilinx/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror 

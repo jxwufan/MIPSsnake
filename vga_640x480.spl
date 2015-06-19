@@ -1,0 +1,13 @@
+[Inputs]
+clk
+clr
+[Outputs]
+hsync
+vsync
+vidon
+=x[9:0]=
+=y[9:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel vga_640x480
+

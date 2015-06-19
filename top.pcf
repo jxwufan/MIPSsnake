@@ -1,0 +1,153 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Fri Jun 19 21:56:59 2015
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "red<1>" LOCATE = SITE "V7" LEVEL 1;
+COMP "red<2>" LOCATE = SITE "N7" LEVEL 1;
+COMP "green<0>" LOCATE = SITE "P8" LEVEL 1;
+COMP "green<1>" LOCATE = SITE "T6" LEVEL 1;
+COMP "green<2>" LOCATE = SITE "V6" LEVEL 1;
+COMP "hsync" LOCATE = SITE "N6" LEVEL 1;
+COMP "vsync" LOCATE = SITE "P7" LEVEL 1;
+COMP "mclk" LOCATE = SITE "V10" LEVEL 1;
+COMP "blue<0>" LOCATE = SITE "R7" LEVEL 1;
+COMP "blue<1>" LOCATE = SITE "T7" LEVEL 1;
+COMP "red<0>" LOCATE = SITE "U7" LEVEL 1;
+PIN
+        vram_mod/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[17].ram.r/s6_init.ram/TRUE_DP.PRIM18.ram_pins<28>
+        = BEL
+        "vram_mod/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[17].ram.r/s6_init.ram/TRUE_DP.PRIM18.ram"
+        PINNAME CLKA;
+PIN
+        vram_mod/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[17].ram.r/s6_init.ram/TRUE_DP.PRIM18.ram_pins<29>
+        = BEL
+        "vram_mod/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[17].ram.r/s6_init.ram/TRUE_DP.PRIM18.ram"
+        PINNAME CLKB;
+PIN
+        vram_mod/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[15].ram.r/s6_init.ram/TRUE_DP.PRIM18.ram_pins<28>
+        = BEL
+        "vram_mod/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[15].ram.r/s6_init.ram/TRUE_DP.PRIM18.ram"
+        PINNAME CLKA;
+PIN
+        vram_mod/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[15].ram.r/s6_init.ram/TRUE_DP.PRIM18.ram_pins<29>
+        = BEL
+        "vram_mod/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[15].ram.r/s6_init.ram/TRUE_DP.PRIM18.ram"
+        PINNAME CLKB;
+PIN
+        vram_mod/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[13].ram.r/s6_init.ram/TRUE_DP.PRIM18.ram_pins<28>
+        = BEL
+        "vram_mod/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[13].ram.r/s6_init.ram/TRUE_DP.PRIM18.ram"
+        PINNAME CLKA;
+PIN
+        vram_mod/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[13].ram.r/s6_init.ram/TRUE_DP.PRIM18.ram_pins<29>
+        = BEL
+        "vram_mod/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[13].ram.r/s6_init.ram/TRUE_DP.PRIM18.ram"
+        PINNAME CLKB;
+PIN
+        vram_mod/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[10].ram.r/s6_init.ram/TRUE_DP.PRIM18.ram_pins<28>
+        = BEL
+        "vram_mod/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[10].ram.r/s6_init.ram/TRUE_DP.PRIM18.ram"
+        PINNAME CLKA;
+PIN
+        vram_mod/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[10].ram.r/s6_init.ram/TRUE_DP.PRIM18.ram_pins<29>
+        = BEL
+        "vram_mod/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[10].ram.r/s6_init.ram/TRUE_DP.PRIM18.ram"
+        PINNAME CLKB;
+PIN
+        vram_mod/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[8].ram.r/s6_init.ram/TRUE_DP.PRIM18.ram_pins<28>
+        = BEL
+        "vram_mod/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[8].ram.r/s6_init.ram/TRUE_DP.PRIM18.ram"
+        PINNAME CLKA;
+PIN
+        vram_mod/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[8].ram.r/s6_init.ram/TRUE_DP.PRIM18.ram_pins<29>
+        = BEL
+        "vram_mod/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[8].ram.r/s6_init.ram/TRUE_DP.PRIM18.ram"
+        PINNAME CLKB;
+PIN
+        vram_mod/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[6].ram.r/s6_init.ram/TRUE_DP.PRIM18.ram_pins<28>
+        = BEL
+        "vram_mod/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[6].ram.r/s6_init.ram/TRUE_DP.PRIM18.ram"
+        PINNAME CLKA;
+PIN
+        vram_mod/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[6].ram.r/s6_init.ram/TRUE_DP.PRIM18.ram_pins<29>
+        = BEL
+        "vram_mod/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[6].ram.r/s6_init.ram/TRUE_DP.PRIM18.ram"
+        PINNAME CLKB;
+PIN
+        vram_mod/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[4].ram.r/s6_init.ram/TRUE_DP.PRIM18.ram_pins<28>
+        = BEL
+        "vram_mod/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[4].ram.r/s6_init.ram/TRUE_DP.PRIM18.ram"
+        PINNAME CLKA;
+PIN
+        vram_mod/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[4].ram.r/s6_init.ram/TRUE_DP.PRIM18.ram_pins<29>
+        = BEL
+        "vram_mod/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[4].ram.r/s6_init.ram/TRUE_DP.PRIM18.ram"
+        PINNAME CLKB;
+PIN
+        vram_mod/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/TRUE_DP.PRIM18.ram_pins<28>
+        = BEL
+        "vram_mod/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/TRUE_DP.PRIM18.ram"
+        PINNAME CLKA;
+PIN
+        vram_mod/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/TRUE_DP.PRIM18.ram_pins<29>
+        = BEL
+        "vram_mod/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/TRUE_DP.PRIM18.ram"
+        PINNAME CLKB;
+PIN
+        ram_mod/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/s6_init.ram/SP.SIMPLE_PRIM18.ram_pins<28>
+        = BEL
+        "ram_mod/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/s6_init.ram/SP.SIMPLE_PRIM18.ram"
+        PINNAME CLKA;
+PIN
+        ram_mod/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/s6_init.ram/SP.SIMPLE_PRIM18.ram_pins<28>
+        = BEL
+        "ram_mod/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/s6_init.ram/SP.SIMPLE_PRIM18.ram"
+        PINNAME CLKA;
+PIN
+        ram_mod/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SP.SIMPLE_PRIM9.ram_pins<26>
+        = BEL
+        "ram_mod/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SP.SIMPLE_PRIM9.ram"
+        PINNAME CLKAWRCLK;
+TIMEGRP sys_clk_pin = BEL "clkdiv/p_0" BEL "clkdiv/p_1" BEL "mclk_BUFGP/BUFG"
+        PIN
+        "vram_mod/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[17].ram.r/s6_init.ram/TRUE_DP.PRIM18.ram_pins<28>"
+        PIN
+        "vram_mod/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[17].ram.r/s6_init.ram/TRUE_DP.PRIM18.ram_pins<29>"
+        PIN
+        "vram_mod/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[15].ram.r/s6_init.ram/TRUE_DP.PRIM18.ram_pins<28>"
+        PIN
+        "vram_mod/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[15].ram.r/s6_init.ram/TRUE_DP.PRIM18.ram_pins<29>"
+        PIN
+        "vram_mod/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[13].ram.r/s6_init.ram/TRUE_DP.PRIM18.ram_pins<28>"
+        PIN
+        "vram_mod/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[13].ram.r/s6_init.ram/TRUE_DP.PRIM18.ram_pins<29>"
+        PIN
+        "vram_mod/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[10].ram.r/s6_init.ram/TRUE_DP.PRIM18.ram_pins<28>"
+        PIN
+        "vram_mod/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[10].ram.r/s6_init.ram/TRUE_DP.PRIM18.ram_pins<29>"
+        PIN
+        "vram_mod/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[8].ram.r/s6_init.ram/TRUE_DP.PRIM18.ram_pins<28>"
+        PIN
+        "vram_mod/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[8].ram.r/s6_init.ram/TRUE_DP.PRIM18.ram_pins<29>"
+        PIN
+        "vram_mod/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[6].ram.r/s6_init.ram/TRUE_DP.PRIM18.ram_pins<28>"
+        PIN
+        "vram_mod/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[6].ram.r/s6_init.ram/TRUE_DP.PRIM18.ram_pins<29>"
+        PIN
+        "vram_mod/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[4].ram.r/s6_init.ram/TRUE_DP.PRIM18.ram_pins<28>"
+        PIN
+        "vram_mod/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[4].ram.r/s6_init.ram/TRUE_DP.PRIM18.ram_pins<29>"
+        PIN
+        "vram_mod/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/TRUE_DP.PRIM18.ram_pins<28>"
+        PIN
+        "vram_mod/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/TRUE_DP.PRIM18.ram_pins<29>"
+        PIN
+        "ram_mod/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/s6_init.ram/SP.SIMPLE_PRIM18.ram_pins<28>"
+        PIN
+        "ram_mod/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/s6_init.ram/SP.SIMPLE_PRIM18.ram_pins<28>"
+        PIN
+        "ram_mod/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SP.SIMPLE_PRIM9.ram_pins<26>";
+TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_pin" 100 MHz HIGH 50%;
+SCHEMATIC END;
+

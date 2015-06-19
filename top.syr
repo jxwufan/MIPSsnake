@@ -1,0 +1,2069 @@
+Release 14.7 - xst P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Reading design: top.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "top.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "top"
+Output Format                      : NGC
+Target Device                      : xc6slx16-3-csg324
+
+---- Source Options
+Top Module Name                    : top
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"ipcore_dir"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "E:\code\hardware\MIPSAPP\g_p.v" into library work
+Parsing module <g_p>.
+Analyzing Verilog file "E:\code\hardware\MIPSAPP\add.v" into library work
+Parsing module <add>.
+Analyzing Verilog file "E:\code\hardware\MIPSAPP\cla_2.v" into library work
+Parsing module <cla_2>.
+Analyzing Verilog file "E:\code\hardware\MIPSAPP\cla_4.v" into library work
+Parsing module <cla_4>.
+Analyzing Verilog file "E:\code\hardware\MIPSAPP\cla_8.v" into library work
+Parsing module <cla_8>.
+Analyzing Verilog file "E:\code\hardware\MIPSAPP\cla_16.v" into library work
+Parsing module <cla_16>.
+Analyzing Verilog file "E:\code\hardware\MIPSAPP\cla_32.v" into library work
+Parsing module <cla_32>.
+Analyzing Verilog file "E:\code\hardware\MIPSAPP\cla32.v" into library work
+Parsing module <cla32>.
+Analyzing Verilog file "E:\code\hardware\MIPSAPP\shift.v" into library work
+Parsing module <shift>.
+Analyzing Verilog file "E:\code\hardware\MIPSAPP\mux4x32.v" into library work
+Parsing module <mux4x32>.
+Analyzing Verilog file "E:\code\hardware\MIPSAPP\addsub32.v" into library work
+Parsing module <addsub32>.
+Analyzing Verilog file "E:\code\hardware\MIPSAPP\regfile.v" into library work
+Parsing module <regfile>.
+Analyzing Verilog file "E:\code\hardware\MIPSAPP\mux2x5.v" into library work
+Parsing module <mux2x5>.
+Analyzing Verilog file "E:\code\hardware\MIPSAPP\mux2x32.v" into library work
+Parsing module <mux2x32>.
+Analyzing Verilog file "E:\code\hardware\MIPSAPP\mccu.v" into library work
+Parsing module <mccu>.
+Analyzing Verilog file "E:\code\hardware\MIPSAPP\diffe32.v" into library work
+Parsing module <dffe32>.
+Analyzing Verilog file "E:\code\hardware\MIPSAPP\dff32.v" into library work
+Parsing module <dff32>.
+Analyzing Verilog file "E:\code\hardware\MIPSAPP\alu.v" into library work
+Parsing module <alu>.
+Analyzing Verilog file "E:\code\hardware\MIPSAPP\vga_640x480.v" into library work
+Parsing module <vga_640x480>.
+Analyzing Verilog file "E:\code\hardware\MIPSAPP\mccpu.v" into library work
+Parsing module <mccpu>.
+Analyzing Verilog file "E:\code\hardware\MIPSAPP\ipcore_dir\vram.v" into library work
+Parsing module <vram>.
+Analyzing Verilog file "E:\code\hardware\MIPSAPP\ipcore_dir\ram.v" into library work
+Parsing module <ram>.
+Analyzing Verilog file "E:\code\hardware\MIPSAPP\clkdiv.v" into library work
+Parsing module <clkdiv>.
+Analyzing Verilog file "E:\code\hardware\MIPSAPP\BUS.v" into library work
+Parsing module <BUS>.
+WARNING:HDLCompiler:327 - "E:\code\hardware\MIPSAPP\BUS.v" Line 52: Concatenation with unsized literal; will interpret as 32 bits
+Analyzing Verilog file "E:\code\hardware\MIPSAPP\top.v" into library work
+Parsing module <top>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+WARNING:HDLCompiler:1016 - "E:\code\hardware\MIPSAPP\top.v" Line 52: Port clr is not connected to this instance
+
+Elaborating module <top>.
+
+Elaborating module <clkdiv>.
+WARNING:HDLCompiler:413 - "E:\code\hardware\MIPSAPP\clkdiv.v" Line 56: Result of 22-bit expression is truncated to fit in 21-bit target.
+WARNING:HDLCompiler:413 - "E:\code\hardware\MIPSAPP\clkdiv.v" Line 57: Result of 4-bit expression is truncated to fit in 3-bit target.
+WARNING:HDLCompiler:413 - "E:\code\hardware\MIPSAPP\clkdiv.v" Line 65: Result of 21-bit expression is truncated to fit in 20-bit target.
+WARNING:HDLCompiler:1127 - "E:\code\hardware\MIPSAPP\clkdiv.v" Line 45: Assignment to cnt ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "E:\code\hardware\MIPSAPP\top.v" Line 47: Assignment to clk10ms ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "E:\code\hardware\MIPSAPP\top.v" Line 48: Assignment to clk190 ignored, since the identifier is never used
+
+Elaborating module <vga_640x480>.
+WARNING:HDLCompiler:413 - "E:\code\hardware\MIPSAPP\vga_640x480.v" Line 49: Result of 32-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "E:\code\hardware\MIPSAPP\vga_640x480.v" Line 50: Result of 32-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "E:\code\hardware\MIPSAPP\vga_640x480.v" Line 65: Result of 11-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "E:\code\hardware\MIPSAPP\vga_640x480.v" Line 89: Result of 11-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:1127 - "E:\code\hardware\MIPSAPP\top.v" Line 57: Assignment to y ignored, since the identifier is never used
+
+Elaborating module <mccpu>.
+
+Elaborating module <dffe32>.
+
+Elaborating module <dff32>.
+WARNING:HDLCompiler:189 - "E:\code\hardware\MIPSAPP\mccpu.v" Line 47: Size mismatch in connection of port <d>. Formal port size is 32-bit while actual signal size is 1-bit.
+
+Elaborating module <mux2x5>.
+
+Elaborating module <mux2x32>.
+
+Elaborating module <mux4x32>.
+WARNING:HDLCompiler:189 - "E:\code\hardware\MIPSAPP\mccpu.v" Line 57: Size mismatch in connection of port <a0>. Formal port size is 32-bit while actual signal size is 1-bit.
+
+Elaborating module <regfile>.
+
+Elaborating module <alu>.
+WARNING:HDLCompiler:1016 - "E:\code\hardware\MIPSAPP\addsub32.v" Line 25: Port c0 is not connected to this instance
+
+Elaborating module <addsub32>.
+
+Elaborating module <cla32>.
+
+Elaborating module <cla_32>.
+
+Elaborating module <cla_16>.
+
+Elaborating module <cla_8>.
+
+Elaborating module <cla_4>.
+
+Elaborating module <cla_2>.
+
+Elaborating module <add>.
+
+Elaborating module <g_p>.
+
+Elaborating module <shift>.
+WARNING:HDLCompiler:189 - "E:\code\hardware\MIPSAPP\mccpu.v" Line 71: Size mismatch in connection of port <r>. Formal port size is 32-bit while actual signal size is 1-bit.
+
+Elaborating module <mccu>.
+WARNING:HDLCompiler:189 - "E:\code\hardware\MIPSAPP\mccpu.v" Line 93: Size mismatch in connection of port <state>. Formal port size is 3-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:1127 - "E:\code\hardware\MIPSAPP\mccpu.v" Line 93: Assignment to state ignored, since the identifier is never used
+WARNING:HDLCompiler:189 - "E:\code\hardware\MIPSAPP\top.v" Line 63: Size mismatch in connection of port <resetn>. Formal port size is 1-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:327 - "E:\code\hardware\MIPSAPP\BUS.v" Line 52: Concatenation with unsized literal; will interpret as 32 bits
+
+Elaborating module <BUS>.
+WARNING:HDLCompiler:189 - "E:\code\hardware\MIPSAPP\top.v" Line 75: Size mismatch in connection of port <ram2bus>. Formal port size is 8-bit while actual signal size is 32-bit.
+
+Elaborating module <vram>.
+WARNING:HDLCompiler:1499 - "E:\code\hardware\MIPSAPP\ipcore_dir\vram.v" Line 39: Empty module <vram> remains a black box.
+WARNING:HDLCompiler:189 - "E:\code\hardware\MIPSAPP\top.v" Line 90: Size mismatch in connection of port <douta>. Formal port size is 8-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:1127 - "E:\code\hardware\MIPSAPP\top.v" Line 90: Assignment to douta ignored, since the identifier is never used
+WARNING:HDLCompiler:189 - "E:\code\hardware\MIPSAPP\top.v" Line 93: Size mismatch in connection of port <addrb>. Formal port size is 16-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "E:\code\hardware\MIPSAPP\top.v" Line 94: Size mismatch in connection of port <dinb>. Formal port size is 8-bit while actual signal size is 32-bit.
+
+Elaborating module <ram>.
+WARNING:HDLCompiler:1499 - "E:\code\hardware\MIPSAPP\ipcore_dir\ram.v" Line 39: Empty module <ram> remains a black box.
+WARNING:HDLCompiler:634 - "E:\code\hardware\MIPSAPP\top.v" Line 37: Net <vram2bus[7]> does not have a driver.
+WARNING:HDLCompiler:634 - "E:\code\hardware\MIPSAPP\top.v" Line 45: Net <clr> does not have a driver.
+WARNING:HDLCompiler:634 - "E:\code\hardware\MIPSAPP\top.v" Line 92: Net <web> does not have a driver.
+WARNING:HDLCompiler:552 - "E:\code\hardware\MIPSAPP\top.v" Line 52: Input port clr is not connected on this instance
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <top>.
+    Related source file is "E:\code\hardware\MIPSAPP\top.v".
+WARNING:Xst:2898 - Port 'clr', unconnected in block instance 'vga_gen', is tied to GND.
+INFO:Xst:3210 - "E:\code\hardware\MIPSAPP\top.v" line 43: Output port <clk10ms> of the instance <clkdiv> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\code\hardware\MIPSAPP\top.v" line 43: Output port <clk190> of the instance <clkdiv> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\code\hardware\MIPSAPP\top.v" line 52: Output port <y> of the instance <vga_gen> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\code\hardware\MIPSAPP\top.v" line 85: Output port <douta> of the instance <vram_mod> is unconnected or connected to loadless signal.
+WARNING:Xst:653 - Signal <vram2bus> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <clr> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <web> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Found 1-bit 8-to-1 multiplexer for signal <x[2]_color[7]_Mux_0_o> created at line 108.
+    Summary:
+	inferred   3 Multiplexer(s).
+Unit <top> synthesized.
+
+Synthesizing Unit <clkdiv>.
+    Related source file is "E:\code\hardware\MIPSAPP\clkdiv.v".
+    Found 20-bit register for signal <regi>.
+    Found 21-bit register for signal <cnt2>.
+    Found 1-bit register for signal <_10ms>.
+    Found 3-bit register for signal <p>.
+    Found 21-bit adder for signal <cnt2[20]_GND_2_o_mux_10_OUT> created at line 56.
+    Found 3-bit adder for signal <p[2]_GND_2_o_mux_7_OUT> created at line 57.
+    Found 20-bit adder for signal <regi[19]_GND_2_o_add_5_OUT> created at line 65.
+    Summary:
+	inferred   3 Adder/Subtractor(s).
+	inferred  45 D-type flip-flop(s).
+Unit <clkdiv> synthesized.
+
+Synthesizing Unit <vga_640x480>.
+    Related source file is "E:\code\hardware\MIPSAPP\vga_640x480.v".
+        hpixels = 10'b1100100000
+        vlines = 10'b1000001001
+        hbp = 10'b0010010000
+        hfp = 10'b1100010000
+        vbp = 10'b0000011111
+        vfp = 10'b0111111111
+    Found 1-bit register for signal <vsenable>.
+    Found 10-bit register for signal <vc>.
+    Found 10-bit register for signal <hc>.
+    Found 11-bit subtractor for signal <GND_3_o_GND_3_o_sub_1_OUT> created at line 49.
+    Found 11-bit subtractor for signal <GND_3_o_GND_3_o_sub_3_OUT> created at line 50.
+    Found 10-bit adder for signal <hc[9]_GND_3_o_add_6_OUT> created at line 65.
+    Found 10-bit adder for signal <vc[9]_GND_3_o_add_14_OUT> created at line 89.
+    Found 10-bit subtractor for signal <x> created at line 27.
+    Found 10-bit subtractor for signal <y> created at line 28.
+    Found 10-bit comparator lessequal for signal <hc[9]_GND_3_o_LessThan_10_o> created at line 73
+    Found 10-bit comparator lessequal for signal <vc[9]_GND_3_o_LessThan_20_o> created at line 95
+    Found 10-bit comparator greater for signal <hc[9]_PWR_3_o_LessThan_21_o> created at line 103
+    Found 10-bit comparator greater for signal <GND_3_o_hc[9]_LessThan_22_o> created at line 103
+    Found 10-bit comparator greater for signal <vc[9]_GND_3_o_LessThan_23_o> created at line 103
+    Found 10-bit comparator greater for signal <GND_3_o_vc[9]_LessThan_24_o> created at line 103
+    Summary:
+	inferred   6 Adder/Subtractor(s).
+	inferred  21 D-type flip-flop(s).
+	inferred   6 Comparator(s).
+Unit <vga_640x480> synthesized.
+
+Synthesizing Unit <mccpu>.
+    Related source file is "E:\code\hardware\MIPSAPP\mccpu.v".
+INFO:Xst:3210 - "E:\code\hardware\MIPSAPP\mccpu.v" line 73: Output port <state> of the instance <control_unit> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <mccpu> synthesized.
+
+Synthesizing Unit <dffe32>.
+    Related source file is "E:\code\hardware\MIPSAPP\diffe32.v".
+    Found 32-bit register for signal <q>.
+    Summary:
+	inferred  32 D-type flip-flop(s).
+Unit <dffe32> synthesized.
+
+Synthesizing Unit <dff32>.
+    Related source file is "E:\code\hardware\MIPSAPP\dff32.v".
+    Found 32-bit register for signal <q>.
+    Summary:
+	inferred  32 D-type flip-flop(s).
+Unit <dff32> synthesized.
+
+Synthesizing Unit <mux2x5>.
+    Related source file is "E:\code\hardware\MIPSAPP\mux2x5.v".
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <mux2x5> synthesized.
+
+Synthesizing Unit <mux2x32>.
+    Related source file is "E:\code\hardware\MIPSAPP\mux2x32.v".
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <mux2x32> synthesized.
+
+Synthesizing Unit <mux4x32>.
+    Related source file is "E:\code\hardware\MIPSAPP\mux4x32.v".
+    Found 32-bit 4-to-1 multiplexer for signal <y> created at line 26.
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <mux4x32> synthesized.
+
+Synthesizing Unit <regfile>.
+    Related source file is "E:\code\hardware\MIPSAPP\regfile.v".
+    Found 992-bit register for signal <n0050[991:0]>.
+    Found 32-bit 31-to-1 multiplexer for signal <rna[4]_register[31][31]_wide_mux_1_OUT> created at line 28.
+    Found 32-bit 31-to-1 multiplexer for signal <rnb[4]_register[31][31]_wide_mux_4_OUT> created at line 29.
+    Summary:
+	inferred 992 D-type flip-flop(s).
+	inferred  35 Multiplexer(s).
+Unit <regfile> synthesized.
+
+Synthesizing Unit <alu>.
+    Related source file is "E:\code\hardware\MIPSAPP\alu.v".
+    Found 32-bit comparator greater for signal <a[31]_b[31]_LessThan_11_o> created at line 38
+    Summary:
+	inferred   1 Comparator(s).
+	inferred   4 Multiplexer(s).
+Unit <alu> synthesized.
+
+Synthesizing Unit <addsub32>.
+    Related source file is "E:\code\hardware\MIPSAPP\addsub32.v".
+INFO:Xst:3210 - "E:\code\hardware\MIPSAPP\addsub32.v" line 25: Output port <c0> of the instance <as32> is unconnected or connected to loadless signal.
+    Summary:
+Unit <addsub32> synthesized.
+
+Synthesizing Unit <cla32>.
+    Related source file is "E:\code\hardware\MIPSAPP\cla32.v".
+    Summary:
+	no macro.
+Unit <cla32> synthesized.
+
+Synthesizing Unit <cla_32>.
+    Related source file is "E:\code\hardware\MIPSAPP\cla_32.v".
+    Summary:
+	no macro.
+Unit <cla_32> synthesized.
+
+Synthesizing Unit <cla_16>.
+    Related source file is "E:\code\hardware\MIPSAPP\cla_16.v".
+    Summary:
+	no macro.
+Unit <cla_16> synthesized.
+
+Synthesizing Unit <cla_8>.
+    Related source file is "E:\code\hardware\MIPSAPP\cla_8.v".
+    Summary:
+	no macro.
+Unit <cla_8> synthesized.
+
+Synthesizing Unit <cla_4>.
+    Related source file is "E:\code\hardware\MIPSAPP\cla_4.v".
+    Summary:
+	no macro.
+Unit <cla_4> synthesized.
+
+Synthesizing Unit <cla_2>.
+    Related source file is "E:\code\hardware\MIPSAPP\cla_2.v".
+    Summary:
+	no macro.
+Unit <cla_2> synthesized.
+
+Synthesizing Unit <add>.
+    Related source file is "E:\code\hardware\MIPSAPP\add.v".
+    Summary:
+Unit <add> synthesized.
+
+Synthesizing Unit <g_p>.
+    Related source file is "E:\code\hardware\MIPSAPP\g_p.v".
+    Summary:
+	no macro.
+Unit <g_p> synthesized.
+
+Synthesizing Unit <shift>.
+    Related source file is "E:\code\hardware\MIPSAPP\shift.v".
+    Found 32-bit shifter logical left for signal <d[31]_sa[4]_shift_left_0_OUT> created at line 29
+    Found 32-bit shifter logical right for signal <d[31]_sa[4]_shift_right_1_OUT> created at line 31
+    Found 32-bit shifter arithmetic right for signal <d[31]_sa[4]_shift_right_2_OUT> created at line 33
+    Summary:
+	inferred   2 Multiplexer(s).
+	inferred   3 Combinational logic shifter(s).
+Unit <shift> synthesized.
+
+Synthesizing Unit <mccu>.
+    Related source file is "E:\code\hardware\MIPSAPP\mccu.v".
+        sif = 3'b000
+        sid = 3'b001
+        sexe = 3'b010
+        smem = 3'b011
+        swb = 3'b100
+    Found 3-bit register for signal <state>.
+    Found finite state machine <FSM_0> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 5                                              |
+    | Transitions        | 12                                             |
+    | Inputs             | 7                                              |
+    | Outputs            | 6                                              |
+    | Clock              | clock (rising_edge)                            |
+    | Power Up State     | 000                                            |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Summary:
+	inferred  47 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <mccu> synthesized.
+
+Synthesizing Unit <BUS>.
+    Related source file is "E:\code\hardware\MIPSAPP\BUS.v".
+    Summary:
+	inferred   7 Multiplexer(s).
+Unit <BUS> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 9
+ 10-bit adder                                          : 2
+ 10-bit subtractor                                     : 2
+ 11-bit subtractor                                     : 2
+ 20-bit adder                                          : 1
+ 21-bit adder                                          : 1
+ 3-bit adder                                           : 1
+# Registers                                            : 14
+ 1-bit register                                        : 2
+ 10-bit register                                       : 2
+ 20-bit register                                       : 1
+ 21-bit register                                       : 1
+ 3-bit register                                        : 1
+ 32-bit register                                       : 6
+ 992-bit register                                      : 1
+# Comparators                                          : 7
+ 10-bit comparator greater                             : 4
+ 10-bit comparator lessequal                           : 2
+ 32-bit comparator greater                             : 1
+# Multiplexers                                         : 107
+ 1-bit 2-to-1 multiplexer                              : 33
+ 1-bit 8-to-1 multiplexer                              : 1
+ 2-bit 2-to-1 multiplexer                              : 17
+ 3-bit 2-to-1 multiplexer                              : 1
+ 32-bit 2-to-1 multiplexer                             : 46
+ 32-bit 31-to-1 multiplexer                            : 2
+ 32-bit 4-to-1 multiplexer                             : 3
+ 4-bit 2-to-1 multiplexer                              : 1
+ 5-bit 2-to-1 multiplexer                              : 1
+ 8-bit 2-to-1 multiplexer                              : 2
+# Logic shifters                                       : 3
+ 32-bit shifter arithmetic right                       : 1
+ 32-bit shifter logical left                           : 1
+ 32-bit shifter logical right                          : 1
+# FSMs                                                 : 1
+# Xors                                                 : 66
+ 1-bit xor2                                            : 64
+ 32-bit xor2                                           : 2
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <ipcore_dir/vram.ngc>.
+Reading core <ipcore_dir/ram.ngc>.
+Loading core <vram> for timing and area information for instance <vram_mod>.
+Loading core <ram> for timing and area information for instance <ram_mod>.
+WARNING:Xst:1293 - FF/Latch <q_31> has a constant value of 0 in block <rc>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <q_30> has a constant value of 0 in block <rc>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <q_29> has a constant value of 0 in block <rc>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <q_28> has a constant value of 0 in block <rc>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <q_27> has a constant value of 0 in block <rc>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <q_26> has a constant value of 0 in block <rc>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <q_25> has a constant value of 0 in block <rc>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <q_24> has a constant value of 0 in block <rc>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <q_23> has a constant value of 0 in block <rc>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <q_22> has a constant value of 0 in block <rc>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <q_21> has a constant value of 0 in block <rc>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <q_20> has a constant value of 0 in block <rc>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <q_19> has a constant value of 0 in block <rc>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <q_18> has a constant value of 0 in block <rc>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <q_17> has a constant value of 0 in block <rc>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <q_16> has a constant value of 0 in block <rc>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <q_15> has a constant value of 0 in block <rc>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <q_14> has a constant value of 0 in block <rc>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <q_13> has a constant value of 0 in block <rc>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <q_12> has a constant value of 0 in block <rc>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <q_11> has a constant value of 0 in block <rc>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <q_10> has a constant value of 0 in block <rc>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <q_9> has a constant value of 0 in block <rc>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <q_8> has a constant value of 0 in block <rc>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <q_7> has a constant value of 0 in block <rc>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <q_6> has a constant value of 0 in block <rc>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <q_5> has a constant value of 0 in block <rc>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <q_4> has a constant value of 0 in block <rc>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <q_3> has a constant value of 0 in block <rc>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <q_2> has a constant value of 0 in block <rc>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <q_1> has a constant value of 0 in block <rc>. This FF/Latch will be trimmed during the optimization process.
+
+Synthesizing (advanced) Unit <clkdiv>.
+The following registers are absorbed into counter <p>: 1 register on signal <p>.
+The following registers are absorbed into counter <cnt2>: 1 register on signal <cnt2>.
+The following registers are absorbed into counter <regi>: 1 register on signal <regi>.
+Unit <clkdiv> synthesized (advanced).
+
+Synthesizing (advanced) Unit <vga_640x480>.
+The following registers are absorbed into counter <hc>: 1 register on signal <hc>.
+The following registers are absorbed into counter <vc>: 1 register on signal <vc>.
+Unit <vga_640x480> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 2
+ 10-bit subtractor borrow in                           : 2
+# Counters                                             : 5
+ 10-bit up counter                                     : 2
+ 20-bit up counter                                     : 1
+ 21-bit up counter                                     : 1
+ 3-bit up counter                                      : 1
+# Registers                                            : 1186
+ Flip-Flops                                            : 1186
+# Comparators                                          : 7
+ 10-bit comparator greater                             : 4
+ 10-bit comparator lessequal                           : 2
+ 32-bit comparator greater                             : 1
+# Multiplexers                                         : 107
+ 1-bit 2-to-1 multiplexer                              : 33
+ 1-bit 8-to-1 multiplexer                              : 1
+ 2-bit 2-to-1 multiplexer                              : 17
+ 3-bit 2-to-1 multiplexer                              : 1
+ 32-bit 2-to-1 multiplexer                             : 46
+ 32-bit 31-to-1 multiplexer                            : 2
+ 32-bit 4-to-1 multiplexer                             : 3
+ 4-bit 2-to-1 multiplexer                              : 1
+ 5-bit 2-to-1 multiplexer                              : 1
+ 8-bit 2-to-1 multiplexer                              : 2
+# Logic shifters                                       : 3
+ 32-bit shifter arithmetic right                       : 1
+ 32-bit shifter logical left                           : 1
+ 32-bit shifter logical right                          : 1
+# FSMs                                                 : 1
+# Xors                                                 : 66
+ 1-bit xor2                                            : 64
+ 32-bit xor2                                           : 2
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:2677 - Node <clkdiv/_10ms> of sequential type is unconnected in block <top>.
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <cpu/control_unit/FSM_0> on signal <state[1:3]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ 000   | 000
+ 001   | 001
+ 010   | 010
+ 100   | 100
+ 011   | 011
+-------------------
+WARNING:Xst:2677 - Node <clkdiv/p_2> of sequential type is unconnected in block <top>.
+
+Optimizing unit <dffe32> ...
+
+Optimizing unit <dff32> ...
+
+Optimizing unit <top> ...
+
+Optimizing unit <vga_640x480> ...
+
+Optimizing unit <mccpu> ...
+
+Optimizing unit <regfile> ...
+
+Optimizing unit <mccu> ...
+
+Optimizing unit <alu> ...
+WARNING:Xst:1293 - FF/Latch <cpu/ra/q_24> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/ra/q_23> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/ra/q_22> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/ra/q_21> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/ra/q_20> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/ra/q_19> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/ra/q_18> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/ra/q_17> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/ra/q_16> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/ra/q_15> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/ra/q_14> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/ra/q_13> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/ra/q_12> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/ra/q_11> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/ra/q_10> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/ra/q_9> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/ra/q_8> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/ra/q_7> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/ra/q_6> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/ra/q_5> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/ra/q_4> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/ra/q_3> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/ra/q_2> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/rb/q_15> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/rb/q_14> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/rb/q_13> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/rb/q_12> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/rb/q_11> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/rb/q_10> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/rb/q_9> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/rb/q_8> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/rb/q_7> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/rb/q_6> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/rb/q_5> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/rb/q_4> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/rb/q_3> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/rb/q_2> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/rb/q_1> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/rb/q_0> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/ra/q_31> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/ra/q_30> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/ra/q_29> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/ra/q_28> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/ra/q_27> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/ra/q_26> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/ra/q_25> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/dr/q_9> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/dr/q_8> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/rf/register_31_703> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/rf/register_31_702> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/rf/register_31_701> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/rf/register_31_700> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/rf/register_31_699> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/rf/register_31_698> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/rf/register_31_697> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/rf/register_31_696> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/rf/register_31_695> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/rf/register_31_694> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/rf/register_31_693> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/rf/register_31_692> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/rf/register_31_691> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/rf/register_31_690> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/rf/register_31_689> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/rf/register_31_688> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/rf/register_31_687> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/rf/register_31_686> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/rf/register_31_684> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/rf/register_31_683> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/rf/register_31_682> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/ra/q_1> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/ra/q_0> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/dr/q_31> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/dr/q_30> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/dr/q_29> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/dr/q_28> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/dr/q_27> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/dr/q_26> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/dr/q_25> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/dr/q_24> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/dr/q_23> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/dr/q_22> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/dr/q_21> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/dr/q_20> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/dr/q_19> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/dr/q_18> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/dr/q_17> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/dr/q_16> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/dr/q_15> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/dr/q_14> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/dr/q_13> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/dr/q_12> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/dr/q_11> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/dr/q_10> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/ir/q_30> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/ir/q_29> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/ir/q_28> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/ir/q_27> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/ir/q_26> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/ir/q_25> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/ir/q_24> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/ir/q_23> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/ir/q_22> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/ir/q_21> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/ir/q_20> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/ir/q_19> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/ir/q_18> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/ir/q_17> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/ir/q_16> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/ir/q_15> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/ir/q_14> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/ir/q_13> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/ir/q_12> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/ir/q_11> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/ir/q_10> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/ir/q_9> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/ir/q_8> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/ip/q_31> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/ip/q_30> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/ip/q_29> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/ip/q_28> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/ip/q_27> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/ip/q_26> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/ip/q_25> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/ip/q_24> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/ip/q_23> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/ip/q_22> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/ip/q_21> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/ip/q_20> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/ip/q_19> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/ip/q_18> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/ip/q_17> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/ip/q_16> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/ip/q_15> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/ip/q_14> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/ip/q_13> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/ip/q_12> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/ip/q_11> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/ip/q_10> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/ip/q_1> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/ir/q_31> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/rc/q_7> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/rc/q_6> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/rc/q_5> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/rc/q_4> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/rc/q_3> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/rc/q_2> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/rc/q_1> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/rb/q_31> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/rb/q_30> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/rb/q_29> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/rb/q_28> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/rb/q_27> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/rb/q_26> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/rb/q_25> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/rb/q_24> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/rb/q_23> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/rb/q_22> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/rb/q_21> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/rb/q_20> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/rb/q_19> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/rb/q_18> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/rb/q_17> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/rb/q_16> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/rc/q_31> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/rc/q_30> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/rc/q_29> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/rc/q_28> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/rc/q_27> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/rc/q_26> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/rc/q_25> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/rc/q_24> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/rc/q_23> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/rc/q_22> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/rc/q_21> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/rc/q_20> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/rc/q_19> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/rc/q_18> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/rc/q_17> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/rc/q_16> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/rc/q_15> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/rc/q_14> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/rc/q_13> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/rc/q_12> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/rc/q_11> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/rc/q_10> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/rc/q_9> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/rc/q_8> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/ip/q_9> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/ip/q_8> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/ip/q_7> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/ip/q_6> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/ip/q_5> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/ip/q_4> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/ip/q_3> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cpu/ip/q_2> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <cpu/dr/q_7> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/dr/q_6> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/dr/q_5> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/dr/q_4> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/dr/q_3> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/dr/q_2> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/dr/q_1> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/dr/q_0> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_991> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_990> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_989> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_988> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_987> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_986> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_985> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_984> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_983> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_982> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_981> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_980> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_979> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_978> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_977> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_976> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_975> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_974> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_973> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_972> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_971> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_970> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_969> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_968> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_967> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_966> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_965> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_964> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_963> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_962> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_961> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_960> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_959> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_958> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_957> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_956> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_955> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_954> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_953> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_952> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_951> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_950> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_949> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_948> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_947> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_946> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_945> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_944> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_943> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_942> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_941> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_940> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_939> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_938> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_937> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_936> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_935> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_934> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_933> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_932> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_931> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_930> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_929> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_928> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_927> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_926> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_925> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_924> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_923> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_922> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_921> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_920> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_919> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_918> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_917> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_916> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_915> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_914> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_913> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_912> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_911> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_910> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_909> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_908> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_907> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_906> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_905> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_904> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_903> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_902> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_901> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_900> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_899> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_898> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_897> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_896> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_895> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_894> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_893> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_892> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_891> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_890> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_889> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_888> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_887> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_886> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_885> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_884> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_883> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_882> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_881> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_880> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_879> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_878> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_877> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_876> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_875> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_874> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_873> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_872> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_871> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_870> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_869> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_868> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_867> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_866> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_865> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_864> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_863> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_862> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_861> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_860> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_859> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_858> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_857> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_856> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_855> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_854> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_853> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_852> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_851> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_850> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_849> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_848> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_847> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_846> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_845> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_844> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_843> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_842> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_841> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_840> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_839> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_838> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_837> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_836> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_835> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_834> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_833> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_832> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_831> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_830> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_829> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_828> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_827> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_826> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_825> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_824> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_823> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_822> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_821> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_820> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_819> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_818> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_817> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_816> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_815> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_814> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_813> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_812> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_811> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_810> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_809> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_808> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_807> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_806> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_805> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_804> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_803> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_802> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_801> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_800> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_799> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_798> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_797> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_796> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_795> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_794> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_793> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_792> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_791> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_790> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_789> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_788> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_787> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_786> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_785> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_784> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_783> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_782> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_781> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_780> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_779> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_778> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_777> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_776> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_775> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_774> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_773> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_772> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_771> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_770> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_769> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_768> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_767> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_766> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_765> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_764> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_763> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_762> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_761> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_760> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_759> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_758> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_757> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_756> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_755> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_754> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_753> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_752> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_751> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_750> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_749> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_748> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_747> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_746> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_745> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_744> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_743> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_742> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_741> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_740> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_739> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_738> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_737> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_736> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_735> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_734> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_733> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_732> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_731> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_730> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_729> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_728> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_727> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_726> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_725> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_724> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_723> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_722> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_721> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_720> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_719> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_718> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_717> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_716> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_715> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_714> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_713> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_712> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_711> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_710> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_709> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_708> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_707> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_706> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_705> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_704> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_685> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_681> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_680> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_679> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_678> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_677> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_676> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_675> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_674> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_673> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_672> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_671> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_670> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_669> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_668> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_667> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_666> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_665> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_664> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_663> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_662> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_661> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_660> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_659> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_658> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_657> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_656> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_655> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_654> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_653> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_652> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_651> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_650> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_649> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_648> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_647> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_646> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_645> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_644> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_643> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_642> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_641> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_640> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_639> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_638> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_637> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_636> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_635> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_634> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_633> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_632> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_631> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_630> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_629> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_628> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_627> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_626> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_625> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_624> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_623> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_622> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_621> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_620> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_619> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_618> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_617> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_616> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_615> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_614> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_613> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_612> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_611> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_610> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_609> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_608> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_607> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_606> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_605> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_604> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_603> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_602> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_601> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_600> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_599> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_598> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_597> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_596> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_595> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_594> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_593> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_592> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_591> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_590> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_589> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_588> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_587> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_586> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_585> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_584> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_583> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_582> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_581> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_580> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_579> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_578> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_577> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_576> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_575> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_574> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_573> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_572> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_571> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_570> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_569> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_568> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_567> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_566> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_565> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_564> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_563> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_562> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_561> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_560> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_559> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_558> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_557> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_556> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_555> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_554> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_553> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_552> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_551> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_550> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_549> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_548> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_547> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_546> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_545> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_544> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_543> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_542> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_541> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_540> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_539> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_538> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_537> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_536> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_535> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_534> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_533> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_532> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_531> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_530> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_529> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_528> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_527> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_526> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_525> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_524> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_523> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_522> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_521> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_520> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_519> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_518> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_517> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_516> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_515> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_514> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_513> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_512> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_511> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_510> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_509> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_508> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_507> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_506> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_505> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_504> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_503> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_502> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_501> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_500> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_499> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_498> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_497> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_496> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_495> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_494> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_493> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_492> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_491> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_490> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_489> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_488> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_487> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_486> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_485> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_484> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_483> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_482> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_481> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_480> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_479> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_478> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_477> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_476> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_475> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_474> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_473> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_472> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_471> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_470> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_469> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_468> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_467> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_466> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_465> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_464> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_463> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_462> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_461> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_460> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_459> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_458> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_457> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_456> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_455> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_454> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_453> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_452> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_451> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_450> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_449> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_448> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_447> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_446> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_445> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_444> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_443> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_442> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_441> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_440> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_439> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_438> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_437> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_436> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_435> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_434> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_433> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_432> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_431> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_430> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_429> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_428> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_427> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_426> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_425> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_424> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_423> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_422> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_421> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_420> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_419> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_418> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_417> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_416> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_415> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_414> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_413> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_412> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_411> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_410> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_409> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_408> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_407> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_406> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_405> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_404> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_403> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_402> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_401> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_400> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_399> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_398> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_397> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_396> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_395> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_394> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_393> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_392> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_391> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_390> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_389> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_388> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_387> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_386> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_385> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_384> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_383> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_382> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_381> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_380> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_379> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_378> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_377> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_376> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_375> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_374> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_373> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_372> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_371> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_370> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_369> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_368> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_367> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_366> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_365> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_364> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_363> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_362> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_361> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_360> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_359> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_358> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_357> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_356> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_355> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_354> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_353> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_352> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_351> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_350> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_349> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_348> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_347> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_346> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_345> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_344> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_343> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_342> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_341> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_340> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_339> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_338> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_337> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_336> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_335> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_334> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_333> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_332> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_331> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_330> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_329> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_328> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_327> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_326> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_325> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_324> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_323> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_322> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_321> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_320> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_319> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_318> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_317> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_316> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_315> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_314> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_313> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_312> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_311> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_310> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_309> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_308> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_307> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_306> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_305> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_304> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_303> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_302> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_301> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_300> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_299> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_298> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_297> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_296> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_295> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_294> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_293> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_292> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_291> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_290> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_289> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_288> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_287> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_286> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_285> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_284> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_283> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_282> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_281> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_280> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_279> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_278> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_277> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_276> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_275> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_274> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_273> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_272> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_271> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_270> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_269> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_268> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_267> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_266> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_265> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_264> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_263> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_262> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_261> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_260> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_259> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_258> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_257> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_256> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_255> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_254> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_253> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_252> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_251> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_250> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_249> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_248> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_247> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_246> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_245> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_244> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_243> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_242> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_241> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_240> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_239> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_238> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_237> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_236> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_235> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_234> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_233> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_232> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_231> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_230> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_229> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_228> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_227> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_226> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_225> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_224> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_223> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_222> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_221> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_220> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_219> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_218> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_217> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_216> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_215> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_214> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_213> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_212> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_211> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_210> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_209> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_208> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_207> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_206> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_205> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_204> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_203> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_202> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_201> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_200> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_199> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_198> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_197> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_196> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_195> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_194> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_193> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_192> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_191> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_190> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_189> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_188> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_187> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_186> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_185> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_184> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_183> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_182> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_181> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_180> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_179> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_178> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_177> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_176> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_175> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_174> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_173> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_172> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_171> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_170> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_169> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_168> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_167> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_166> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_165> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_164> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_163> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_162> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_161> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_160> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_159> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_158> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_157> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_156> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_155> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_154> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_153> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_152> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_151> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_150> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_149> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_148> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_147> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_146> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_145> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_144> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_143> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_142> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_141> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_140> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_139> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_138> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_137> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_136> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_135> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_134> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_133> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_132> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_131> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_130> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_129> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_128> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_127> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_126> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_125> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_124> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_123> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_122> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_121> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_120> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_119> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_118> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_117> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_116> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_115> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_114> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_113> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_112> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_111> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_110> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_109> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_108> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_107> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_106> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_105> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_104> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_103> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_102> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_101> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_100> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_99> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_98> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_97> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_96> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_95> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_94> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_93> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_92> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_91> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_90> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_89> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_88> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_87> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_86> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_85> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_84> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_83> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_82> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_81> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_80> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_79> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_78> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_77> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_76> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_75> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_74> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_73> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_72> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_71> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_70> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_69> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_68> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_67> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_66> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_65> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_64> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_63> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_62> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_61> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_60> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_59> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_58> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_57> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_56> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_55> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_54> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_53> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_52> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_51> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_50> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_49> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_48> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_47> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_46> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_45> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_44> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_43> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_42> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_41> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_40> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_39> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_38> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_37> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_36> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_35> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_34> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_33> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_32> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_31> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_30> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_29> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_28> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_27> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_26> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_25> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_24> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_23> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_22> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_21> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_20> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_19> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_18> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_17> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_16> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_15> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_14> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_13> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_12> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_11> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_10> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_9> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_8> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_7> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_6> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_5> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_4> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_3> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_2> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_1> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cpu/rf/register_31_0> of sequential type is unconnected in block <top>.
+WARNING:Xst:1293 - FF/Latch <cpu/ip/q_0> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block top, actual ratio is 1.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 35
+ Flip-Flops                                            : 35
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : top.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 196
+#      GND                         : 3
+#      INV                         : 4
+#      LUT1                        : 18
+#      LUT2                        : 12
+#      LUT3                        : 25
+#      LUT4                        : 26
+#      LUT5                        : 9
+#      LUT6                        : 38
+#      MUXCY                       : 36
+#      MUXF7                       : 2
+#      VCC                         : 3
+#      XORCY                       : 20
+# FlipFlops/Latches                : 46
+#      FD                          : 7
+#      FDE                         : 19
+#      FDR                         : 10
+#      FDRE                        : 10
+# RAMS                             : 27
+#      RAMB16BWER                  : 26
+#      RAMB8BWER                   : 1
+# Clock Buffers                    : 2
+#      BUFG                        : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 10
+#      OBUF                        : 10
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx16csg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              46  out of  18224     0%  
+ Number of Slice LUTs:                  132  out of   9112     1%  
+    Number used as Logic:               132  out of   9112     1%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    149
+   Number with an unused Flip Flop:     103  out of    149    69%  
+   Number with an unused LUT:            17  out of    149    11%  
+   Number of fully used LUT-FF pairs:    29  out of    149    19%  
+   Number of unique control sets:         8
+
+IO Utilization: 
+ Number of IOs:                          11
+ Number of bonded IOBs:                  11  out of    232     4%  
+
+Specific Feature Utilization:
+ Number of Block RAM/FIFO:               27  out of     32    84%  
+    Number using Block RAM only:         27
+ Number of BUFG/BUFGCTRLs:                2  out of     16    12%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+----------------------------------------------------------------------------------------------------------------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)                                                                                                            | Load  |
+-----------------------------------+----------------------------------------------------------------------------------------------------------------------------------+-------+
+mclk                               | BUFGP                                                                                                                            | 40    |
+clkdiv/p_1                         | BUFG                                                                                                                             | 33    |
+ram_mod/N1                         | NONE(ram_mod/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[7].ram.r/s6_init.ram/SP.SIMPLE_PRIM18.ram)| 8     |
+-----------------------------------+----------------------------------------------------------------------------------------------------------------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 5.188ns (Maximum Frequency: 192.738MHz)
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: 9.431ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'mclk'
+  Clock period: 1.950ns (frequency: 512.794MHz)
+  Total number of paths / destination ports: 3 / 2
+-------------------------------------------------------------------------
+Delay:               1.950ns (Levels of Logic = 1)
+  Source:            clkdiv/p_0 (FF)
+  Destination:       clkdiv/p_0 (FF)
+  Source Clock:      mclk rising
+  Destination Clock: mclk rising
+
+  Data Path: clkdiv/p_0 to clkdiv/p_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               2   0.447   0.616  clkdiv/p_0 (clkdiv/p_0)
+     INV:I->O              1   0.206   0.579  clkdiv/Mcount_p_xor<0>11_INV_0 (Result<0>)
+     FD:D                      0.102          clkdiv/p_0
+    ----------------------------------------
+    Total                      1.950ns (0.755ns logic, 1.195ns route)
+                                       (38.7% logic, 61.3% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clkdiv/p_1'
+  Clock period: 5.188ns (frequency: 192.738MHz)
+  Total number of paths / destination ports: 586 / 63
+-------------------------------------------------------------------------
+Delay:               5.188ns (Levels of Logic = 6)
+  Source:            cpu/control_unit/state_FSM_FFd1 (FF)
+  Destination:       cpu/rc/q_0 (FF)
+  Source Clock:      clkdiv/p_1 rising
+  Destination Clock: clkdiv/p_1 rising
+
+  Data Path: cpu/control_unit/state_FSM_FFd1 to cpu/rc/q_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q              11   0.447   1.111  cpu/control_unit/state_FSM_FFd1 (cpu/control_unit/state_FSM_FFd1)
+     LUT3:I0->O            5   0.205   0.715  cpu/control_unit/Mmux_pcsource111 (cpu/control_unit/Mmux_pcsource11)
+     LUT6:I5->O            2   0.205   0.864  cpu/control_unit/Mmux_aluc21 (cpu/aluc<1>)
+     LUT5:I1->O            1   0.203   0.000  cpu/aluint/select/Mmux_y23_G (N38)
+     MUXF7:I1->O           1   0.140   0.580  cpu/aluint/select/Mmux_y23 (cpu/aluint/select/Mmux_y22)
+     LUT6:I5->O            1   0.205   0.000  cpu/aluint/Mmux_r11_lut1 (cpu/aluint/Mmux_r11_lut1)
+     MUXCY:S->O            1   0.411   0.000  cpu/aluint/Mmux_r11_cy1 (cpu/n0035<0>)
+     FD:D                      0.102          cpu/rc/q_0
+    ----------------------------------------
+    Total                      5.188ns (1.918ns logic, 3.270ns route)
+                                       (37.0% logic, 63.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clkdiv/p_1'
+  Total number of paths / destination ports: 294 / 10
+-------------------------------------------------------------------------
+Offset:              7.650ns (Levels of Logic = 5)
+  Source:            vga_gen/hc_4 (FF)
+  Destination:       red<2> (PAD)
+  Source Clock:      clkdiv/p_1 rising
+
+  Data Path: vga_gen/hc_4 to red<2>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              4   0.447   1.028  vga_gen/hc_4 (vga_gen/hc_4)
+     LUT5:I0->O            1   0.203   0.580  blue<1>3 (blue<1>3)
+     LUT4:I3->O            1   0.205   0.827  blue<1>4 (blue<1>4)
+     LUT6:I2->O            1   0.203   0.580  blue<1>5 (blue<1>5)
+     LUT3:I2->O            8   0.205   0.802  blue<1>6 (blue_1_OBUF)
+     OBUF:I->O                 2.571          red_2_OBUF (red<2>)
+    ----------------------------------------
+    Total                      7.650ns (3.834ns logic, 3.816ns route)
+                                       (50.1% logic, 49.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'mclk'
+  Total number of paths / destination ports: 576 / 8
+-------------------------------------------------------------------------
+Offset:              9.431ns (Levels of Logic = 7)
+  Source:            vram_mod/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[12].ram.r/s6_init.ram/TRUE_DP.PRIM18.ram (RAM)
+  Destination:       red<2> (PAD)
+  Source Clock:      mclk rising
+
+  Data Path: vram_mod/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[12].ram.r/s6_init.ram/TRUE_DP.PRIM18.ram to red<2>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     RAMB16BWER:CLKB->DOB3    1   1.850   0.808  U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[12].ram.r/s6_init.ram/TRUE_DP.PRIM18.ram (U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[12].ram.ram_doutb<3>)
+     LUT4:I1->O            1   0.205   0.808  U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_b.B/Mmux_dout_mux81 (U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_b.B/Mmux_dout_mux8)
+     LUT6:I3->O            1   0.205   0.827  U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_b.B/Mmux_dout_mux82 (doutb<7>)
+     end scope: 'vram_mod:doutb<7>'
+     LUT6:I2->O            1   0.203   0.000  Mmux_x[2]_color[7]_Mux_0_o_3 (Mmux_x[2]_color[7]_Mux_0_o_3)
+     MUXF7:I1->O           1   0.140   0.808  Mmux_x[2]_color[7]_Mux_0_o_2_f7 (x[2]_color[7]_Mux_0_o)
+     LUT3:I0->O            8   0.205   0.802  blue<1>6 (blue_1_OBUF)
+     OBUF:I->O                 2.571          red_2_OBUF (red<2>)
+    ----------------------------------------
+    Total                      9.431ns (5.379ns logic, 4.052ns route)
+                                       (57.0% logic, 43.0% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clkdiv/p_1
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clkdiv/p_1     |    5.188|         |         |         |
+mclk           |    2.531|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock mclk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clkdiv/p_1     |    3.376|         |         |         |
+mclk           |    1.950|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 22.00 secs
+Total CPU time to Xst completion: 22.39 secs
+ 
+--> 
+
+Total memory usage is 198620 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings : 1244 (   0 filtered)
+Number of infos    :    7 (   0 filtered)
+
