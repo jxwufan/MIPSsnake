@@ -144,7 +144,7 @@ module mccu(op, func, z, clock, resetn,
 		aluc[3] = i_sra | i_slt | i_nor | i_slti;
 		aluc[2] = i_sub | i_or  | i_srl | i_sra | i_ori  | i_lui | i_nor;
 		aluc[1] = i_xor | i_sll | i_srl | i_sra | i_xori | i_beq | i_bne | i_lui;
-		aluc[0] = i_and | i_or  | i_sll | i_srl | i_sra  | i_ori | i_nor;
+		aluc[0] = i_and | i_or  | i_sll | i_srl | i_sra  | i_andi | i_ori | i_nor;
 
 		if (i_beq || i_bne) begin
 		   pcsource = 2'h1;

@@ -48,6 +48,7 @@ blk_mem_gen_v7_3.asy
 blk_mem_gen_v7_3.gise
 blk_mem_gen_v7_3.mif
 blk_mem_gen_v7_3.ngc
+blk_mem_gen_v7_3.sym
 blk_mem_gen_v7_3.v
 blk_mem_gen_v7_3.veo
 blk_mem_gen_v7_3.xco

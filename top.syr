@@ -5,14 +5,14 @@ Parameter TMPDIR set to xst/projnav.tmp
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.04 secs
+Total CPU time to Xst completion: 0.05 secs
  
 --> 
 Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.04 secs
+Total CPU time to Xst completion: 0.05 secs
  
 --> 
 Reading design: top.prj
@@ -167,15 +167,15 @@ WARNING:HDLCompiler:327 - "/home/fan/code/mips/MIPSAPP/BUS.v" Line 52: Concatena
 Analyzing Verilog file "/home/fan/code/mips/MIPSAPP/top.v" into library work
 Parsing module <top>.
 WARNING:HDLCompiler:751 - "/home/fan/code/mips/MIPSAPP/top.v" Line 35: Redeclaration of ansi port mclk is not allowed
-WARNING:HDLCompiler:751 - "/home/fan/code/mips/MIPSAPP/top.v" Line 42: Redeclaration of ansi port hsync is not allowed
-WARNING:HDLCompiler:751 - "/home/fan/code/mips/MIPSAPP/top.v" Line 43: Redeclaration of ansi port vsync is not allowed
+WARNING:HDLCompiler:751 - "/home/fan/code/mips/MIPSAPP/top.v" Line 43: Redeclaration of ansi port hsync is not allowed
+WARNING:HDLCompiler:751 - "/home/fan/code/mips/MIPSAPP/top.v" Line 44: Redeclaration of ansi port vsync is not allowed
 WARNING:HDLCompiler:1335 - "/home/fan/code/mips/MIPSAPP/top.v" Line 22: Port sw must not be declared to be an array
 WARNING:HDLCompiler:1335 - "/home/fan/code/mips/MIPSAPP/top.v" Line 23: Port btn must not be declared to be an array
 
 =========================================================================
 *                            HDL Elaboration                            *
 =========================================================================
-WARNING:HDLCompiler:1016 - "/home/fan/code/mips/MIPSAPP/top.v" Line 97: Port clr is not connected to this instance
+WARNING:HDLCompiler:1016 - "/home/fan/code/mips/MIPSAPP/top.v" Line 100: Port clr is not connected to this instance
 
 Elaborating module <top>.
 
@@ -183,16 +183,18 @@ Elaborating module <debuger>.
 
 Elaborating module <x7segbc>.
 WARNING:HDLCompiler:413 - "/home/fan/code/mips/MIPSAPP/x7segbc.v" Line 82: Result of 3-bit expression is truncated to fit in 2-bit target.
-WARNING:HDLCompiler:189 - "/home/fan/code/mips/MIPSAPP/top.v" Line 74: Size mismatch in connection of port <input3>. Formal port size is 32-bit while actual signal size is 12-bit.
-WARNING:HDLCompiler:189 - "/home/fan/code/mips/MIPSAPP/top.v" Line 76: Size mismatch in connection of port <input5>. Formal port size is 32-bit while actual signal size is 1-bit.
-WARNING:HDLCompiler:189 - "/home/fan/code/mips/MIPSAPP/top.v" Line 78: Size mismatch in connection of port <input7>. Formal port size is 32-bit while actual signal size is 8-bit.
+WARNING:HDLCompiler:189 - "/home/fan/code/mips/MIPSAPP/top.v" Line 75: Size mismatch in connection of port <input3>. Formal port size is 32-bit while actual signal size is 12-bit.
+WARNING:HDLCompiler:189 - "/home/fan/code/mips/MIPSAPP/top.v" Line 77: Size mismatch in connection of port <input5>. Formal port size is 32-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "/home/fan/code/mips/MIPSAPP/top.v" Line 79: Size mismatch in connection of port <input7>. Formal port size is 32-bit while actual signal size is 8-bit.
 
 Elaborating module <clkdiv>.
-WARNING:HDLCompiler:413 - "/home/fan/code/mips/MIPSAPP/clkdiv.v" Line 62: Result of 22-bit expression is truncated to fit in 21-bit target.
-WARNING:HDLCompiler:413 - "/home/fan/code/mips/MIPSAPP/clkdiv.v" Line 63: Result of 4-bit expression is truncated to fit in 3-bit target.
-WARNING:HDLCompiler:413 - "/home/fan/code/mips/MIPSAPP/clkdiv.v" Line 71: Result of 21-bit expression is truncated to fit in 20-bit target.
-WARNING:HDLCompiler:1127 - "/home/fan/code/mips/MIPSAPP/clkdiv.v" Line 50: Assignment to cnt ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/fan/code/mips/MIPSAPP/top.v" Line 91: Assignment to clk10ms ignored, since the identifier is never used
+WARNING:HDLCompiler:413 - "/home/fan/code/mips/MIPSAPP/clkdiv.v" Line 71: Result of 4-bit expression is truncated to fit in 3-bit target.
+WARNING:HDLCompiler:413 - "/home/fan/code/mips/MIPSAPP/clkdiv.v" Line 109: Result of 6-bit expression is truncated to fit in 5-bit target.
+WARNING:HDLCompiler:1127 - "/home/fan/code/mips/MIPSAPP/clkdiv.v" Line 57: Assignment to cnt ignored, since the identifier is never used
+WARNING:HDLCompiler:189 - "/home/fan/code/mips/MIPSAPP/top.v" Line 90: Size mismatch in connection of port <clr>. Formal port size is 1-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:1127 - "/home/fan/code/mips/MIPSAPP/top.v" Line 92: Assignment to clk10ms ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/fan/code/mips/MIPSAPP/top.v" Line 94: Assignment to clk1ms ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/fan/code/mips/MIPSAPP/top.v" Line 95: Assignment to clk100ms ignored, since the identifier is never used
 
 Elaborating module <vga_640x480>.
 WARNING:HDLCompiler:413 - "/home/fan/code/mips/MIPSAPP/vga_640x480.v" Line 49: Result of 32-bit expression is truncated to fit in 10-bit target.
@@ -238,47 +240,45 @@ Elaborating module <g_p>.
 Elaborating module <shift>.
 
 Elaborating module <mccu>.
-WARNING:HDLCompiler:189 - "/home/fan/code/mips/MIPSAPP/top.v" Line 111: Size mismatch in connection of port <inst>. Formal port size is 32-bit while actual signal size is 1-bit.
-WARNING:HDLCompiler:1127 - "/home/fan/code/mips/MIPSAPP/top.v" Line 111: Assignment to inst ignored, since the identifier is never used
-WARNING:HDLCompiler:189 - "/home/fan/code/mips/MIPSAPP/top.v" Line 112: Size mismatch in connection of port <alu_out>. Formal port size is 32-bit while actual signal size is 1-bit.
-WARNING:HDLCompiler:1127 - "/home/fan/code/mips/MIPSAPP/top.v" Line 112: Assignment to alu_out ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/fan/code/mips/MIPSAPP/top.v" Line 116: Assignment to state ignored, since the identifier is never used
-WARNING:HDLCompiler:189 - "/home/fan/code/mips/MIPSAPP/top.v" Line 117: Size mismatch in connection of port <npc>. Formal port size is 32-bit while actual signal size is 1-bit.
-WARNING:HDLCompiler:1127 - "/home/fan/code/mips/MIPSAPP/top.v" Line 117: Assignment to npc ignored, since the identifier is never used
-WARNING:HDLCompiler:189 - "/home/fan/code/mips/MIPSAPP/top.v" Line 118: Size mismatch in connection of port <pcsource>. Formal port size is 2-bit while actual signal size is 1-bit.
-WARNING:HDLCompiler:1127 - "/home/fan/code/mips/MIPSAPP/top.v" Line 118: Assignment to pcsource ignored, since the identifier is never used
-WARNING:HDLCompiler:189 - "/home/fan/code/mips/MIPSAPP/top.v" Line 119: Size mismatch in connection of port <alua>. Formal port size is 32-bit while actual signal size is 1-bit.
-WARNING:HDLCompiler:1127 - "/home/fan/code/mips/MIPSAPP/top.v" Line 119: Assignment to alua ignored, since the identifier is never used
-WARNING:HDLCompiler:189 - "/home/fan/code/mips/MIPSAPP/top.v" Line 120: Size mismatch in connection of port <alub>. Formal port size is 32-bit while actual signal size is 1-bit.
-WARNING:HDLCompiler:1127 - "/home/fan/code/mips/MIPSAPP/top.v" Line 120: Assignment to alub ignored, since the identifier is never used
-WARNING:HDLCompiler:189 - "/home/fan/code/mips/MIPSAPP/top.v" Line 121: Size mismatch in connection of port <aluc>. Formal port size is 4-bit while actual signal size is 1-bit.
-WARNING:HDLCompiler:1127 - "/home/fan/code/mips/MIPSAPP/top.v" Line 121: Assignment to aluc ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/fan/code/mips/MIPSAPP/top.v" Line 122: Assignment to z ignored, since the identifier is never used
-WARNING:HDLCompiler:189 - "/home/fan/code/mips/MIPSAPP/top.v" Line 123: Size mismatch in connection of port <opa>. Formal port size is 32-bit while actual signal size is 1-bit.
-WARNING:HDLCompiler:1127 - "/home/fan/code/mips/MIPSAPP/top.v" Line 123: Assignment to opa ignored, since the identifier is never used
-WARNING:HDLCompiler:189 - "/home/fan/code/mips/MIPSAPP/top.v" Line 124: Size mismatch in connection of port <rega>. Formal port size is 32-bit while actual signal size is 1-bit.
-WARNING:HDLCompiler:1127 - "/home/fan/code/mips/MIPSAPP/top.v" Line 124: Assignment to rega ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/fan/code/mips/MIPSAPP/top.v" Line 125: Assignment to selpc ignored, since the identifier is never used
-WARNING:HDLCompiler:189 - "/home/fan/code/mips/MIPSAPP/top.v" Line 126: Size mismatch in connection of port <res>. Formal port size is 32-bit while actual signal size is 1-bit.
-WARNING:HDLCompiler:1127 - "/home/fan/code/mips/MIPSAPP/top.v" Line 126: Assignment to res ignored, since the identifier is never used
-WARNING:HDLCompiler:189 - "/home/fan/code/mips/MIPSAPP/top.v" Line 127: Size mismatch in connection of port <wn>. Formal port size is 5-bit while actual signal size is 1-bit.
-WARNING:HDLCompiler:1127 - "/home/fan/code/mips/MIPSAPP/top.v" Line 127: Assignment to wn ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/fan/code/mips/MIPSAPP/top.v" Line 128: Assignment to wreg ignored, since the identifier is never used
+WARNING:HDLCompiler:189 - "/home/fan/code/mips/MIPSAPP/top.v" Line 114: Size mismatch in connection of port <inst>. Formal port size is 32-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:1127 - "/home/fan/code/mips/MIPSAPP/top.v" Line 114: Assignment to inst ignored, since the identifier is never used
+WARNING:HDLCompiler:189 - "/home/fan/code/mips/MIPSAPP/top.v" Line 115: Size mismatch in connection of port <alu_out>. Formal port size is 32-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:1127 - "/home/fan/code/mips/MIPSAPP/top.v" Line 115: Assignment to alu_out ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/fan/code/mips/MIPSAPP/top.v" Line 119: Assignment to state ignored, since the identifier is never used
+WARNING:HDLCompiler:189 - "/home/fan/code/mips/MIPSAPP/top.v" Line 120: Size mismatch in connection of port <npc>. Formal port size is 32-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:1127 - "/home/fan/code/mips/MIPSAPP/top.v" Line 120: Assignment to npc ignored, since the identifier is never used
+WARNING:HDLCompiler:189 - "/home/fan/code/mips/MIPSAPP/top.v" Line 121: Size mismatch in connection of port <pcsource>. Formal port size is 2-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:1127 - "/home/fan/code/mips/MIPSAPP/top.v" Line 121: Assignment to pcsource ignored, since the identifier is never used
+WARNING:HDLCompiler:189 - "/home/fan/code/mips/MIPSAPP/top.v" Line 122: Size mismatch in connection of port <alua>. Formal port size is 32-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:1127 - "/home/fan/code/mips/MIPSAPP/top.v" Line 122: Assignment to alua ignored, since the identifier is never used
+WARNING:HDLCompiler:189 - "/home/fan/code/mips/MIPSAPP/top.v" Line 123: Size mismatch in connection of port <alub>. Formal port size is 32-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:1127 - "/home/fan/code/mips/MIPSAPP/top.v" Line 123: Assignment to alub ignored, since the identifier is never used
+WARNING:HDLCompiler:189 - "/home/fan/code/mips/MIPSAPP/top.v" Line 124: Size mismatch in connection of port <aluc>. Formal port size is 4-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:1127 - "/home/fan/code/mips/MIPSAPP/top.v" Line 124: Assignment to aluc ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/fan/code/mips/MIPSAPP/top.v" Line 125: Assignment to z ignored, since the identifier is never used
+WARNING:HDLCompiler:189 - "/home/fan/code/mips/MIPSAPP/top.v" Line 126: Size mismatch in connection of port <opa>. Formal port size is 32-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:1127 - "/home/fan/code/mips/MIPSAPP/top.v" Line 126: Assignment to opa ignored, since the identifier is never used
+WARNING:HDLCompiler:189 - "/home/fan/code/mips/MIPSAPP/top.v" Line 127: Size mismatch in connection of port <rega>. Formal port size is 32-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:1127 - "/home/fan/code/mips/MIPSAPP/top.v" Line 127: Assignment to rega ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/fan/code/mips/MIPSAPP/top.v" Line 128: Assignment to selpc ignored, since the identifier is never used
+WARNING:HDLCompiler:189 - "/home/fan/code/mips/MIPSAPP/top.v" Line 129: Size mismatch in connection of port <res>. Formal port size is 32-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:1127 - "/home/fan/code/mips/MIPSAPP/top.v" Line 129: Assignment to res ignored, since the identifier is never used
+WARNING:HDLCompiler:189 - "/home/fan/code/mips/MIPSAPP/top.v" Line 130: Size mismatch in connection of port <wn>. Formal port size is 5-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:1127 - "/home/fan/code/mips/MIPSAPP/top.v" Line 130: Assignment to wn ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/fan/code/mips/MIPSAPP/top.v" Line 131: Assignment to wreg ignored, since the identifier is never used
 WARNING:HDLCompiler:327 - "/home/fan/code/mips/MIPSAPP/BUS.v" Line 52: Concatenation with unsized literal; will interpret as 32 bits
 
 Elaborating module <BUS>.
 
 Elaborating module <vram>.
 WARNING:HDLCompiler:1499 - "/home/fan/code/mips/MIPSAPP/ipcore_dir/vram.v" Line 39: Empty module <vram> remains a black box.
-WARNING:HDLCompiler:189 - "/home/fan/code/mips/MIPSAPP/top.v" Line 157: Size mismatch in connection of port <web>. Formal port size is 1-bit while actual signal size is 32-bit.
-WARNING:HDLCompiler:189 - "/home/fan/code/mips/MIPSAPP/top.v" Line 158: Size mismatch in connection of port <addrb>. Formal port size is 16-bit while actual signal size is 32-bit.
-WARNING:HDLCompiler:189 - "/home/fan/code/mips/MIPSAPP/top.v" Line 159: Size mismatch in connection of port <dinb>. Formal port size is 8-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/fan/code/mips/MIPSAPP/top.v" Line 161: Size mismatch in connection of port <addrb>. Formal port size is 16-bit while actual signal size is 32-bit.
 
 Elaborating module <ram>.
 WARNING:HDLCompiler:1499 - "/home/fan/code/mips/MIPSAPP/ipcore_dir/ram.v" Line 39: Empty module <ram> remains a black box.
-WARNING:HDLCompiler:1127 - "/home/fan/code/mips/MIPSAPP/top.v" Line 179: Assignment to test ignored, since the identifier is never used
-WARNING:HDLCompiler:634 - "/home/fan/code/mips/MIPSAPP/top.v" Line 76: Net <bus2cpu> does not have a driver.
-WARNING:HDLCompiler:552 - "/home/fan/code/mips/MIPSAPP/top.v" Line 97: Input port clr is not connected on this instance
+WARNING:HDLCompiler:1127 - "/home/fan/code/mips/MIPSAPP/top.v" Line 182: Assignment to test ignored, since the identifier is never used
+WARNING:HDLCompiler:634 - "/home/fan/code/mips/MIPSAPP/top.v" Line 77: Net <bus2cpu> does not have a driver.
+WARNING:HDLCompiler:552 - "/home/fan/code/mips/MIPSAPP/top.v" Line 100: Input port clr is not connected on this instance
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -289,26 +289,28 @@ Synthesizing Unit <top>.
 WARNING:Xst:2898 - Port 'clr', unconnected in block instance 'vga_gen', is tied to GND.
 WARNING:Xst:647 - Input <sw<7:4>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <btn<4:1>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-INFO:Xst:3210 - "/home/fan/code/mips/MIPSAPP/top.v" line 87: Output port <clk10ms> of the instance <clkdiv> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/fan/code/mips/MIPSAPP/top.v" line 106: Output port <inst> of the instance <mycpu> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/fan/code/mips/MIPSAPP/top.v" line 106: Output port <alu_out> of the instance <mycpu> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/fan/code/mips/MIPSAPP/top.v" line 106: Output port <state> of the instance <mycpu> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/fan/code/mips/MIPSAPP/top.v" line 106: Output port <npc> of the instance <mycpu> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/fan/code/mips/MIPSAPP/top.v" line 106: Output port <pcsource> of the instance <mycpu> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/fan/code/mips/MIPSAPP/top.v" line 106: Output port <alua> of the instance <mycpu> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/fan/code/mips/MIPSAPP/top.v" line 106: Output port <alub> of the instance <mycpu> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/fan/code/mips/MIPSAPP/top.v" line 106: Output port <aluc> of the instance <mycpu> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/fan/code/mips/MIPSAPP/top.v" line 106: Output port <opa> of the instance <mycpu> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/fan/code/mips/MIPSAPP/top.v" line 106: Output port <rega> of the instance <mycpu> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/fan/code/mips/MIPSAPP/top.v" line 106: Output port <res> of the instance <mycpu> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/fan/code/mips/MIPSAPP/top.v" line 106: Output port <wn> of the instance <mycpu> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/fan/code/mips/MIPSAPP/top.v" line 106: Output port <z> of the instance <mycpu> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/fan/code/mips/MIPSAPP/top.v" line 106: Output port <selpc> of the instance <mycpu> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/fan/code/mips/MIPSAPP/top.v" line 106: Output port <wreg> of the instance <mycpu> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/fan/code/mips/MIPSAPP/top.v" line 88: Output port <clk10ms> of the instance <clkdiv> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/fan/code/mips/MIPSAPP/top.v" line 88: Output port <clk1ms> of the instance <clkdiv> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/fan/code/mips/MIPSAPP/top.v" line 88: Output port <clk100ms> of the instance <clkdiv> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/fan/code/mips/MIPSAPP/top.v" line 109: Output port <inst> of the instance <mycpu> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/fan/code/mips/MIPSAPP/top.v" line 109: Output port <alu_out> of the instance <mycpu> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/fan/code/mips/MIPSAPP/top.v" line 109: Output port <state> of the instance <mycpu> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/fan/code/mips/MIPSAPP/top.v" line 109: Output port <npc> of the instance <mycpu> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/fan/code/mips/MIPSAPP/top.v" line 109: Output port <pcsource> of the instance <mycpu> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/fan/code/mips/MIPSAPP/top.v" line 109: Output port <alua> of the instance <mycpu> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/fan/code/mips/MIPSAPP/top.v" line 109: Output port <alub> of the instance <mycpu> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/fan/code/mips/MIPSAPP/top.v" line 109: Output port <aluc> of the instance <mycpu> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/fan/code/mips/MIPSAPP/top.v" line 109: Output port <opa> of the instance <mycpu> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/fan/code/mips/MIPSAPP/top.v" line 109: Output port <rega> of the instance <mycpu> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/fan/code/mips/MIPSAPP/top.v" line 109: Output port <res> of the instance <mycpu> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/fan/code/mips/MIPSAPP/top.v" line 109: Output port <wn> of the instance <mycpu> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/fan/code/mips/MIPSAPP/top.v" line 109: Output port <z> of the instance <mycpu> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/fan/code/mips/MIPSAPP/top.v" line 109: Output port <selpc> of the instance <mycpu> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/fan/code/mips/MIPSAPP/top.v" line 109: Output port <wreg> of the instance <mycpu> is unconnected or connected to loadless signal.
 WARNING:Xst:653 - Signal <bus2cpu> is used but never assigned. This sourceless signal will be automatically connected to value GND.
-    Found 17-bit adder for signal <n0026> created at line 158.
-    Found 10x7-bit multiplier for signal <n0033> created at line 158.
-    Found 1-bit 8-to-1 multiplexer for signal <x[2]_color[7]_Mux_19_o> created at line 192.
+    Found 17-bit adder for signal <n0028> created at line 161.
+    Found 10x7-bit multiplier for signal <n0037> created at line 161.
+    Found 1-bit 8-to-1 multiplexer for signal <x[2]_color[7]_Mux_20_o> created at line 195.
     Summary:
 	inferred   1 Multiplier(s).
 	inferred   1 Adder/Subtractor(s).
@@ -341,19 +343,25 @@ Unit <x7segbc> synthesized.
 
 Synthesizing Unit <clkdiv>.
     Related source file is "/home/fan/code/mips/MIPSAPP/clkdiv.v".
-    Found 20-bit register for signal <regi>.
-    Found 21-bit register for signal <cnt2>.
+    Found 33-bit register for signal <regi>.
+    Found 33-bit register for signal <cnt2>.
     Found 33-bit register for signal <cnt3>.
+    Found 5-bit register for signal <_5mcnt>.
     Found 1-bit register for signal <_10ms>.
-    Found 1-bit register for signal <_1s>.
+    Found 1-bit register for signal <_1ms>.
+    Found 33-bit register for signal <_100cnt>.
+    Found 1-bit register for signal <_100ms>.
+    Found 1-bit register for signal <clk5mhz>.
     Found 3-bit register for signal <p>.
-    Found 21-bit adder for signal <cnt2[20]_GND_4_o_add_2_OUT> created at line 62.
-    Found 3-bit adder for signal <p[2]_GND_4_o_add_3_OUT> created at line 63.
-    Found 20-bit adder for signal <regi[19]_GND_4_o_add_5_OUT> created at line 71.
-    Found 33-bit adder for signal <cnt3[32]_GND_4_o_add_8_OUT> created at line 81.
+    Found 33-bit adder for signal <cnt2[32]_GND_4_o_mux_19_OUT> created at line 70.
+    Found 3-bit adder for signal <p[2]_GND_4_o_mux_16_OUT> created at line 71.
+    Found 33-bit adder for signal <regi[32]_GND_4_o_add_5_OUT> created at line 79.
+    Found 33-bit adder for signal <cnt3[32]_GND_4_o_add_8_OUT> created at line 89.
+    Found 33-bit adder for signal <100cnt[32]_GND_4_o_add_11_OUT> created at line 99.
+    Found 5-bit adder for signal <5mcnt[4]_GND_4_o_add_14_OUT> created at line 109.
     Summary:
-	inferred   4 Adder/Subtractor(s).
-	inferred  79 D-type flip-flop(s).
+	inferred   6 Adder/Subtractor(s).
+	inferred 144 D-type flip-flop(s).
 Unit <clkdiv> synthesized.
 
 Synthesizing Unit <vga_640x480>.
@@ -547,25 +555,23 @@ Macro Statistics
  4x4-bit single-port Read Only RAM                     : 1
 # Multipliers                                          : 1
  10x7-bit multiplier                                   : 1
-# Adders/Subtractors                                   : 12
+# Adders/Subtractors                                   : 14
  10-bit adder                                          : 2
  10-bit subtractor                                     : 2
  11-bit subtractor                                     : 2
  17-bit adder                                          : 1
  2-bit adder                                           : 1
- 20-bit adder                                          : 1
- 21-bit adder                                          : 1
  3-bit adder                                           : 1
- 33-bit adder                                          : 1
-# Registers                                            : 17
- 1-bit register                                        : 3
+ 33-bit adder                                          : 4
+ 5-bit adder                                           : 1
+# Registers                                            : 21
+ 1-bit register                                        : 5
  10-bit register                                       : 2
  2-bit register                                        : 1
- 20-bit register                                       : 1
- 21-bit register                                       : 1
  3-bit register                                        : 1
  32-bit register                                       : 6
- 33-bit register                                       : 1
+ 33-bit register                                       : 4
+ 5-bit register                                        : 1
  992-bit register                                      : 1
 # Comparators                                          : 7
  10-bit comparator greater                             : 4
@@ -601,3 +607,735 @@ Macro Statistics
 =========================================================================
 
 Reading core <ipcore_dir/vram.ngc>.
+Reading core <ipcore_dir/ram.ngc>.
+Loading core <vram> for timing and area information for instance <vram_mod>.
+Loading core <ram> for timing and area information for instance <ram_mod>.
+
+Synthesizing (advanced) Unit <clkdiv>.
+The following registers are absorbed into counter <cnt2>: 1 register on signal <cnt2>.
+The following registers are absorbed into counter <p>: 1 register on signal <p>.
+The following registers are absorbed into counter <regi>: 1 register on signal <regi>.
+The following registers are absorbed into counter <cnt3>: 1 register on signal <cnt3>.
+The following registers are absorbed into counter <_5mcnt>: 1 register on signal <_5mcnt>.
+The following registers are absorbed into counter <_100cnt>: 1 register on signal <_100cnt>.
+Unit <clkdiv> synthesized (advanced).
+
+Synthesizing (advanced) Unit <top>.
+	Multiplier <Mmult_n0037> in block <top> and adder/subtractor <Madd_n0028_Madd> in block <top> are combined into a MAC<Maddsub_n0037>.
+Unit <top> synthesized (advanced).
+
+Synthesizing (advanced) Unit <vga_640x480>.
+The following registers are absorbed into counter <hc>: 1 register on signal <hc>.
+The following registers are absorbed into counter <vc>: 1 register on signal <vc>.
+Unit <vga_640x480> synthesized (advanced).
+
+Synthesizing (advanced) Unit <x7segbc>.
+The following registers are absorbed into counter <s>: 1 register on signal <s>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_an> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 4-word x 4-bit                      |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <s>             |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <an>            |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_a_to_g> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 7-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <digit>         |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <a_to_g>        |          |
+    -----------------------------------------------------------------------
+Unit <x7segbc> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 2
+ 16x7-bit single-port distributed Read Only RAM        : 1
+ 4x4-bit single-port distributed Read Only RAM         : 1
+# MACs                                                 : 1
+ 10x7-to-16-bit MAC                                    : 1
+# Adders/Subtractors                                   : 2
+ 10-bit subtractor borrow in                           : 2
+# Counters                                             : 9
+ 10-bit up counter                                     : 2
+ 2-bit up counter                                      : 1
+ 3-bit up counter                                      : 1
+ 33-bit up counter                                     : 4
+ 5-bit up counter                                      : 1
+# Registers                                            : 1189
+ Flip-Flops                                            : 1189
+# Comparators                                          : 7
+ 10-bit comparator greater                             : 4
+ 10-bit comparator lessequal                           : 2
+ 32-bit comparator greater                             : 1
+# Multiplexers                                         : 114
+ 1-bit 2-to-1 multiplexer                              : 33
+ 1-bit 4-to-1 multiplexer                              : 4
+ 1-bit 8-to-1 multiplexer                              : 1
+ 16-bit 2-to-1 multiplexer                             : 1
+ 2-bit 2-to-1 multiplexer                              : 17
+ 3-bit 2-to-1 multiplexer                              : 1
+ 32-bit 2-to-1 multiplexer                             : 47
+ 32-bit 31-to-1 multiplexer                            : 2
+ 32-bit 4-to-1 multiplexer                             : 3
+ 32-bit 8-to-1 multiplexer                             : 1
+ 4-bit 2-to-1 multiplexer                              : 1
+ 5-bit 2-to-1 multiplexer                              : 1
+ 8-bit 2-to-1 multiplexer                              : 2
+# Logic shifters                                       : 3
+ 32-bit shifter arithmetic right                       : 1
+ 32-bit shifter logical left                           : 1
+ 32-bit shifter logical right                          : 1
+# FSMs                                                 : 1
+# Xors                                                 : 66
+ 1-bit xor2                                            : 64
+ 32-bit xor2                                           : 2
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <mycpu/control_unit/FSM_0> on signal <state[1:3]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ 000   | 000
+ 001   | 001
+ 010   | 010
+ 100   | 100
+ 011   | 011
+-------------------
+WARNING:Xst:2677 - Node <p_2> of sequential type is unconnected in block <clkdiv>.
+WARNING:Xst:2677 - Node <cnt2_19> of sequential type is unconnected in block <clkdiv>.
+WARNING:Xst:2677 - Node <cnt2_20> of sequential type is unconnected in block <clkdiv>.
+WARNING:Xst:2677 - Node <cnt2_21> of sequential type is unconnected in block <clkdiv>.
+WARNING:Xst:2677 - Node <cnt2_22> of sequential type is unconnected in block <clkdiv>.
+WARNING:Xst:2677 - Node <cnt2_23> of sequential type is unconnected in block <clkdiv>.
+WARNING:Xst:2677 - Node <cnt2_24> of sequential type is unconnected in block <clkdiv>.
+WARNING:Xst:2677 - Node <cnt2_25> of sequential type is unconnected in block <clkdiv>.
+WARNING:Xst:2677 - Node <cnt2_26> of sequential type is unconnected in block <clkdiv>.
+WARNING:Xst:2677 - Node <cnt2_27> of sequential type is unconnected in block <clkdiv>.
+WARNING:Xst:2677 - Node <cnt2_28> of sequential type is unconnected in block <clkdiv>.
+WARNING:Xst:2677 - Node <cnt2_29> of sequential type is unconnected in block <clkdiv>.
+WARNING:Xst:2677 - Node <cnt2_30> of sequential type is unconnected in block <clkdiv>.
+WARNING:Xst:2677 - Node <cnt2_31> of sequential type is unconnected in block <clkdiv>.
+WARNING:Xst:2677 - Node <cnt2_32> of sequential type is unconnected in block <clkdiv>.
+
+Optimizing unit <dffe32> ...
+
+Optimizing unit <dff32> ...
+
+Optimizing unit <top> ...
+
+Optimizing unit <clkdiv> ...
+
+Optimizing unit <mccpu> ...
+
+Optimizing unit <regfile> ...
+
+Optimizing unit <mccu> ...
+
+Optimizing unit <alu> ...
+WARNING:Xst:2677 - Node <clkdiv/cnt3_32> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <clkdiv/cnt3_31> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <clkdiv/cnt3_30> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <clkdiv/cnt3_29> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <clkdiv/cnt3_28> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <clkdiv/cnt3_27> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <clkdiv/cnt3_26> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <clkdiv/cnt3_25> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <clkdiv/cnt3_24> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <clkdiv/cnt3_23> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <clkdiv/cnt3_22> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <clkdiv/cnt3_21> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <clkdiv/cnt3_20> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <clkdiv/cnt3_19> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <clkdiv/cnt3_18> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <clkdiv/cnt3_17> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <clkdiv/cnt3_16> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <clkdiv/cnt3_15> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <clkdiv/cnt3_14> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <clkdiv/cnt3_13> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <clkdiv/cnt3_12> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <clkdiv/cnt3_11> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <clkdiv/cnt3_10> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <clkdiv/cnt3_9> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <clkdiv/cnt3_8> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <clkdiv/cnt3_7> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <clkdiv/cnt3_6> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <clkdiv/cnt3_5> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <clkdiv/cnt3_4> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <clkdiv/cnt3_3> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <clkdiv/cnt3_2> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <clkdiv/cnt3_1> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <clkdiv/cnt3_0> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <clkdiv/_100cnt_32> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <clkdiv/_100cnt_31> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <clkdiv/_100cnt_30> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <clkdiv/_100cnt_29> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <clkdiv/_100cnt_28> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <clkdiv/_100cnt_27> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <clkdiv/_100cnt_26> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <clkdiv/_100cnt_25> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <clkdiv/_100cnt_24> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <clkdiv/_100cnt_23> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <clkdiv/_100cnt_22> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <clkdiv/_100cnt_21> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <clkdiv/_100cnt_20> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <clkdiv/_100cnt_19> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <clkdiv/_100cnt_18> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <clkdiv/_100cnt_17> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <clkdiv/_100cnt_16> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <clkdiv/_100cnt_15> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <clkdiv/_100cnt_14> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <clkdiv/_100cnt_13> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <clkdiv/_100cnt_12> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <clkdiv/_100cnt_11> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <clkdiv/_100cnt_10> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <clkdiv/_100cnt_9> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <clkdiv/_100cnt_8> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <clkdiv/_100cnt_7> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <clkdiv/_100cnt_6> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <clkdiv/_100cnt_5> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <clkdiv/_100cnt_4> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <clkdiv/_100cnt_3> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <clkdiv/_100cnt_2> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <clkdiv/_100cnt_1> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <clkdiv/_100cnt_0> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <clkdiv/regi_32> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <clkdiv/regi_31> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <clkdiv/regi_30> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <clkdiv/regi_29> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <clkdiv/regi_28> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <clkdiv/regi_27> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <clkdiv/regi_26> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <clkdiv/regi_25> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <clkdiv/regi_24> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <clkdiv/regi_23> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <clkdiv/regi_22> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <clkdiv/regi_21> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <clkdiv/regi_20> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <clkdiv/regi_19> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <clkdiv/regi_18> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <clkdiv/regi_17> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <clkdiv/regi_16> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <clkdiv/regi_15> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <clkdiv/regi_14> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <clkdiv/regi_13> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <clkdiv/regi_12> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <clkdiv/regi_11> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <clkdiv/regi_10> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <clkdiv/regi_9> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <clkdiv/regi_8> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <clkdiv/regi_7> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <clkdiv/regi_6> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <clkdiv/regi_5> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <clkdiv/regi_4> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <clkdiv/regi_3> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <clkdiv/regi_2> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <clkdiv/regi_1> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <clkdiv/regi_0> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <clkdiv/_1ms> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <clkdiv/_10ms> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <clkdiv/_100ms> of sequential type is unconnected in block <top>.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block top, actual ratio is 39.
+FlipFlop mycpu/control_unit/state_FSM_FFd1 has been replicated 2 time(s)
+FlipFlop mycpu/control_unit/state_FSM_FFd2 has been replicated 2 time(s)
+FlipFlop mycpu/control_unit/state_FSM_FFd3 has been replicated 2 time(s)
+FlipFlop mycpu/ir/q_2 has been replicated 3 time(s)
+FlipFlop mycpu/ir/q_26 has been replicated 2 time(s)
+FlipFlop mycpu/ir/q_28 has been replicated 2 time(s)
+FlipFlop mycpu/ir/q_3 has been replicated 2 time(s)
+FlipFlop mycpu/ir/q_31 has been replicated 2 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 1254
+ Flip-Flops                                            : 1254
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : top.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 3332
+#      GND                         : 3
+#      INV                         : 10
+#      LUT1                        : 36
+#      LUT2                        : 88
+#      LUT3                        : 1087
+#      LUT4                        : 188
+#      LUT5                        : 374
+#      LUT6                        : 1327
+#      MUXCY                       : 52
+#      MUXF7                       : 125
+#      VCC                         : 3
+#      XORCY                       : 39
+# FlipFlops/Latches                : 1265
+#      FD                          : 23
+#      FDC                         : 139
+#      FDCE                        : 1067
+#      FDE                         : 11
+#      FDR                         : 15
+#      FDRE                        : 10
+# RAMS                             : 27
+#      RAMB16BWER                  : 26
+#      RAMB8BWER                   : 1
+# Clock Buffers                    : 3
+#      BUFG                        : 2
+#      BUFGP                       : 1
+# IO Buffers                       : 28
+#      IBUF                        : 5
+#      OBUF                        : 23
+# DSPs                             : 1
+#      DSP48A1                     : 1
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx16csg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:            1265  out of  18224     6%  
+ Number of Slice LUTs:                 3110  out of   9112    34%  
+    Number used as Logic:              3110  out of   9112    34%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:   3176
+   Number with an unused Flip Flop:    1911  out of   3176    60%  
+   Number with an unused LUT:            66  out of   3176     2%  
+   Number of fully used LUT-FF pairs:  1199  out of   3176    37%  
+   Number of unique control sets:        13
+
+IO Utilization: 
+ Number of IOs:                          37
+ Number of bonded IOBs:                  29  out of    232    12%  
+
+Specific Feature Utilization:
+ Number of Block RAM/FIFO:               27  out of     32    84%  
+    Number using Block RAM only:         27
+ Number of BUFG/BUFGCTRLs:                3  out of     16    18%  
+ Number of DSP48A1s:                      1  out of     32     3%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+----------------------------------------------------------------------------------------------------------------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)                                                                                                            | Load  |
+-----------------------------------+----------------------------------------------------------------------------------------------------------------------------------+-------+
+clkdiv/p_1                         | BUFG                                                                                                                             | 21    |
+clkdiv/cnt2_18                     | NONE(debug/mod/s_0)                                                                                                              | 2     |
+mclk                               | BUFGP                                                                                                                            | 65    |
+clkdiv/clk5mhz                     | BUFG                                                                                                                             | 1204  |
+ram_mod/N1                         | NONE(ram_mod/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[7].ram.r/s6_init.ram/SP.SIMPLE_PRIM18.ram)| 8     |
+-----------------------------------+----------------------------------------------------------------------------------------------------------------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 15.336ns (Maximum Frequency: 65.207MHz)
+   Minimum input arrival time before clock: 5.294ns
+   Maximum output required time after clock: 15.660ns
+   Maximum combinational path delay: 10.971ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clkdiv/p_1'
+  Clock period: 4.121ns (frequency: 242.642MHz)
+  Total number of paths / destination ports: 340 / 51
+-------------------------------------------------------------------------
+Delay:               4.121ns (Levels of Logic = 2)
+  Source:            vga_gen/hc_5 (FF)
+  Destination:       vga_gen/hc_0 (FF)
+  Source Clock:      clkdiv/p_1 rising
+  Destination Clock: clkdiv/p_1 rising
+
+  Data Path: vga_gen/hc_5 to vga_gen/hc_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              6   0.447   0.973  vga_gen/hc_5 (vga_gen/hc_5)
+     LUT3:I0->O            2   0.205   0.981  vga_gen/GND_5_o_vsenable_MUX_97_o<9>11 (vga_gen/GND_5_o_vsenable_MUX_97_o<9>1)
+     LUT6:I0->O           11   0.203   0.882  vga_gen/GND_5_o_vsenable_MUX_97_o<9> (vga_gen/GND_5_o_vsenable_MUX_97_o)
+     FDR:R                     0.430          vga_gen/hc_0
+    ----------------------------------------
+    Total                      4.121ns (1.285ns logic, 2.836ns route)
+                                       (31.2% logic, 68.8% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clkdiv/cnt2_18'
+  Clock period: 2.291ns (frequency: 436.500MHz)
+  Total number of paths / destination ports: 3 / 2
+-------------------------------------------------------------------------
+Delay:               2.291ns (Levels of Logic = 1)
+  Source:            debug/mod/s_0 (FF)
+  Destination:       debug/mod/s_0 (FF)
+  Source Clock:      clkdiv/cnt2_18 rising
+  Destination Clock: clkdiv/cnt2_18 rising
+
+  Data Path: debug/mod/s_0 to debug/mod/s_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             14   0.447   0.957  debug/mod/s_0 (debug/mod/s_0)
+     INV:I->O              1   0.206   0.579  debug/mod/Mcount_s_xor<0>11_INV_0 (Result<0>2)
+     FDC:D                     0.102          debug/mod/s_0
+    ----------------------------------------
+    Total                      2.291ns (0.755ns logic, 1.536ns route)
+                                       (33.0% logic, 67.0% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'mclk'
+  Clock period: 2.785ns (frequency: 359.066MHz)
+  Total number of paths / destination ports: 238 / 32
+-------------------------------------------------------------------------
+Delay:               2.785ns (Levels of Logic = 1)
+  Source:            clkdiv/_5mcnt_4 (FF)
+  Destination:       clkdiv/_5mcnt_4 (FF)
+  Source Clock:      mclk rising
+  Destination Clock: mclk rising
+
+  Data Path: clkdiv/_5mcnt_4 to clkdiv/_5mcnt_4
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              2   0.447   0.961  clkdiv/_5mcnt_4 (clkdiv/_5mcnt_4)
+     LUT5:I0->O            6   0.203   0.744  clkdiv/GND_4_o_clk5mhz_MUX_86_o<4>1 (clkdiv/GND_4_o_clk5mhz_MUX_86_o)
+     FDR:R                     0.430          clkdiv/_5mcnt_0
+    ----------------------------------------
+    Total                      2.785ns (1.080ns logic, 1.705ns route)
+                                       (38.8% logic, 61.2% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clkdiv/clk5mhz'
+  Clock period: 15.336ns (frequency: 65.207MHz)
+  Total number of paths / destination ports: 14058058 / 2271
+-------------------------------------------------------------------------
+Delay:               15.336ns (Levels of Logic = 13)
+  Source:            mycpu/ir/q_27 (FF)
+  Destination:       mycpu/ip/q_16 (FF)
+  Source Clock:      clkdiv/clk5mhz rising
+  Destination Clock: clkdiv/clk5mhz rising
+
+  Data Path: mycpu/ir/q_27 to mycpu/ip/q_16
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q            19   0.447   1.176  mycpu/ir/q_27 (mycpu/ir/q_27)
+     LUT3:I1->O           17   0.203   1.028  mycpu/control_unit/Mmux_aluc4211 (mycpu/control_unit/Mmux_aluc421)
+     LUT6:I5->O           17   0.205   1.028  mycpu/control_unit/out1911 (mycpu/control_unit/out191)
+     LUT6:I5->O          116   0.205   1.920  mycpu/control_unit/alusrcb<0>1 (mycpu/alusrcb<0>)
+     LUT4:I3->O            9   0.205   0.934  mycpu/alu_a/Mmux_y151 (mycpu/alua<22>)
+     LUT6:I4->O            1   0.203   0.684  mycpu/aluint/select/Mmux_y305_SW2_F (N793)
+     LUT3:I1->O            2   0.203   0.617  mycpu/aluint/select/Mmux_y305_SW21 (N214)
+     LUT6:I5->O            2   0.205   0.721  mycpu/aluint/as32/as32/cla/cla1/cla0/cla1/g_p0/c_out1_SW4 (N379)
+     LUT5:I3->O            1   0.203   0.684  mycpu/aluint/Mmux_r151_SW2 (N585)
+     LUT5:I3->O            4   0.203   0.788  mycpu/aluint/Mmux_r151 (mycpu/alu_out<22>)
+     LUT6:I4->O            1   0.203   0.808  mycpu/aluint/z5_SW0_SW0 (N706)
+     LUT6:I3->O            2   0.205   0.721  mycpu/aluint/z6_SW0 (N170)
+     LUT6:I4->O           17   0.203   1.028  mycpu/aluint/z7 (mycpu/z)
+     LUT6:I5->O            1   0.205   0.000  mycpu/ip/q_0_dpot (mycpu/ip/q_0_dpot)
+     FDCE:D                    0.102          mycpu/ip/q_0
+    ----------------------------------------
+    Total                     15.336ns (3.200ns logic, 12.136ns route)
+                                       (20.9% logic, 79.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clkdiv/cnt2_18'
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Offset:              3.927ns (Levels of Logic = 1)
+  Source:            btn<0> (PAD)
+  Destination:       debug/mod/s_0 (FF)
+  Destination Clock: clkdiv/cnt2_18 rising
+
+  Data Path: btn<0> to debug/mod/s_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O          1283   1.222   2.275  btn_0_IBUF (btn_0_IBUF)
+     FDC:CLR                   0.430          debug/mod/s_0
+    ----------------------------------------
+    Total                      3.927ns (1.652ns logic, 2.275ns route)
+                                       (42.1% logic, 57.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clkdiv/clk5mhz'
+  Total number of paths / destination ports: 1204 / 1204
+-------------------------------------------------------------------------
+Offset:              3.927ns (Levels of Logic = 1)
+  Source:            btn<0> (PAD)
+  Destination:       mycpu/ip/q_31 (FF)
+  Destination Clock: clkdiv/clk5mhz rising
+
+  Data Path: btn<0> to mycpu/ip/q_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O          1283   1.222   2.275  btn_0_IBUF (btn_0_IBUF)
+     FDCE:CLR                  0.430          mycpu/ip/q_0
+    ----------------------------------------
+    Total                      3.927ns (1.652ns logic, 2.275ns route)
+                                       (42.1% logic, 57.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'mclk'
+  Total number of paths / destination ports: 108 / 108
+-------------------------------------------------------------------------
+Offset:              5.294ns (Levels of Logic = 3)
+  Source:            btn<0> (PAD)
+  Destination:       vram_mod/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[18].ram.r/s6_init.ram/TRUE_DP.PRIM18.ram (RAM)
+  Destination Clock: mclk rising
+
+  Data Path: btn<0> to vram_mod/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[18].ram.r/s6_init.ram/TRUE_DP.PRIM18.ram
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O          1283   1.222   2.275  btn_0_IBUF (btn_0_IBUF)
+     INV:I->O             32   0.206   1.291  btn[0]_INV_162_o1_INV_0 (btn[0]_INV_162_o)
+     begin scope: 'vram_mod:dinb<7>'
+     RAMB16BWER:DIB0           0.300          U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[18].ram.r/s6_init.ram/TRUE_DP.PRIM18.ram
+    ----------------------------------------
+    Total                      5.294ns (1.728ns logic, 3.566ns route)
+                                       (32.6% logic, 67.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clkdiv/p_1'
+  Total number of paths / destination ports: 302 / 10
+-------------------------------------------------------------------------
+Offset:              8.292ns (Levels of Logic = 5)
+  Source:            vga_gen/vc_5 (FF)
+  Destination:       red<2> (PAD)
+  Source Clock:      clkdiv/p_1 rising
+
+  Data Path: vga_gen/vc_5 to red<2>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             9   0.447   1.174  vga_gen/vc_5 (vga_gen/vc_5)
+     LUT5:I0->O            2   0.203   0.981  SF011 (SF01)
+     LUT6:I0->O            1   0.203   0.924  blue<1>4 (blue<1>4)
+     LUT6:I1->O            1   0.203   0.580  blue<1>5 (blue<1>5)
+     LUT2:I1->O            8   0.205   0.802  blue<1>6 (blue_1_OBUF)
+     OBUF:I->O                 2.571          red_2_OBUF (red<2>)
+    ----------------------------------------
+    Total                      8.292ns (3.832ns logic, 4.460ns route)
+                                       (46.2% logic, 53.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'mclk'
+  Total number of paths / destination ports: 1612 / 15
+-------------------------------------------------------------------------
+Offset:              11.255ns (Levels of Logic = 9)
+  Source:            vram_mod/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[12].ram.r/s6_init.ram/TRUE_DP.PRIM18.ram (RAM)
+  Destination:       a_to_g<6> (PAD)
+  Source Clock:      mclk rising
+
+  Data Path: vram_mod/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[12].ram.r/s6_init.ram/TRUE_DP.PRIM18.ram to a_to_g<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     RAMB16BWER:CLKA->DOA0    1   1.850   0.808  U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[12].ram.r/s6_init.ram/TRUE_DP.PRIM18.ram (U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[12].ram.ram_douta<0>)
+     LUT4:I1->O            1   0.205   0.808  U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/Mmux_dout_mux51 (U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/Mmux_dout_mux5)
+     LUT6:I3->O            1   0.205   0.684  U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/Mmux_dout_mux52 (douta<4>)
+     end scope: 'vram_mod:douta<4>'
+     LUT4:I2->O            3   0.203   0.755  SoC_Bus/Mmux_bus2cpu271 (frommem<4>)
+     LUT6:I4->O            1   0.203   0.827  debug/Mmux_data273 (debug/data<4>)
+     LUT6:I2->O            1   0.203   0.000  debug/mod/Mmux_digit<0>_4 (debug/mod/Mmux_digit<0>_4)
+     MUXF7:I0->O           7   0.131   1.021  debug/mod/Mmux_digit<0>_2_f7 (debug/mod/digit<0>)
+     LUT4:I0->O            1   0.203   0.579  debug/mod/Mram_a_to_g21 (a_to_g_2_OBUF)
+     OBUF:I->O                 2.571          a_to_g_2_OBUF (a_to_g<2>)
+    ----------------------------------------
+    Total                     11.255ns (5.774ns logic, 5.481ns route)
+                                       (51.3% logic, 48.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clkdiv/cnt2_18'
+  Total number of paths / destination ports: 92 / 11
+-------------------------------------------------------------------------
+Offset:              6.486ns (Levels of Logic = 4)
+  Source:            debug/mod/s_0 (FF)
+  Destination:       a_to_g<6> (PAD)
+  Source Clock:      clkdiv/cnt2_18 rising
+
+  Data Path: debug/mod/s_0 to a_to_g<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             14   0.447   1.322  debug/mod/s_0 (debug/mod/s_0)
+     LUT6:I0->O            1   0.203   0.000  debug/mod/Mmux_digit<0>_3 (debug/mod/Mmux_digit<0>_3)
+     MUXF7:I1->O           7   0.140   1.021  debug/mod/Mmux_digit<0>_2_f7 (debug/mod/digit<0>)
+     LUT4:I0->O            1   0.203   0.579  debug/mod/Mram_a_to_g21 (a_to_g_2_OBUF)
+     OBUF:I->O                 2.571          a_to_g_2_OBUF (a_to_g<2>)
+    ----------------------------------------
+    Total                      6.486ns (3.564ns logic, 2.922ns route)
+                                       (55.0% logic, 45.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clkdiv/clk5mhz'
+  Total number of paths / destination ports: 29125 / 8
+-------------------------------------------------------------------------
+Offset:              15.660ns (Levels of Logic = 11)
+  Source:            mycpu/control_unit/state_FSM_FFd3 (FF)
+  Destination:       a_to_g<6> (PAD)
+  Source Clock:      clkdiv/clk5mhz rising
+
+  Data Path: mycpu/control_unit/state_FSM_FFd3 to a_to_g<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             66   0.447   1.882  mycpu/control_unit/state_FSM_FFd3 (mycpu/control_unit/state_FSM_FFd3)
+     LUT4:I1->O            2   0.205   0.981  mycpu/mem_address/Mmux_y161 (address<23>)
+     LUT6:I0->O            2   0.203   0.981  SoC_Bus/GND_25_o_GND_25_o_equal_3_o<31>12 (SoC_Bus/GND_25_o_GND_25_o_equal_3_o<31>12)
+     LUT6:I0->O            1   0.203   0.924  SoC_Bus/GND_25_o_GND_25_o_equal_3_o<31>_SW0 (N839)
+     LUT6:I1->O           99   0.203   1.871  SoC_Bus/GND_25_o_GND_25_o_equal_3_o<31> (SoC_Bus/GND_25_o_GND_25_o_equal_3_o)
+     LUT5:I4->O            8   0.205   1.031  debug/Mmux_data1101 (debug/Mmux_data110)
+     LUT3:I0->O            1   0.205   0.580  debug/Mmux_data272 (debug/Mmux_data271)
+     LUT6:I5->O            1   0.205   0.827  debug/Mmux_data273 (debug/data<4>)
+     LUT6:I2->O            1   0.203   0.000  debug/mod/Mmux_digit<0>_4 (debug/mod/Mmux_digit<0>_4)
+     MUXF7:I0->O           7   0.131   1.021  debug/mod/Mmux_digit<0>_2_f7 (debug/mod/digit<0>)
+     LUT4:I0->O            1   0.203   0.579  debug/mod/Mram_a_to_g21 (a_to_g_2_OBUF)
+     OBUF:I->O                 2.571          a_to_g_2_OBUF (a_to_g<2>)
+    ----------------------------------------
+    Total                     15.660ns (4.984ns logic, 10.676ns route)
+                                       (31.8% logic, 68.2% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 1596 / 7
+-------------------------------------------------------------------------
+Delay:               10.971ns (Levels of Logic = 8)
+  Source:            sw<1> (PAD)
+  Destination:       a_to_g<6> (PAD)
+
+  Data Path: sw<1> to a_to_g<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            65   1.222   1.991  sw_1_IBUF (sw_1_IBUF)
+     LUT5:I0->O            8   0.203   1.031  debug/Mmux_data1101 (debug/Mmux_data110)
+     LUT3:I0->O            1   0.205   0.580  debug/Mmux_data272 (debug/Mmux_data271)
+     LUT6:I5->O            1   0.205   0.827  debug/Mmux_data273 (debug/data<4>)
+     LUT6:I2->O            1   0.203   0.000  debug/mod/Mmux_digit<0>_4 (debug/mod/Mmux_digit<0>_4)
+     MUXF7:I0->O           7   0.131   1.021  debug/mod/Mmux_digit<0>_2_f7 (debug/mod/digit<0>)
+     LUT4:I0->O            1   0.203   0.579  debug/mod/Mram_a_to_g21 (a_to_g_2_OBUF)
+     OBUF:I->O                 2.571          a_to_g_2_OBUF (a_to_g<2>)
+    ----------------------------------------
+    Total                     10.971ns (4.943ns logic, 6.028ns route)
+                                       (45.1% logic, 54.9% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clkdiv/clk5mhz
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clkdiv/clk5mhz |   15.336|         |         |         |
+mclk           |    4.865|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clkdiv/cnt2_18
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clkdiv/cnt2_18 |    2.291|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clkdiv/p_1
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clkdiv/p_1     |    4.121|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock mclk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clkdiv/clk5mhz |   10.358|         |         |         |
+clkdiv/p_1     |    9.139|         |         |         |
+mclk           |    2.785|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 53.00 secs
+Total CPU time to Xst completion: 53.11 secs
+ 
+--> 
+
+
+Total memory usage is 517456 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  177 (   0 filtered)
+Number of infos    :   22 (   0 filtered)
+

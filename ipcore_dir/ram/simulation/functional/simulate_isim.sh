@@ -1,3 +1,4 @@
+#!/bin/sh
 # (c) Copyright 2009 - 2010 Xilinx, Inc. All rights reserved.
 # 
 # This file contains confidential and proprietary information
@@ -44,28 +45,27 @@
 # THIS COPYRIGHT NOTICE AND DISCLAIMER MUST BE RETAINED AS
 # PART OF THIS FILE AT ALL TIMES.
 #--------------------------------------------------------------------------------
-#!/bin/sh
+
 cp ../../../ram.mif .
-rm -rf simv* csrc DVEfiles AN.DB
+
 
 echo "Compiling Core Verilog UNISIM/Behavioral model"
-vlogan +v2k  ../../../ram.v
-vhdlan  ../../example_design/ram_exdes.vhd
+vlogcomp -work work ../../../ram.v 
+vhpcomp -work work ../../example_design/ram_exdes.vhd
 
 echo "Compiling Test Bench Files"
-vhdlan    ../bmg_tb_pkg.vhd
-vhdlan    ../random.vhd
-vhdlan    ../data_gen.vhd
-vhdlan    ../addr_gen.vhd
-vhdlan    ../checker.vhd
-vhdlan    ../bmg_stim_gen.vhd
-vhdlan    ../ram_synth.vhd 
-vhdlan    ../ram_tb.vhd
 
-echo "Elaborating Design"
-vlogan +v2k $XILINX/verilog/src/glbl.v
-vcs +vcs+lic+wait -debug ram_tb glbl
+vhpcomp -work work    ../bmg_tb_pkg.vhd
+vhpcomp -work work    ../random.vhd
+vhpcomp -work work    ../data_gen.vhd
+vhpcomp -work work    ../addr_gen.vhd
+vhpcomp -work work    ../checker.vhd
+vhpcomp -work work    ../bmg_stim_gen.vhd
+vhpcomp -work work    ../ram_synth.vhd 
+vhpcomp -work work    ../ram_tb.vhd
 
-echo "Simulating Design"
-./simv -ucli -i ucli_commands.key
-dve -session vcs_session.tcl
+
+vlogcomp -work work $XILINX/verilog/src/glbl.v
+fuse work.ram_tb work.glbl -L unisims_ver -L xilinxcorelib_ver -o ram_tb.exe
+
+./ram_tb.exe -gui -tclbatch simcmds.tcl

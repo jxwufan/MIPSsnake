@@ -36,7 +36,8 @@ module top(input mclk,
 	 wire clk25;
 	 wire clk10ms;
 	 wire clk190;
-	 wire clk1s;
+	 wire clk1ms;
+	 wire clk100ms;
 	 
 	 //vga_gen
 	 wire hsync;
@@ -86,11 +87,13 @@ debuger debug (
 	 
 	 clkdiv clkdiv (
     .mclk(mclk), 
-    .clr(btn[0]), 
+    .clr(0), 
     .clk25(clk25), 
     .clk10ms(clk10ms), 
     .clk190(clk190),
-	 .clk1s(clk1s)
+	 .clk1ms(clk1ms),
+	 .clk100ms(clk100ms),
+	 .clk5mhz(clk5mhz)
     );
                                                              
 	 
@@ -104,7 +107,7 @@ debuger debug (
     );
 	 
 	 mccpu mycpu (
-    .clock(clk1s), 
+    .clock(clk5mhz), 
     .resetn(btn[0]), 
     .frommem(frommem), 
     .pc(pc), 
@@ -154,9 +157,9 @@ debuger debug (
 		  .dina(bus2vram), // input [7 : 0] dina
 		  .douta(vram2bus), // output [7 : 0] douta
 		  .clkb(mclk), // input clkb
-		  .web(0), // input [0 : 0] web
+		  .web(btn[0]), // input [0 : 0] web
 		  .addrb(y * 80 + x[9:3]), // input [15 : 0] addrb
-		  .dinb(0), // input [7 : 0] dinb
+		  .dinb({8{~btn[0]}}), // input [7 : 0] dinb
 		  .doutb(color) // output [7 : 0] doutb
 		);
 		
@@ -189,9 +192,9 @@ debuger debug (
 		end
 		else test <= 0;
 		if (vidon) begin
-			red <= {3{color[x[2:0]]}};
-			green <= {3{color[x[2:0]]}};
-			blue <= {2{color[x[2:0]]}};
+			red <= {3{color[{~x[2:0]}]}};
+			green <= {3{color[{~x[2:0]}]}};
+			blue <= {2{color[{~x[2:0]}]}};
 		end else begin
 			red <= 0;
 			green <= 0;
