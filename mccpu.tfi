@@ -6,9 +6,25 @@ mccpu instance_name (
     .clock(clock), 
     .resetn(resetn), 
     .frommem(frommem), 
+    .pc(pc), 
+    .inst(inst), 
+    .alu_out(alu_out), 
     .wmem(wmem), 
     .madr(madr), 
-    .tomem(tomem)
+    .tomem(tomem), 
+    .state(state), 
+    .npc(npc), 
+    .pcsource(pcsource), 
+    .alua(alua), 
+    .alub(alub), 
+    .aluc(aluc), 
+    .z(z), 
+    .opa(opa), 
+    .rega(rega), 
+    .selpc(selpc), 
+    .res(res), 
+    .wn(wn), 
+    .wreg(wreg)
     );
 
 

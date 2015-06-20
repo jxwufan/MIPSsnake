@@ -26,8 +26,8 @@ module top(input mclk,
 			  output reg [1:0] blue,
 			  output hsync,
 			  output vsync,
-				output reg LED2, // 用于调试的LED灯
-				output wire [6:0] a_to_g, // 用于输出最高得分的七段数码管
+				output reg LED2, 
+				output wire [6:0] a_to_g, 
 				output wire [3:0] an,
 				output wire dp
     );
@@ -58,22 +58,24 @@ module top(input mclk,
 	 wire [11:0] ram_address;
 	 wire [15:0] vram_address;
 	 wire [7:0] color;
+	 wire [2:0] state;
 	 
 	 initial begin
 		LED2 <= 0;
 	 end
 	 
+	 wire [31:0] pc;
 debuger debug (
     .high(sw[0]), 
     .sel({sw[3],sw[2],sw[1]}), 
     .input0(tomem), 
-    .input1(0), 
-    .input2('h1234abcd), 
+    .input1(frommem), 
+    .input2(pc), 
     .input3(ram_address), 
     .input4(ram2bus), 
     .input5(bus2cpu), 
     .input6(address), 
-    .input7(input7), 
+    .input7(bus2vram), 
     .cclk(clk190), 
     .clr(btn[0]), 
     .a_to_g(a_to_g), 
@@ -101,14 +103,32 @@ debuger debug (
     .vidon(vidon)
     );
 	 
-	 mccpu cpu (
-    .clock(clk190), 
+	 mccpu mycpu (
+    .clock(clk1s), 
     .resetn(btn[0]), 
     .frommem(frommem), 
+    .pc(pc), 
+    .inst(inst), 
+    .alu_out(alu_out), 
     .wmem(mem_w), 
     .madr(address), 
-    .tomem(tomem)
+    .tomem(tomem), 
+    .state(state), 
+    .npc(npc), 
+    .pcsource(pcsource), 
+    .alua(alua), 
+    .alub(alub), 
+    .aluc(aluc), 
+    .z(z), 
+    .opa(opa), 
+    .rega(rega), 
+    .selpc(selpc), 
+    .res(res), 
+    .wn(wn), 
+    .wreg(wreg)
     );
+
+
 	 
 	 BUS SoC_Bus (
     .mem_w(mem_w), 
@@ -134,9 +154,9 @@ debuger debug (
 		  .dina(bus2vram), // input [7 : 0] dina
 		  .douta(vram2bus), // output [7 : 0] douta
 		  .clkb(mclk), // input clkb
-		  .web(1), // input [0 : 0] web
+		  .web(0), // input [0 : 0] web
 		  .addrb(y * 80 + x[9:3]), // input [15 : 0] addrb
-		  .dinb(test), // input [7 : 0] dinb
+		  .dinb(0), // input [7 : 0] dinb
 		  .doutb(color) // output [7 : 0] doutb
 		);
 		
@@ -147,6 +167,14 @@ debuger debug (
 		  .dina(bus2ram), // input [31 : 0] dina
 		  .douta(ram2bus) // output [31 : 0] douta
 		);
+		
+		/*ram ram_mod (
+		  .clka(mclk), // input clka
+		  .wea(mem_w), // input [0 : 0] wea
+		  .addra(address[13:2]), // input [11 : 0] addra
+		  .dina(tomem), // input [31 : 0] dina
+		  .douta(frommem) // output [31 : 0] douta
+		);*/
 					
 	always @(*) begin
 		if (x >= 320 && x <= 327) begin
@@ -171,8 +199,8 @@ debuger debug (
 		end
 	end
 	
-	always @(posedge clk1s) begin
-		LED2 <= ~LED2;
+	always @(*) begin
+		LED2 <= vram_w;
 	end
 
 endmodule

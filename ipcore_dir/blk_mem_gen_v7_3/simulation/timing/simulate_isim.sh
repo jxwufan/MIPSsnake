@@ -1,3 +1,4 @@
+#!/bin/sh
 # (c) Copyright 2009 - 2010 Xilinx, Inc. All rights reserved.
 # 
 # This file contains confidential and proprietary information
@@ -43,20 +44,24 @@
 # 
 # THIS COPYRIGHT NOTICE AND DISCLAIMER MUST BE RETAINED AS
 # PART OF THIS FILE AT ALL TIMES.
- 
- 
- 
+#--------------------------------------------------------------------------------
+
+cp ../../../blk_mem_gen_v7_3.mif .
 
 
+vlogcomp -work work ../../implement/results/routed.v
 
+echo "Compiling Test Bench Files"
 
-wcfg new
-isim set radix hex
-wave add /blk_mem_gen_v7_3_tb/status
-      wave add  /blk_mem_gen_v7_3_tb/blk_mem_gen_v7_3_synth_inst/BMG_PORT/CLKA
-      wave add  /blk_mem_gen_v7_3_tb/blk_mem_gen_v7_3_synth_inst/BMG_PORT/ADDRA
-      wave add  /blk_mem_gen_v7_3_tb/blk_mem_gen_v7_3_synth_inst/BMG_PORT/DINA
-      wave add  /blk_mem_gen_v7_3_tb/blk_mem_gen_v7_3_synth_inst/BMG_PORT/WEA
-      wave add  /blk_mem_gen_v7_3_tb/blk_mem_gen_v7_3_synth_inst/BMG_PORT/DOUTA
-run all
-quit
+vhpcomp -work work    ../bmg_tb_pkg.vhd
+vhpcomp -work work    ../random.vhd
+vhpcomp -work work    ../data_gen.vhd
+vhpcomp -work work    ../addr_gen.vhd
+vhpcomp -work work    ../checker.vhd
+vhpcomp -work work    ../bmg_stim_gen.vhd
+vhpcomp -work work    ../blk_mem_gen_v7_3_synth.vhd 
+vhpcomp -work work    ../blk_mem_gen_v7_3_tb.vhd
+
+    fuse -L simprims_ver work.blk_mem_gen_v7_3_tb work.glbl -o blk_mem_gen_v7_3_tb.exe
+
+./blk_mem_gen_v7_3_tb.exe -sdftyp /blk_mem_gen_v7_3_tb/blk_mem_gen_v7_3_synth_inst/bmg_port=../../implement/results/routed.sdf -gui -tclbatch simcmds.tcl

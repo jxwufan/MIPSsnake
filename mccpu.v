@@ -18,15 +18,22 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module mccpu(clock, resetn, frommem, wmem, madr, tomem, pc);
+module mccpu(clock, resetn, frommem, pc, inst, alu_out, wmem, madr, tomem, state, npc, pcsource, alua, alub, aluc, z, opa, rega, selpc, res, wn, wreg);
 
 	input [31:0] frommem;
 	input clock, resetn;
-	output [31:0] madr, tomem;
+	output [31:0] pc, inst, alu_out, madr, tomem;
+	output [2:0] state;
 	output wmem;
-	output [31:0] pc;
-	
-	wire [31:0] pc;
+	output npc;
+	output pcsource;
+	output alua, alub, aluc, z;
+	output opa;
+	output rega;
+	output selpc;
+	output res;
+	output wn;
+	output wreg;
 	wire [4:0] wn;
 	wire [3:0] aluc;
 	wire [4:0] reg_dest;

@@ -27,7 +27,7 @@ output wire clk190,
 output wire clk1s
     );
 	 
-// mclk的时钟频率为100Mhz，通过计数器实现分频
+// mclk时频为100Mhz通实址频
 	 
 reg [2:0] p;
 reg [19:0] regi;
@@ -61,7 +61,7 @@ begin
 	begin
 		cnt2 <= cnt2 + 1;
 		p <= p + 1;
-		if (regi == 999999) // 由于mclk每1M次的时候过去10Ms, 故通过计数器记录Mclk的次数实现10Ms的信号
+		if (regi == 999999) // mclk每1M蔚时去10Ms, 通录Mclk拇实10Ms藕
 			begin
 				regi <= 0;
 				_10ms <= 1;
@@ -71,7 +71,7 @@ begin
 				regi <= regi + 1;
 				_10ms <= 0; 
 			end
-		if (cnt3 == 99999999)
+		if (cnt3 == 9999999)
 		 begin
 			cnt3 <= 0;
 			_1s <= 1;
@@ -89,7 +89,7 @@ assign clk10ms = _10ms;
 assign clk190 = cnt2[18];
 assign clk1s = _1s;
 
-// 25 与 190的原理类似，不再赘述
+// 25  190原疲赘
 
 
 endmodule

@@ -1,3 +1,4 @@
+#!/bin/sh
 # (c) Copyright 2009 - 2010 Xilinx, Inc. All rights reserved.
 # 
 # This file contains confidential and proprietary information
@@ -43,20 +44,28 @@
 # 
 # THIS COPYRIGHT NOTICE AND DISCLAIMER MUST BE RETAINED AS
 # PART OF THIS FILE AT ALL TIMES.
- 
- 
- 
+#--------------------------------------------------------------------------------
+
+cp ../../../blk_mem_gen_v7_3.mif .
 
 
+echo "Compiling Core Verilog UNISIM/Behavioral model"
+vlogcomp -work work ../../../blk_mem_gen_v7_3.v 
+vhpcomp -work work ../../example_design/blk_mem_gen_v7_3_exdes.vhd
+
+echo "Compiling Test Bench Files"
+
+vhpcomp -work work    ../bmg_tb_pkg.vhd
+vhpcomp -work work    ../random.vhd
+vhpcomp -work work    ../data_gen.vhd
+vhpcomp -work work    ../addr_gen.vhd
+vhpcomp -work work    ../checker.vhd
+vhpcomp -work work    ../bmg_stim_gen.vhd
+vhpcomp -work work    ../blk_mem_gen_v7_3_synth.vhd 
+vhpcomp -work work    ../blk_mem_gen_v7_3_tb.vhd
 
 
-wcfg new
-isim set radix hex
-wave add /blk_mem_gen_v7_3_tb/status
-      wave add  /blk_mem_gen_v7_3_tb/blk_mem_gen_v7_3_synth_inst/BMG_PORT/CLKA
-      wave add  /blk_mem_gen_v7_3_tb/blk_mem_gen_v7_3_synth_inst/BMG_PORT/ADDRA
-      wave add  /blk_mem_gen_v7_3_tb/blk_mem_gen_v7_3_synth_inst/BMG_PORT/DINA
-      wave add  /blk_mem_gen_v7_3_tb/blk_mem_gen_v7_3_synth_inst/BMG_PORT/WEA
-      wave add  /blk_mem_gen_v7_3_tb/blk_mem_gen_v7_3_synth_inst/BMG_PORT/DOUTA
-run all
-quit
+vlogcomp -work work $XILINX/verilog/src/glbl.v
+fuse work.blk_mem_gen_v7_3_tb work.glbl -L unisims_ver -L xilinxcorelib_ver -o blk_mem_gen_v7_3_tb.exe
+
+./blk_mem_gen_v7_3_tb.exe -gui -tclbatch simcmds.tcl

@@ -1,1 +1,2 @@
 vhdtdtfi -lang verilog -prj MIPSAPP -o E:/code/hardware/MIPSAPP/mccpu.tfi -lib work E:/code/hardware/MIPSAPP//mccpu.v -module mccpu -template D:/Xilinx/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror 
+vhdtdtfi -lang verilog -prj MIPSAPP -o /home/fan/code/mips/MIPSAPP/mccpu.tfi -lib work /home/fan/code/mips/MIPSAPP//mccpu.v -module mccpu -template /opt/Xilinx/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror 
