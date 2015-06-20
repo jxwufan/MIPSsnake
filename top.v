@@ -19,35 +19,78 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 module top(input mclk,
-			  output reg [2:0] red,
+			  input sw[7:0],
+			  input btn[4:0],
+			  output reg [2:0] red,                                                                                             
 			  output reg [2:0] green,
 			  output reg [1:0] blue,
 			  output hsync,
-			  output vsync
+			  output vsync,
+				output reg LED2, // 用于调试的LED灯
+				output wire [6:0] a_to_g, // 用于输出最高得分的七段数码管
+				output wire [3:0] an,
+				output wire dp
     );
+	 //clkdiv
+	 wire mclk;
+	 wire clk25;
+	 wire clk10ms;
+	 wire clk190;
+	 wire clk1s;
 	 
+	 //vga_gen
+	 wire hsync;
+	 wire vsync;
 	 wire [9:0] x, y;
 	 wire vison;
-	 wire [7:0] color;
-	 wire [31:0] frommem, tomem;
+	 
+	 //cpu
+	 wire [31:0] frommem, tomem, address;
 	 wire mem_w;
-	 wire [31:0] address;
+
+	 //BUS
+	 wire [7:0] vram2bus;
+	 wire [31:0] ram2bus;
 	 wire ram_w;
 	 wire vram_w;
-	 wire [7:0] vram2bus, bus2vram;
-	 wire [31:0] ram2bus, bus2ram;
+	 wire [31:0] bus2ram;
+	 wire [7:0] bus2vram;
 	 wire [11:0] ram_address;
 	 wire [15:0] vram_address;
+	 wire [7:0] color;
 	 
+	 initial begin
+		LED2 <= 0;
+	 end
+	 
+debuger debug (
+    .high(sw[0]), 
+    .sel({sw[3],sw[2],sw[1]}), 
+    .input0(tomem), 
+    .input1(0), 
+    .input2('h1234abcd), 
+    .input3(ram_address), 
+    .input4(ram2bus), 
+    .input5(bus2cpu), 
+    .input6(address), 
+    .input7(input7), 
+    .cclk(clk190), 
+    .clr(btn[0]), 
+    .a_to_g(a_to_g), 
+    .an(an), 
+    .dp(dp)
+    );
+
 	 
 	 clkdiv clkdiv (
     .mclk(mclk), 
-    .clr(clr), 
+    .clr(btn[0]), 
     .clk25(clk25), 
     .clk10ms(clk10ms), 
-    .clk190(clk190)
+    .clk190(clk190),
+	 .clk1s(clk1s)
     );
-
+                                                             
 	 
 	 vga_640x480 vga_gen (
     .clk(clk25),  
@@ -59,8 +102,8 @@ module top(input mclk,
     );
 	 
 	 mccpu cpu (
-    .clock(clk25), 
-    .resetn(0), 
+    .clock(clk190), 
+    .resetn(btn[0]), 
     .frommem(frommem), 
     .wmem(mem_w), 
     .madr(address), 
@@ -82,16 +125,18 @@ module top(input mclk,
     .vram_address(vram_address)
     );
 	 
+	 reg [7:0] test;
+	 
 		vram vram_mod (
 		  .clka(mclk), // input clka
 		  .wea(vram_w), // input [0 : 0] wea
 		  .addra(vram_address), // input [15 : 0] addra
 		  .dina(bus2vram), // input [7 : 0] dina
-		  .douta(douta), // output [7 : 0] douta
+		  .douta(vram2bus), // output [7 : 0] douta
 		  .clkb(mclk), // input clkb
-		  .web(web), // input [0 : 0] web
-		  .addrb(0), // input [15 : 0] addrb
-		  .dinb(0), // input [7 : 0] dinb
+		  .web(1), // input [0 : 0] web
+		  .addrb(y * 80 + x[9:3]), // input [15 : 0] addrb
+		  .dinb(test), // input [7 : 0] dinb
 		  .doutb(color) // output [7 : 0] doutb
 		);
 		
@@ -104,6 +149,17 @@ module top(input mclk,
 		);
 					
 	always @(*) begin
+		if (x >= 320 && x <= 327) begin
+			if (y == 280) test <= 'h7c;
+			else if (y == 281) test <= 'h86;
+			else if (y == 282) test <= 'h8a;
+			else if (y == 283) test <= 'h92;
+			else if (y == 284) test <= 'ha2;
+			else if (y == 285) test <= 'hc2;
+			else if (y == 286) test <= 'h7c;
+			else test <= 0;
+		end
+		else test <= 0;
 		if (vidon) begin
 			red <= {3{color[x[2:0]]}};
 			green <= {3{color[x[2:0]]}};
@@ -113,6 +169,10 @@ module top(input mclk,
 			green <= 0;
 			blue <= 0;
 		end
+	end
+	
+	always @(posedge clk1s) begin
+		LED2 <= ~LED2;
 	end
 
 endmodule

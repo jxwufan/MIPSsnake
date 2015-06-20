@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2015-06-19T12:06:01</DateModified>
+  <DateModified>2015-06-20T16:25:28</DateModified>
   <ModuleName>top</ModuleName>
-  <SummaryTimeStamp>2015-06-16T23:08:08</SummaryTimeStamp>
-  <SavedFilePath>E:/code/hardware/MIPSAPP/iseconfig/top.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>E:/code/hardware/MIPSAPP\</ImplementationReportsDirectory>
+  <SummaryTimeStamp>2015-06-20T12:05:23</SummaryTimeStamp>
+  <SavedFilePath>/home/fan/code/mips/MIPSAPP/iseconfig/top.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>/home/fan/code/mips/MIPSAPP/</ImplementationReportsDirectory>
   <DateInitialized>2015-06-16T22:10:15</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

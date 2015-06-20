@@ -1,0 +1,1 @@
+vhdtdtfi -lang verilog -prj MIPSAPP -o E:/code/hardware/MIPSAPP/debuger.tfi -lib work E:/code/hardware/MIPSAPP//debuger.v -module debuger -template D:/Xilinx/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror 

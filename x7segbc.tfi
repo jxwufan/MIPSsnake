@@ -1,0 +1,14 @@
+
+
+
+// Instantiate the module
+x7segbc instance_name (
+    .x(x), 
+    .cclk(cclk), 
+    .clr(clr), 
+    .a_to_g(a_to_g), 
+    .an(an), 
+    .dp(dp)
+    );
+
+

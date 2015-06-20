@@ -1,0 +1,1 @@
+vhdtdtfi -lang verilog -prj MIPSAPP -o E:/code/hardware/MIPSAPP/x7segbc.tfi -lib work E:/code/hardware/MIPSAPP//x7segbc.v -module x7segbc -template D:/Xilinx/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror 

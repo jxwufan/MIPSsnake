@@ -1,0 +1,23 @@
+
+
+
+// Instantiate the module
+debuger instance_name (
+    .high(high), 
+    .sel(sel), 
+    .input0(input0), 
+    .input1(input1), 
+    .input2(input2), 
+    .input3(input3), 
+    .input4(input4), 
+    .input5(input5), 
+    .input6(input6), 
+    .input7(input7), 
+    .cclk(cclk), 
+    .clr(clr), 
+    .a_to_g(a_to_g), 
+    .an(an), 
+    .dp(dp)
+    );
+
+

@@ -23,7 +23,8 @@ input wire mclk,
 input wire clr,
 output wire clk25,
 output wire clk10ms,
-output wire clk190
+output wire clk190,
+output wire clk1s
     );
 	 
 // mclk的时钟频率为100Mhz，通过计数器实现分频
@@ -32,7 +33,9 @@ reg [2:0] p;
 reg [19:0] regi;
 reg [20:0] cnt;
 reg _10ms;
+reg _1s;
 reg [20:0] cnt2;
+reg [32:0] cnt3;
 
 initial 
 begin
@@ -40,6 +43,8 @@ begin
 	regi <= 0;
 	_10ms <= 0;
 	cnt <= 0;
+	cnt3 <= 0;
+	_1s <= 0;
 end
 
 always @(posedge mclk)
@@ -50,6 +55,7 @@ begin
 		regi <= 0;
 		cnt <= 0;
 		cnt2 <= 0;
+		cnt3 <= 0;
 	end
 	else
 	begin
@@ -64,13 +70,24 @@ begin
 			begin
 				regi <= regi + 1;
 				_10ms <= 0; 
-			end 
+			end
+		if (cnt3 == 99999999)
+		 begin
+			cnt3 <= 0;
+			_1s <= 1;
+		 end
+		else 
+		begin
+			cnt3 <= cnt3 + 1;
+			_1s <= 0;
+		end
 	end
 end
 
 assign clk25 = p[1];
 assign clk10ms = _10ms;
 assign clk190 = cnt2[18];
+assign clk1s = _1s;
 
 // 25 与 190的原理类似，不再赘述
 

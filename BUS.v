@@ -22,7 +22,7 @@ module BUS(input mem_w,
 			  input [31:0] cpu2bus,
 			  input [31:0] cpu_address,
 			  input [7:0]  vram2bus,
-			  input [7:0] ram2bus,
+			  input [31:0] ram2bus,
 			  output reg ram_w,
 			  output reg vram_w,
 			  output reg [31:0] bus2cpu,
@@ -41,7 +41,7 @@ module BUS(input mem_w,
 		bus2cpu = 0;
 		bus2ram = 0;
 		bus2vram = 0;
-		if (cpu_address[31:14] == 18'h0) begin
+		if (cpu_address[31:14] == 0) begin
 			ram_w = mem_w;
 			bus2ram = cpu2bus;
 			bus2cpu = ram2bus;
