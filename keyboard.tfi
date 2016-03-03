@@ -1,0 +1,13 @@
+
+
+
+// Instantiate the module
+keyboard instance_name (
+    .clk25(clk25), 
+    .clr(clr), 
+    .PS2C(PS2C), 
+    .PS2D(PS2D), 
+    .ascii(ascii)
+    );
+
+

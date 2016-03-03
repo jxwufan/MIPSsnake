@@ -27,9 +27,9 @@ NET "LED2"         LOC = "V16" | IOSTANDARD = "LVCMOS33";   #Bank = 2, Pin name 
 
 
 
-## Pic USB-HID interface
-#NET "PS2D" LOC = "J13" | IOSTANDARD = "LVCMOS33" | PULLUP;  #Bank = 1, Pin name = IO_L39P_M1A3,             Sch name = PIC-SDI1
-#NET "PS2C"  LOC = "L12" | IOSTANDARD = "LVCMOS33" | PULLUP;  #Bank = 1, Pin name = IO_L40P_GCLK11_M1A5,      Sch name = PIC-SCK1
+# Pic USB-HID interface
+NET "PS2D" LOC = "J13" | IOSTANDARD = "LVCMOS33" | PULLUP;  #Bank = 1, Pin name = IO_L39P_M1A3,             Sch name = PIC-SDI1
+NET "PS2C"  LOC = "L12" | IOSTANDARD = "LVCMOS33" | PULLUP;  #Bank = 1, Pin name = IO_L40P_GCLK11_M1A5,      Sch name = PIC-SCK1
 
 NET "a_to_g<6>"         LOC = "T17" | IOSTANDARD = "LVCMOS33";   #Bank = 1, Pin name = IO_L51P_M1DQ12,                    Sch name = CA
 NET "a_to_g<5>"         LOC = "T18" | IOSTANDARD = "LVCMOS33";   #Bank = 1, Pin name = IO_L51N_M1DQ13,                    Sch name = CB

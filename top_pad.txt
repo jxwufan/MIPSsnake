@@ -1,7 +1,7 @@
-Release 14.7 - par P.20131013 (lin64)
+Release 14.7 - par P.20131013 (nt)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Sat Jun 20 22:14:36 2015
+Sun Sep 13 19:15:43 2015
 
 
 INFO: The IO information is provided in three file formats as part of the Place and Route (PAR) process.  These formats are:
@@ -176,7 +176,7 @@ Pinout by Pin Number:
 |J10       |           |         |VCCINT                       |         |           |              |          |         |           |         |1.2      |          |           |                |
 |J11       |           |         |GND                          |         |           |              |          |         |           |         |         |          |           |                |
 |J12       |           |         |VCCAUX                       |         |           |              |          |         |           |         |2.5      |          |           |                |
-|J13       |           |IOBM     |IO_L39P_M1A3_1               |UNUSED   |           |1             |          |         |           |         |         |          |           |                |
+|J13       |PS2D       |IOB      |IO_L39P_M1A3_1               |INPUT    |LVCMOS33   |1             |          |         |PULLUP     |NONE     |         |LOCATED   |NO         |NONE            |
 |J14       |           |         |VCCO_1                       |         |           |1             |          |         |           |         |3.30     |          |           |                |
 |J15       |           |         |GND                          |         |           |              |          |         |           |         |         |          |           |                |
 |J16       |           |IOBM     |IO_L44P_A3_M1DQ6_1           |UNUSED   |           |1             |          |         |           |         |         |          |           |                |
@@ -211,7 +211,7 @@ Pinout by Pin Number:
 |L9        |           |         |GND                          |         |           |              |          |         |           |         |         |          |           |                |
 |L10       |           |         |VCCINT                       |         |           |              |          |         |           |         |1.2      |          |           |                |
 |L11       |           |         |GND                          |         |           |              |          |         |           |         |         |          |           |                |
-|L12       |           |IOBM     |IO_L40P_GCLK11_M1A5_1        |UNUSED   |           |1             |          |         |           |         |         |          |           |                |
+|L12       |PS2C       |IOB      |IO_L40P_GCLK11_M1A5_1        |INPUT    |LVCMOS33   |1             |          |         |PULLUP     |NONE     |         |LOCATED   |NO         |NONE            |
 |L13       |           |IOBS     |IO_L40N_GCLK10_M1A6_1        |UNUSED   |           |1             |          |         |           |         |         |          |           |                |
 |L14       |a_to_g<0>  |IOB      |IO_L61P_1                    |OUTPUT   |LVCMOS33   |1             |12        |SLOW     |           |         |         |LOCATED   |NO         |NONE            |
 |L15       |           |IOBM     |IO_L42P_GCLK7_M1UDM_1        |UNUSED   |           |1             |          |         |           |         |         |          |           |                |
@@ -341,7 +341,7 @@ Pinout by Pin Number:
 |V13       |           |IOBS     |IO_L14N_D12_2                |UNUSED   |           |2             |          |         |           |         |         |          |           |                |
 |V14       |           |IOBS     |IO_L12N_D2_MISO3_2           |UNUSED   |           |2             |          |         |           |         |         |          |           |                |
 |V15       |           |IOBS     |IO_L5N_2                     |UNUSED   |           |2             |          |         |           |         |         |          |           |                |
-|V16       |LED2       |IOB      |IO_L2N_CMPMOSI_2             |OUTPUT   |LVCMOS33   |2             |12        |SLOW     |           |         |         |LOCATED   |NO         |NONE            |
+|V16       |LED2       |IOB      |IO_L2N_CMPMOSI_2             |OUTPUT   |LVCMOS33   |2             |12        |SLOW     |           |         |         |LOCATED   |YES        |NONE            |
 |V17       |           |         |DONE_2                       |         |           |              |          |         |           |         |         |          |           |                |
 |V18       |           |         |GND                          |         |           |              |          |         |           |         |         |          |           |                |
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+

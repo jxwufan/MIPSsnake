@@ -1,0 +1,3 @@
+vhdtdtfi -lib work C:/Users/fan/Desktop/MIPShelloWorld/random_generator.v -lang verilog -prj MIPSAPP -o random_generator.spl -module random_generator -template D:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 random_generator.spl C:/Users/fan/Desktop/MIPShelloWorld/random_generator.sym 
+vhdtdtfi -lang verilog -prj MIPSAPP -o C:/Users/fan/Desktop/MIPShelloWorld/random_generator.tfi -lib work C:/Users/fan/Desktop/MIPShelloWorld//random_generator.v -module random_generator -template D:/Xilinx/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror 

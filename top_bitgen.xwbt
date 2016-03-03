@@ -1,8 +1,8 @@
 INTSTYLE=ise
-INFILE=/home/fan/code/mips/MIPSAPP/top.ncd
-OUTFILE=/home/fan/code/mips/MIPSAPP/top.bit
+INFILE=C:\Users\fan\Desktop\MIPShelloWorld\top.ncd
+OUTFILE=C:\Users\fan\Desktop\MIPShelloWorld\top.bit
 FAMILY=Spartan6
 PART=xc6slx16-3csg324
-WORKINGDIR=/home/fan/code/mips/MIPSAPP
+WORKINGDIR=C:\Users\fan\Desktop\MIPShelloWorld
 LICENSE=WebPack
 USER_INFO=210946127_0_0_770

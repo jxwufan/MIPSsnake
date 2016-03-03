@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "G:/code/hardware/MIPShelloWorld/testBus.xst" -ofn "G:/code/hardware/MIPShelloWorld/testBus.syr" 

@@ -1,0 +1,11 @@
+
+
+
+// Instantiate the module
+move instance_name (
+    .clk(clk), 
+    .clr(clr), 
+    .move(move)
+    );
+
+

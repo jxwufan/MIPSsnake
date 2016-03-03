@@ -89,7 +89,7 @@ begin
 			cnt3 <= cnt3 + 1;
 			_1ms <= 0;
 		end
-		if (_100cnt == 9999999) 
+		if (_100cnt == 19999999) 
 			begin
 				_100cnt <= 0;
 				_100ms <= 1;
@@ -99,7 +99,7 @@ begin
 				_100cnt <= _100cnt + 1;
 				_100ms <= 0;
 			end
-		if (_5mcnt == 20)
+		if (_5mcnt == 1)
 		begin
 			_5mcnt <= 0;
 			clk5mhz <= 1;

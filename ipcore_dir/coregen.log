@@ -1,12 +1,6 @@
-Welcome to Xilinx CORE Generator.
-Help system initialized.
-The IP Catalog has been reloaded.
-Opening project file /home/fan/code/mips/MIPSAPP/ipcore_dir/coregen.cgp.
-Recustomize and Generate (Under Current Project Settings)INFO:sim:172 - Generating IP...
+INFO:sim:172 - Generating IP...
 Applying current project options...
 Finished applying current project options.
-WARNING:sim - A core named 'ram' already exists in the project. Output products
-   for this core may be overwritten.
 Resolving generics for 'ram'...
 WARNING:sim - A core named 'ram' already exists in the project. Output products
    for this core may be overwritten.
@@ -20,31 +14,35 @@ Running ngcbuild...
 Writing VEO instantiation template for 'ram'...
 Writing Verilog behavioral simulation model for 'ram'...
 WARNING:sim - Overwriting existing file
-   /home/fan/code/mips/MIPSAPP/ipcore_dir/tmp/_cg/ram/doc/blk_mem_gen_v7_3_vinfo
-   .html with file from view xilinx_documentation
+   C:/Users/fan/Desktop/MIPShelloWorld/ipcore_dir/tmp/_cg/ram/doc/blk_mem_gen_v7
+   _3_vinfo.html with file from view xilinx_documentation
 Delivered 1 file into directory
-/home/fan/code/mips/MIPSAPP/ipcore_dir/tmp/_cg/ram
+C:/Users/fan/Desktop/MIPShelloWorld/ipcore_dir/tmp/_cg/ram
 Generating ASY schematic symbol...
 INFO:sim:949 - Finished generation of ASY schematic symbol.
+Generating SYM schematic symbol for 'ram'...
 Generating metadata file...
 Regenerating ISE project file for 'ram'...
 Generating ISE project...
 XCO file found: ram.xco
 XMDF file found: ram_xmdf.tcl
-Adding /home/fan/code/mips/MIPSAPP/ipcore_dir/tmp/_cg/ram.asy -view all
+Adding C:/Users/fan/Desktop/MIPShelloWorld/ipcore_dir/tmp/_cg/ram.asy -view all
 -origin_type imported
-Adding /home/fan/code/mips/MIPSAPP/ipcore_dir/tmp/_cg/ram.ngc -view all
+Adding C:/Users/fan/Desktop/MIPShelloWorld/ipcore_dir/tmp/_cg/ram.ngc -view all
 -origin_type created
-Checking file "/home/fan/code/mips/MIPSAPP/ipcore_dir/tmp/_cg/ram.ngc" for
-project device match ...
-File "/home/fan/code/mips/MIPSAPP/ipcore_dir/tmp/_cg/ram.ngc" device information
-matches project device.
-Adding /home/fan/code/mips/MIPSAPP/ipcore_dir/tmp/_cg/ram.v -view all
+Checking file "C:/Users/fan/Desktop/MIPShelloWorld/ipcore_dir/tmp/_cg/ram.ngc"
+for project device match ...
+File "C:/Users/fan/Desktop/MIPShelloWorld/ipcore_dir/tmp/_cg/ram.ngc" device
+information matches project device.
+Adding C:/Users/fan/Desktop/MIPShelloWorld/ipcore_dir/tmp/_cg/ram.sym -view all
+-origin_type imported
+Adding C:/Users/fan/Desktop/MIPShelloWorld/ipcore_dir/tmp/_cg/ram.v -view all
 -origin_type created
 INFO:HDLCompiler:1845 - Analyzing Verilog file
-   "/home/fan/code/mips/MIPSAPP/ipcore_dir/tmp/_cg/ram.v" into library work
+   "C:/Users/fan/Desktop/MIPShelloWorld/ipcore_dir/tmp/_cg/ram.v" into library
+   work
 INFO:ProjectMgmt - Parsing design hierarchy completed successfully.
-Adding /home/fan/code/mips/MIPSAPP/ipcore_dir/tmp/_cg/ram.veo -view all
+Adding C:/Users/fan/Desktop/MIPShelloWorld/ipcore_dir/tmp/_cg/ram.veo -view all
 -origin_type imported
 INFO:TclTasksC:2116 - The automatic calculation of top has been turned-off.
    Please set the new top explicitly by running the "project set top" command.
@@ -54,8 +52,6 @@ Top level has been set to "/ram"
 Generating README file...
 Generating FLIST file...
 INFO:sim:948 - Finished FLIST file generation.
-Launching README viewer...
 Moving files to output directory...
 Finished moving files to output directory
-Saved CGP file for project 'coregen'.
-Closed project file.
+Wrote CGP file for project 'ram'.

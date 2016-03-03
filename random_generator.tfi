@@ -1,0 +1,11 @@
+
+
+
+// Instantiate the module
+random_generator instance_name (
+    .mclk(mclk), 
+    .ran_h(ran_h), 
+    .ran_v(ran_v)
+    );
+
+

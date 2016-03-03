@@ -1,21 +1,18 @@
-Release 14.7 - xst P.20131013 (lin64)
+Release 14.7 - xst P.20131013 (nt)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
---> 
-Parameter TMPDIR set to xst/projnav.tmp
+--> Parameter TMPDIR set to xst/projnav.tmp
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.05 secs
+Total CPU time to Xst completion: 0.09 secs
  
---> 
-Parameter xsthdpdir set to xst
+--> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.05 secs
+Total CPU time to Xst completion: 0.09 secs
  
---> 
-Reading design: top.prj
+--> Reading design: top.prj
 
 TABLE OF CONTENTS
   1) Synthesis Options Summary
@@ -111,96 +108,101 @@ Cores Search Directories           : {"ipcore_dir"  }
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Analyzing Verilog file "/home/fan/code/mips/MIPSAPP/g_p.v" into library work
+Analyzing Verilog file "C:\Users\fan\Desktop\MIPShelloWorld\g_p.v" into library work
 Parsing module <g_p>.
-Analyzing Verilog file "/home/fan/code/mips/MIPSAPP/add.v" into library work
+Analyzing Verilog file "C:\Users\fan\Desktop\MIPShelloWorld\add.v" into library work
 Parsing module <add>.
-Analyzing Verilog file "/home/fan/code/mips/MIPSAPP/cla_2.v" into library work
+Analyzing Verilog file "C:\Users\fan\Desktop\MIPShelloWorld\cla_2.v" into library work
 Parsing module <cla_2>.
-Analyzing Verilog file "/home/fan/code/mips/MIPSAPP/cla_4.v" into library work
+Analyzing Verilog file "C:\Users\fan\Desktop\MIPShelloWorld\cla_4.v" into library work
 Parsing module <cla_4>.
-Analyzing Verilog file "/home/fan/code/mips/MIPSAPP/cla_8.v" into library work
+Analyzing Verilog file "C:\Users\fan\Desktop\MIPShelloWorld\cla_8.v" into library work
 Parsing module <cla_8>.
-Analyzing Verilog file "/home/fan/code/mips/MIPSAPP/cla_16.v" into library work
+Analyzing Verilog file "C:\Users\fan\Desktop\MIPShelloWorld\cla_16.v" into library work
 Parsing module <cla_16>.
-Analyzing Verilog file "/home/fan/code/mips/MIPSAPP/cla_32.v" into library work
+Analyzing Verilog file "C:\Users\fan\Desktop\MIPShelloWorld\cla_32.v" into library work
 Parsing module <cla_32>.
-Analyzing Verilog file "/home/fan/code/mips/MIPSAPP/cla32.v" into library work
+Analyzing Verilog file "C:\Users\fan\Desktop\MIPShelloWorld\cla32.v" into library work
 Parsing module <cla32>.
-Analyzing Verilog file "/home/fan/code/mips/MIPSAPP/shift.v" into library work
+Analyzing Verilog file "C:\Users\fan\Desktop\MIPShelloWorld\shift.v" into library work
 Parsing module <shift>.
-Analyzing Verilog file "/home/fan/code/mips/MIPSAPP/mux4x32.v" into library work
+Analyzing Verilog file "C:\Users\fan\Desktop\MIPShelloWorld\mux4x32.v" into library work
 Parsing module <mux4x32>.
-Analyzing Verilog file "/home/fan/code/mips/MIPSAPP/addsub32.v" into library work
+Analyzing Verilog file "C:\Users\fan\Desktop\MIPShelloWorld\addsub32.v" into library work
 Parsing module <addsub32>.
-Analyzing Verilog file "/home/fan/code/mips/MIPSAPP/x7segbc.v" into library work
+Analyzing Verilog file "C:\Users\fan\Desktop\MIPShelloWorld\x7segbc.v" into library work
 Parsing module <x7segbc>.
-Analyzing Verilog file "/home/fan/code/mips/MIPSAPP/regfile.v" into library work
+Analyzing Verilog file "C:\Users\fan\Desktop\MIPShelloWorld\regfile.v" into library work
 Parsing module <regfile>.
-Analyzing Verilog file "/home/fan/code/mips/MIPSAPP/mux2x5.v" into library work
+Analyzing Verilog file "C:\Users\fan\Desktop\MIPShelloWorld\mux2x5.v" into library work
 Parsing module <mux2x5>.
-Analyzing Verilog file "/home/fan/code/mips/MIPSAPP/mux2x32.v" into library work
+Analyzing Verilog file "C:\Users\fan\Desktop\MIPShelloWorld\mux2x32.v" into library work
 Parsing module <mux2x32>.
-Analyzing Verilog file "/home/fan/code/mips/MIPSAPP/mccu.v" into library work
+Analyzing Verilog file "C:\Users\fan\Desktop\MIPShelloWorld\mccu.v" into library work
 Parsing module <mccu>.
-Analyzing Verilog file "/home/fan/code/mips/MIPSAPP/diffe32.v" into library work
+Analyzing Verilog file "C:\Users\fan\Desktop\MIPShelloWorld\diffe32.v" into library work
 Parsing module <dffe32>.
-Analyzing Verilog file "/home/fan/code/mips/MIPSAPP/dff32.v" into library work
+Analyzing Verilog file "C:\Users\fan\Desktop\MIPShelloWorld\dff32.v" into library work
 Parsing module <dff32>.
-Analyzing Verilog file "/home/fan/code/mips/MIPSAPP/alu.v" into library work
+Analyzing Verilog file "C:\Users\fan\Desktop\MIPShelloWorld\alu.v" into library work
 Parsing module <alu>.
-Analyzing Verilog file "/home/fan/code/mips/MIPSAPP/vga_640x480.v" into library work
+Analyzing Verilog file "C:\Users\fan\Desktop\MIPShelloWorld\vga_640x480.v" into library work
 Parsing module <vga_640x480>.
-Analyzing Verilog file "/home/fan/code/mips/MIPSAPP/mccpu.v" into library work
+Analyzing Verilog file "C:\Users\fan\Desktop\MIPShelloWorld\random_generator.v" into library work
+Parsing module <random_generator>.
+Analyzing Verilog file "C:\Users\fan\Desktop\MIPShelloWorld\move.v" into library work
+Parsing module <move>.
+Analyzing Verilog file "C:\Users\fan\Desktop\MIPShelloWorld\mccpu.v" into library work
 Parsing module <mccpu>.
-Analyzing Verilog file "/home/fan/code/mips/MIPSAPP/ipcore_dir/vram.v" into library work
+Analyzing Verilog file "C:\Users\fan\Desktop\MIPShelloWorld\keyboard.v" into library work
+Parsing module <keyboard>.
+Analyzing Verilog file "C:\Users\fan\Desktop\MIPShelloWorld\ipcore_dir\vram.v" into library work
 Parsing module <vram>.
-Analyzing Verilog file "/home/fan/code/mips/MIPSAPP/ipcore_dir/ram.v" into library work
+Analyzing Verilog file "C:\Users\fan\Desktop\MIPShelloWorld\ipcore_dir\ram.v" into library work
 Parsing module <ram>.
-Analyzing Verilog file "/home/fan/code/mips/MIPSAPP/debuger.v" into library work
+Analyzing Verilog file "C:\Users\fan\Desktop\MIPShelloWorld\debuger.v" into library work
 Parsing module <debuger>.
-Analyzing Verilog file "/home/fan/code/mips/MIPSAPP/clkdiv.v" into library work
+Analyzing Verilog file "C:\Users\fan\Desktop\MIPShelloWorld\clkdiv.v" into library work
 Parsing module <clkdiv>.
-Analyzing Verilog file "/home/fan/code/mips/MIPSAPP/BUS.v" into library work
+Analyzing Verilog file "C:\Users\fan\Desktop\MIPShelloWorld\BUS.v" into library work
 Parsing module <BUS>.
-WARNING:HDLCompiler:327 - "/home/fan/code/mips/MIPSAPP/BUS.v" Line 52: Concatenation with unsized literal; will interpret as 32 bits
-Analyzing Verilog file "/home/fan/code/mips/MIPSAPP/top.v" into library work
+WARNING:HDLCompiler:327 - "C:\Users\fan\Desktop\MIPShelloWorld\BUS.v" Line 60: Concatenation with unsized literal; will interpret as 32 bits
+WARNING:HDLCompiler:327 - "C:\Users\fan\Desktop\MIPShelloWorld\BUS.v" Line 64: Concatenation with unsized literal; will interpret as 32 bits
+WARNING:HDLCompiler:327 - "C:\Users\fan\Desktop\MIPShelloWorld\BUS.v" Line 68: Concatenation with unsized literal; will interpret as 32 bits
+Analyzing Verilog file "C:\Users\fan\Desktop\MIPShelloWorld\top.v" into library work
 Parsing module <top>.
-WARNING:HDLCompiler:751 - "/home/fan/code/mips/MIPSAPP/top.v" Line 35: Redeclaration of ansi port mclk is not allowed
-WARNING:HDLCompiler:751 - "/home/fan/code/mips/MIPSAPP/top.v" Line 43: Redeclaration of ansi port hsync is not allowed
-WARNING:HDLCompiler:751 - "/home/fan/code/mips/MIPSAPP/top.v" Line 44: Redeclaration of ansi port vsync is not allowed
-WARNING:HDLCompiler:1335 - "/home/fan/code/mips/MIPSAPP/top.v" Line 22: Port sw must not be declared to be an array
-WARNING:HDLCompiler:1335 - "/home/fan/code/mips/MIPSAPP/top.v" Line 23: Port btn must not be declared to be an array
+WARNING:HDLCompiler:751 - "C:\Users\fan\Desktop\MIPShelloWorld\top.v" Line 37: Redeclaration of ansi port mclk is not allowed
+WARNING:HDLCompiler:751 - "C:\Users\fan\Desktop\MIPShelloWorld\top.v" Line 45: Redeclaration of ansi port hsync is not allowed
+WARNING:HDLCompiler:751 - "C:\Users\fan\Desktop\MIPShelloWorld\top.v" Line 46: Redeclaration of ansi port vsync is not allowed
 
 =========================================================================
 *                            HDL Elaboration                            *
 =========================================================================
-WARNING:HDLCompiler:1016 - "/home/fan/code/mips/MIPSAPP/top.v" Line 100: Port clr is not connected to this instance
+WARNING:HDLCompiler:1016 - "C:\Users\fan\Desktop\MIPShelloWorld\top.v" Line 114: Port clr is not connected to this instance
 
 Elaborating module <top>.
 
 Elaborating module <debuger>.
 
 Elaborating module <x7segbc>.
-WARNING:HDLCompiler:413 - "/home/fan/code/mips/MIPSAPP/x7segbc.v" Line 82: Result of 3-bit expression is truncated to fit in 2-bit target.
-WARNING:HDLCompiler:189 - "/home/fan/code/mips/MIPSAPP/top.v" Line 75: Size mismatch in connection of port <input3>. Formal port size is 32-bit while actual signal size is 12-bit.
-WARNING:HDLCompiler:189 - "/home/fan/code/mips/MIPSAPP/top.v" Line 77: Size mismatch in connection of port <input5>. Formal port size is 32-bit while actual signal size is 1-bit.
-WARNING:HDLCompiler:189 - "/home/fan/code/mips/MIPSAPP/top.v" Line 79: Size mismatch in connection of port <input7>. Formal port size is 32-bit while actual signal size is 8-bit.
+WARNING:HDLCompiler:413 - "C:\Users\fan\Desktop\MIPShelloWorld\x7segbc.v" Line 82: Result of 3-bit expression is truncated to fit in 2-bit target.
+WARNING:HDLCompiler:189 - "C:\Users\fan\Desktop\MIPShelloWorld\top.v" Line 89: Size mismatch in connection of port <input3>. Formal port size is 32-bit while actual signal size is 12-bit.
+WARNING:HDLCompiler:189 - "C:\Users\fan\Desktop\MIPShelloWorld\top.v" Line 90: Size mismatch in connection of port <input4>. Formal port size is 32-bit while actual signal size is 8-bit.
+WARNING:HDLCompiler:189 - "C:\Users\fan\Desktop\MIPShelloWorld\top.v" Line 93: Size mismatch in connection of port <input7>. Formal port size is 32-bit while actual signal size is 1-bit.
 
 Elaborating module <clkdiv>.
-WARNING:HDLCompiler:413 - "/home/fan/code/mips/MIPSAPP/clkdiv.v" Line 71: Result of 4-bit expression is truncated to fit in 3-bit target.
-WARNING:HDLCompiler:413 - "/home/fan/code/mips/MIPSAPP/clkdiv.v" Line 109: Result of 6-bit expression is truncated to fit in 5-bit target.
-WARNING:HDLCompiler:1127 - "/home/fan/code/mips/MIPSAPP/clkdiv.v" Line 57: Assignment to cnt ignored, since the identifier is never used
-WARNING:HDLCompiler:189 - "/home/fan/code/mips/MIPSAPP/top.v" Line 90: Size mismatch in connection of port <clr>. Formal port size is 1-bit while actual signal size is 32-bit.
-WARNING:HDLCompiler:1127 - "/home/fan/code/mips/MIPSAPP/top.v" Line 92: Assignment to clk10ms ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/fan/code/mips/MIPSAPP/top.v" Line 94: Assignment to clk1ms ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/fan/code/mips/MIPSAPP/top.v" Line 95: Assignment to clk100ms ignored, since the identifier is never used
+WARNING:HDLCompiler:413 - "C:\Users\fan\Desktop\MIPShelloWorld\clkdiv.v" Line 71: Result of 4-bit expression is truncated to fit in 3-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\fan\Desktop\MIPShelloWorld\clkdiv.v" Line 109: Result of 6-bit expression is truncated to fit in 5-bit target.
+WARNING:HDLCompiler:1127 - "C:\Users\fan\Desktop\MIPShelloWorld\clkdiv.v" Line 57: Assignment to cnt ignored, since the identifier is never used
+WARNING:HDLCompiler:189 - "C:\Users\fan\Desktop\MIPShelloWorld\top.v" Line 104: Size mismatch in connection of port <clr>. Formal port size is 1-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:1127 - "C:\Users\fan\Desktop\MIPShelloWorld\top.v" Line 106: Assignment to clk10ms ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\fan\Desktop\MIPShelloWorld\top.v" Line 108: Assignment to clk1ms ignored, since the identifier is never used
 
 Elaborating module <vga_640x480>.
-WARNING:HDLCompiler:413 - "/home/fan/code/mips/MIPSAPP/vga_640x480.v" Line 49: Result of 32-bit expression is truncated to fit in 10-bit target.
-WARNING:HDLCompiler:413 - "/home/fan/code/mips/MIPSAPP/vga_640x480.v" Line 50: Result of 32-bit expression is truncated to fit in 10-bit target.
-WARNING:HDLCompiler:413 - "/home/fan/code/mips/MIPSAPP/vga_640x480.v" Line 65: Result of 11-bit expression is truncated to fit in 10-bit target.
-WARNING:HDLCompiler:413 - "/home/fan/code/mips/MIPSAPP/vga_640x480.v" Line 89: Result of 11-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\fan\Desktop\MIPShelloWorld\vga_640x480.v" Line 49: Result of 32-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\fan\Desktop\MIPShelloWorld\vga_640x480.v" Line 50: Result of 32-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\fan\Desktop\MIPShelloWorld\vga_640x480.v" Line 65: Result of 11-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\fan\Desktop\MIPShelloWorld\vga_640x480.v" Line 89: Result of 11-bit expression is truncated to fit in 10-bit target.
 
 Elaborating module <mccpu>.
 
@@ -217,7 +219,7 @@ Elaborating module <mux4x32>.
 Elaborating module <regfile>.
 
 Elaborating module <alu>.
-WARNING:HDLCompiler:1016 - "/home/fan/code/mips/MIPSAPP/addsub32.v" Line 25: Port c0 is not connected to this instance
+WARNING:HDLCompiler:1016 - "C:\Users\fan\Desktop\MIPShelloWorld\addsub32.v" Line 25: Port c0 is not connected to this instance
 
 Elaborating module <addsub32>.
 
@@ -240,92 +242,100 @@ Elaborating module <g_p>.
 Elaborating module <shift>.
 
 Elaborating module <mccu>.
-WARNING:HDLCompiler:189 - "/home/fan/code/mips/MIPSAPP/top.v" Line 114: Size mismatch in connection of port <inst>. Formal port size is 32-bit while actual signal size is 1-bit.
-WARNING:HDLCompiler:1127 - "/home/fan/code/mips/MIPSAPP/top.v" Line 114: Assignment to inst ignored, since the identifier is never used
-WARNING:HDLCompiler:189 - "/home/fan/code/mips/MIPSAPP/top.v" Line 115: Size mismatch in connection of port <alu_out>. Formal port size is 32-bit while actual signal size is 1-bit.
-WARNING:HDLCompiler:1127 - "/home/fan/code/mips/MIPSAPP/top.v" Line 115: Assignment to alu_out ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/fan/code/mips/MIPSAPP/top.v" Line 119: Assignment to state ignored, since the identifier is never used
-WARNING:HDLCompiler:189 - "/home/fan/code/mips/MIPSAPP/top.v" Line 120: Size mismatch in connection of port <npc>. Formal port size is 32-bit while actual signal size is 1-bit.
-WARNING:HDLCompiler:1127 - "/home/fan/code/mips/MIPSAPP/top.v" Line 120: Assignment to npc ignored, since the identifier is never used
-WARNING:HDLCompiler:189 - "/home/fan/code/mips/MIPSAPP/top.v" Line 121: Size mismatch in connection of port <pcsource>. Formal port size is 2-bit while actual signal size is 1-bit.
-WARNING:HDLCompiler:1127 - "/home/fan/code/mips/MIPSAPP/top.v" Line 121: Assignment to pcsource ignored, since the identifier is never used
-WARNING:HDLCompiler:189 - "/home/fan/code/mips/MIPSAPP/top.v" Line 122: Size mismatch in connection of port <alua>. Formal port size is 32-bit while actual signal size is 1-bit.
-WARNING:HDLCompiler:1127 - "/home/fan/code/mips/MIPSAPP/top.v" Line 122: Assignment to alua ignored, since the identifier is never used
-WARNING:HDLCompiler:189 - "/home/fan/code/mips/MIPSAPP/top.v" Line 123: Size mismatch in connection of port <alub>. Formal port size is 32-bit while actual signal size is 1-bit.
-WARNING:HDLCompiler:1127 - "/home/fan/code/mips/MIPSAPP/top.v" Line 123: Assignment to alub ignored, since the identifier is never used
-WARNING:HDLCompiler:189 - "/home/fan/code/mips/MIPSAPP/top.v" Line 124: Size mismatch in connection of port <aluc>. Formal port size is 4-bit while actual signal size is 1-bit.
-WARNING:HDLCompiler:1127 - "/home/fan/code/mips/MIPSAPP/top.v" Line 124: Assignment to aluc ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/fan/code/mips/MIPSAPP/top.v" Line 125: Assignment to z ignored, since the identifier is never used
-WARNING:HDLCompiler:189 - "/home/fan/code/mips/MIPSAPP/top.v" Line 126: Size mismatch in connection of port <opa>. Formal port size is 32-bit while actual signal size is 1-bit.
-WARNING:HDLCompiler:1127 - "/home/fan/code/mips/MIPSAPP/top.v" Line 126: Assignment to opa ignored, since the identifier is never used
-WARNING:HDLCompiler:189 - "/home/fan/code/mips/MIPSAPP/top.v" Line 127: Size mismatch in connection of port <rega>. Formal port size is 32-bit while actual signal size is 1-bit.
-WARNING:HDLCompiler:1127 - "/home/fan/code/mips/MIPSAPP/top.v" Line 127: Assignment to rega ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/fan/code/mips/MIPSAPP/top.v" Line 128: Assignment to selpc ignored, since the identifier is never used
-WARNING:HDLCompiler:189 - "/home/fan/code/mips/MIPSAPP/top.v" Line 129: Size mismatch in connection of port <res>. Formal port size is 32-bit while actual signal size is 1-bit.
-WARNING:HDLCompiler:1127 - "/home/fan/code/mips/MIPSAPP/top.v" Line 129: Assignment to res ignored, since the identifier is never used
-WARNING:HDLCompiler:189 - "/home/fan/code/mips/MIPSAPP/top.v" Line 130: Size mismatch in connection of port <wn>. Formal port size is 5-bit while actual signal size is 1-bit.
-WARNING:HDLCompiler:1127 - "/home/fan/code/mips/MIPSAPP/top.v" Line 130: Assignment to wn ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/fan/code/mips/MIPSAPP/top.v" Line 131: Assignment to wreg ignored, since the identifier is never used
-WARNING:HDLCompiler:327 - "/home/fan/code/mips/MIPSAPP/BUS.v" Line 52: Concatenation with unsized literal; will interpret as 32 bits
+WARNING:HDLCompiler:189 - "C:\Users\fan\Desktop\MIPShelloWorld\top.v" Line 128: Size mismatch in connection of port <inst>. Formal port size is 32-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:1127 - "C:\Users\fan\Desktop\MIPShelloWorld\top.v" Line 128: Assignment to inst ignored, since the identifier is never used
+WARNING:HDLCompiler:189 - "C:\Users\fan\Desktop\MIPShelloWorld\top.v" Line 129: Size mismatch in connection of port <alu_out>. Formal port size is 32-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:1127 - "C:\Users\fan\Desktop\MIPShelloWorld\top.v" Line 129: Assignment to alu_out ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\fan\Desktop\MIPShelloWorld\top.v" Line 133: Assignment to state ignored, since the identifier is never used
+WARNING:HDLCompiler:189 - "C:\Users\fan\Desktop\MIPShelloWorld\top.v" Line 134: Size mismatch in connection of port <npc>. Formal port size is 32-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:1127 - "C:\Users\fan\Desktop\MIPShelloWorld\top.v" Line 134: Assignment to npc ignored, since the identifier is never used
+WARNING:HDLCompiler:189 - "C:\Users\fan\Desktop\MIPShelloWorld\top.v" Line 135: Size mismatch in connection of port <pcsource>. Formal port size is 2-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:1127 - "C:\Users\fan\Desktop\MIPShelloWorld\top.v" Line 135: Assignment to pcsource ignored, since the identifier is never used
+WARNING:HDLCompiler:189 - "C:\Users\fan\Desktop\MIPShelloWorld\top.v" Line 136: Size mismatch in connection of port <alua>. Formal port size is 32-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:1127 - "C:\Users\fan\Desktop\MIPShelloWorld\top.v" Line 136: Assignment to alua ignored, since the identifier is never used
+WARNING:HDLCompiler:189 - "C:\Users\fan\Desktop\MIPShelloWorld\top.v" Line 137: Size mismatch in connection of port <alub>. Formal port size is 32-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:1127 - "C:\Users\fan\Desktop\MIPShelloWorld\top.v" Line 137: Assignment to alub ignored, since the identifier is never used
+WARNING:HDLCompiler:189 - "C:\Users\fan\Desktop\MIPShelloWorld\top.v" Line 138: Size mismatch in connection of port <aluc>. Formal port size is 4-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:1127 - "C:\Users\fan\Desktop\MIPShelloWorld\top.v" Line 138: Assignment to aluc ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\fan\Desktop\MIPShelloWorld\top.v" Line 139: Assignment to z ignored, since the identifier is never used
+WARNING:HDLCompiler:189 - "C:\Users\fan\Desktop\MIPShelloWorld\top.v" Line 140: Size mismatch in connection of port <opa>. Formal port size is 32-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:1127 - "C:\Users\fan\Desktop\MIPShelloWorld\top.v" Line 140: Assignment to opa ignored, since the identifier is never used
+WARNING:HDLCompiler:189 - "C:\Users\fan\Desktop\MIPShelloWorld\top.v" Line 141: Size mismatch in connection of port <rega>. Formal port size is 32-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:1127 - "C:\Users\fan\Desktop\MIPShelloWorld\top.v" Line 141: Assignment to rega ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\fan\Desktop\MIPShelloWorld\top.v" Line 142: Assignment to selpc ignored, since the identifier is never used
+WARNING:HDLCompiler:189 - "C:\Users\fan\Desktop\MIPShelloWorld\top.v" Line 143: Size mismatch in connection of port <res>. Formal port size is 32-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:1127 - "C:\Users\fan\Desktop\MIPShelloWorld\top.v" Line 143: Assignment to res ignored, since the identifier is never used
+WARNING:HDLCompiler:189 - "C:\Users\fan\Desktop\MIPShelloWorld\top.v" Line 144: Size mismatch in connection of port <wn>. Formal port size is 5-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:1127 - "C:\Users\fan\Desktop\MIPShelloWorld\top.v" Line 144: Assignment to wn ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\fan\Desktop\MIPShelloWorld\top.v" Line 145: Assignment to wreg ignored, since the identifier is never used
+
+Elaborating module <keyboard>.
+WARNING:HDLCompiler:413 - "C:\Users\fan\Desktop\MIPShelloWorld\keyboard.v" Line 33: Result of 16-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:1127 - "C:\Users\fan\Desktop\MIPShelloWorld\keyboard.v" Line 33: Assignment to xkey ignored, since the identifier is never used
+
+Elaborating module <move>.
+
+Elaborating module <random_generator>.
+WARNING:HDLCompiler:327 - "C:\Users\fan\Desktop\MIPShelloWorld\BUS.v" Line 60: Concatenation with unsized literal; will interpret as 32 bits
+WARNING:HDLCompiler:327 - "C:\Users\fan\Desktop\MIPShelloWorld\BUS.v" Line 64: Concatenation with unsized literal; will interpret as 32 bits
+WARNING:HDLCompiler:327 - "C:\Users\fan\Desktop\MIPShelloWorld\BUS.v" Line 68: Concatenation with unsized literal; will interpret as 32 bits
 
 Elaborating module <BUS>.
 
 Elaborating module <vram>.
-WARNING:HDLCompiler:1499 - "/home/fan/code/mips/MIPSAPP/ipcore_dir/vram.v" Line 39: Empty module <vram> remains a black box.
-WARNING:HDLCompiler:189 - "/home/fan/code/mips/MIPSAPP/top.v" Line 161: Size mismatch in connection of port <addrb>. Formal port size is 16-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:1499 - "C:\Users\fan\Desktop\MIPShelloWorld\ipcore_dir\vram.v" Line 39: Empty module <vram> remains a black box.
+WARNING:HDLCompiler:189 - "C:\Users\fan\Desktop\MIPShelloWorld\top.v" Line 202: Size mismatch in connection of port <addrb>. Formal port size is 16-bit while actual signal size is 32-bit.
 
 Elaborating module <ram>.
-WARNING:HDLCompiler:1499 - "/home/fan/code/mips/MIPSAPP/ipcore_dir/ram.v" Line 39: Empty module <ram> remains a black box.
-WARNING:HDLCompiler:1127 - "/home/fan/code/mips/MIPSAPP/top.v" Line 182: Assignment to test ignored, since the identifier is never used
-WARNING:HDLCompiler:634 - "/home/fan/code/mips/MIPSAPP/top.v" Line 77: Net <bus2cpu> does not have a driver.
-WARNING:HDLCompiler:552 - "/home/fan/code/mips/MIPSAPP/top.v" Line 100: Input port clr is not connected on this instance
+WARNING:HDLCompiler:1499 - "C:\Users\fan\Desktop\MIPShelloWorld\ipcore_dir\ram.v" Line 39: Empty module <ram> remains a black box.
+WARNING:HDLCompiler:552 - "C:\Users\fan\Desktop\MIPShelloWorld\top.v" Line 114: Input port clr is not connected on this instance
 
 =========================================================================
 *                           HDL Synthesis                               *
 =========================================================================
 
 Synthesizing Unit <top>.
-    Related source file is "/home/fan/code/mips/MIPSAPP/top.v".
+    Related source file is "C:\Users\fan\Desktop\MIPShelloWorld\top.v".
 WARNING:Xst:2898 - Port 'clr', unconnected in block instance 'vga_gen', is tied to GND.
 WARNING:Xst:647 - Input <sw<7:4>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <btn<4:1>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-INFO:Xst:3210 - "/home/fan/code/mips/MIPSAPP/top.v" line 88: Output port <clk10ms> of the instance <clkdiv> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/fan/code/mips/MIPSAPP/top.v" line 88: Output port <clk1ms> of the instance <clkdiv> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/fan/code/mips/MIPSAPP/top.v" line 88: Output port <clk100ms> of the instance <clkdiv> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/fan/code/mips/MIPSAPP/top.v" line 109: Output port <inst> of the instance <mycpu> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/fan/code/mips/MIPSAPP/top.v" line 109: Output port <alu_out> of the instance <mycpu> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/fan/code/mips/MIPSAPP/top.v" line 109: Output port <state> of the instance <mycpu> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/fan/code/mips/MIPSAPP/top.v" line 109: Output port <npc> of the instance <mycpu> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/fan/code/mips/MIPSAPP/top.v" line 109: Output port <pcsource> of the instance <mycpu> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/fan/code/mips/MIPSAPP/top.v" line 109: Output port <alua> of the instance <mycpu> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/fan/code/mips/MIPSAPP/top.v" line 109: Output port <alub> of the instance <mycpu> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/fan/code/mips/MIPSAPP/top.v" line 109: Output port <aluc> of the instance <mycpu> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/fan/code/mips/MIPSAPP/top.v" line 109: Output port <opa> of the instance <mycpu> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/fan/code/mips/MIPSAPP/top.v" line 109: Output port <rega> of the instance <mycpu> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/fan/code/mips/MIPSAPP/top.v" line 109: Output port <res> of the instance <mycpu> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/fan/code/mips/MIPSAPP/top.v" line 109: Output port <wn> of the instance <mycpu> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/fan/code/mips/MIPSAPP/top.v" line 109: Output port <z> of the instance <mycpu> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/fan/code/mips/MIPSAPP/top.v" line 109: Output port <selpc> of the instance <mycpu> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/fan/code/mips/MIPSAPP/top.v" line 109: Output port <wreg> of the instance <mycpu> is unconnected or connected to loadless signal.
-WARNING:Xst:653 - Signal <bus2cpu> is used but never assigned. This sourceless signal will be automatically connected to value GND.
-    Found 17-bit adder for signal <n0028> created at line 161.
-    Found 10x7-bit multiplier for signal <n0037> created at line 161.
-    Found 1-bit 8-to-1 multiplexer for signal <x[2]_color[7]_Mux_20_o> created at line 195.
+INFO:Xst:3210 - "C:\Users\fan\Desktop\MIPShelloWorld\top.v" line 102: Output port <clk10ms> of the instance <clkdiv> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\fan\Desktop\MIPShelloWorld\top.v" line 102: Output port <clk1ms> of the instance <clkdiv> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\fan\Desktop\MIPShelloWorld\top.v" line 123: Output port <inst> of the instance <mycpu> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\fan\Desktop\MIPShelloWorld\top.v" line 123: Output port <alu_out> of the instance <mycpu> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\fan\Desktop\MIPShelloWorld\top.v" line 123: Output port <state> of the instance <mycpu> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\fan\Desktop\MIPShelloWorld\top.v" line 123: Output port <npc> of the instance <mycpu> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\fan\Desktop\MIPShelloWorld\top.v" line 123: Output port <pcsource> of the instance <mycpu> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\fan\Desktop\MIPShelloWorld\top.v" line 123: Output port <alua> of the instance <mycpu> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\fan\Desktop\MIPShelloWorld\top.v" line 123: Output port <alub> of the instance <mycpu> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\fan\Desktop\MIPShelloWorld\top.v" line 123: Output port <aluc> of the instance <mycpu> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\fan\Desktop\MIPShelloWorld\top.v" line 123: Output port <opa> of the instance <mycpu> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\fan\Desktop\MIPShelloWorld\top.v" line 123: Output port <rega> of the instance <mycpu> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\fan\Desktop\MIPShelloWorld\top.v" line 123: Output port <res> of the instance <mycpu> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\fan\Desktop\MIPShelloWorld\top.v" line 123: Output port <wn> of the instance <mycpu> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\fan\Desktop\MIPShelloWorld\top.v" line 123: Output port <z> of the instance <mycpu> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\fan\Desktop\MIPShelloWorld\top.v" line 123: Output port <selpc> of the instance <mycpu> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\fan\Desktop\MIPShelloWorld\top.v" line 123: Output port <wreg> of the instance <mycpu> is unconnected or connected to loadless signal.
+    Found 1-bit register for signal <LED2>.
+    Found 17-bit adder for signal <n0031> created at line 202.
+    Found 10x7-bit multiplier for signal <n0040> created at line 202.
+    Found 1-bit 8-to-1 multiplexer for signal <x[2]_color[7]_Mux_3_o> created at line 225.
     Summary:
 	inferred   1 Multiplier(s).
 	inferred   1 Adder/Subtractor(s).
+	inferred   1 D-type flip-flop(s).
 	inferred   3 Multiplexer(s).
 Unit <top> synthesized.
 
 Synthesizing Unit <debuger>.
-    Related source file is "/home/fan/code/mips/MIPSAPP/debuger.v".
+    Related source file is "C:\Users\fan\Desktop\MIPShelloWorld\debuger.v".
     Found 32-bit 8-to-1 multiplexer for signal <data> created at line 44.
     Summary:
 	inferred   2 Multiplexer(s).
 Unit <debuger> synthesized.
 
 Synthesizing Unit <x7segbc>.
-    Related source file is "/home/fan/code/mips/MIPSAPP/x7segbc.v".
+    Related source file is "C:\Users\fan\Desktop\MIPShelloWorld\x7segbc.v".
     Found 2-bit register for signal <s>.
     Found 2-bit adder for signal <s[1]_GND_3_o_add_4_OUT> created at line 82.
     Found 16x7-bit Read Only RAM for signal <a_to_g>
@@ -342,7 +352,7 @@ Synthesizing Unit <x7segbc>.
 Unit <x7segbc> synthesized.
 
 Synthesizing Unit <clkdiv>.
-    Related source file is "/home/fan/code/mips/MIPSAPP/clkdiv.v".
+    Related source file is "C:\Users\fan\Desktop\MIPShelloWorld\clkdiv.v".
     Found 33-bit register for signal <regi>.
     Found 33-bit register for signal <cnt2>.
     Found 33-bit register for signal <cnt3>.
@@ -365,7 +375,7 @@ Synthesizing Unit <clkdiv>.
 Unit <clkdiv> synthesized.
 
 Synthesizing Unit <vga_640x480>.
-    Related source file is "/home/fan/code/mips/MIPSAPP/vga_640x480.v".
+    Related source file is "C:\Users\fan\Desktop\MIPShelloWorld\vga_640x480.v".
         hpixels = 10'b1100100000
         vlines = 10'b1000001001
         hbp = 10'b0010010000
@@ -394,46 +404,46 @@ Synthesizing Unit <vga_640x480>.
 Unit <vga_640x480> synthesized.
 
 Synthesizing Unit <mccpu>.
-    Related source file is "/home/fan/code/mips/MIPSAPP/mccpu.v".
+    Related source file is "C:\Users\fan\Desktop\MIPShelloWorld\mccpu.v".
     Summary:
 	no macro.
 Unit <mccpu> synthesized.
 
 Synthesizing Unit <dffe32>.
-    Related source file is "/home/fan/code/mips/MIPSAPP/diffe32.v".
+    Related source file is "C:\Users\fan\Desktop\MIPShelloWorld\diffe32.v".
     Found 32-bit register for signal <q>.
     Summary:
 	inferred  32 D-type flip-flop(s).
 Unit <dffe32> synthesized.
 
 Synthesizing Unit <dff32>.
-    Related source file is "/home/fan/code/mips/MIPSAPP/dff32.v".
+    Related source file is "C:\Users\fan\Desktop\MIPShelloWorld\dff32.v".
     Found 32-bit register for signal <q>.
     Summary:
 	inferred  32 D-type flip-flop(s).
 Unit <dff32> synthesized.
 
 Synthesizing Unit <mux2x5>.
-    Related source file is "/home/fan/code/mips/MIPSAPP/mux2x5.v".
+    Related source file is "C:\Users\fan\Desktop\MIPShelloWorld\mux2x5.v".
     Summary:
 	inferred   1 Multiplexer(s).
 Unit <mux2x5> synthesized.
 
 Synthesizing Unit <mux2x32>.
-    Related source file is "/home/fan/code/mips/MIPSAPP/mux2x32.v".
+    Related source file is "C:\Users\fan\Desktop\MIPShelloWorld\mux2x32.v".
     Summary:
 	inferred   1 Multiplexer(s).
 Unit <mux2x32> synthesized.
 
 Synthesizing Unit <mux4x32>.
-    Related source file is "/home/fan/code/mips/MIPSAPP/mux4x32.v".
+    Related source file is "C:\Users\fan\Desktop\MIPShelloWorld\mux4x32.v".
     Found 32-bit 4-to-1 multiplexer for signal <y> created at line 26.
     Summary:
 	inferred   1 Multiplexer(s).
 Unit <mux4x32> synthesized.
 
 Synthesizing Unit <regfile>.
-    Related source file is "/home/fan/code/mips/MIPSAPP/regfile.v".
+    Related source file is "C:\Users\fan\Desktop\MIPShelloWorld\regfile.v".
     Found 992-bit register for signal <n0050[991:0]>.
     Found 32-bit 31-to-1 multiplexer for signal <rna[4]_register[31][31]_wide_mux_1_OUT> created at line 28.
     Found 32-bit 31-to-1 multiplexer for signal <rnb[4]_register[31][31]_wide_mux_4_OUT> created at line 29.
@@ -443,7 +453,7 @@ Synthesizing Unit <regfile>.
 Unit <regfile> synthesized.
 
 Synthesizing Unit <alu>.
-    Related source file is "/home/fan/code/mips/MIPSAPP/alu.v".
+    Related source file is "C:\Users\fan\Desktop\MIPShelloWorld\alu.v".
     Found 32-bit comparator greater for signal <a[31]_b[31]_LessThan_11_o> created at line 38
     Summary:
 	inferred   1 Comparator(s).
@@ -451,60 +461,60 @@ Synthesizing Unit <alu>.
 Unit <alu> synthesized.
 
 Synthesizing Unit <addsub32>.
-    Related source file is "/home/fan/code/mips/MIPSAPP/addsub32.v".
-INFO:Xst:3210 - "/home/fan/code/mips/MIPSAPP/addsub32.v" line 25: Output port <c0> of the instance <as32> is unconnected or connected to loadless signal.
+    Related source file is "C:\Users\fan\Desktop\MIPShelloWorld\addsub32.v".
+INFO:Xst:3210 - "C:\Users\fan\Desktop\MIPShelloWorld\addsub32.v" line 25: Output port <c0> of the instance <as32> is unconnected or connected to loadless signal.
     Summary:
 Unit <addsub32> synthesized.
 
 Synthesizing Unit <cla32>.
-    Related source file is "/home/fan/code/mips/MIPSAPP/cla32.v".
+    Related source file is "C:\Users\fan\Desktop\MIPShelloWorld\cla32.v".
     Summary:
 	no macro.
 Unit <cla32> synthesized.
 
 Synthesizing Unit <cla_32>.
-    Related source file is "/home/fan/code/mips/MIPSAPP/cla_32.v".
+    Related source file is "C:\Users\fan\Desktop\MIPShelloWorld\cla_32.v".
     Summary:
 	no macro.
 Unit <cla_32> synthesized.
 
 Synthesizing Unit <cla_16>.
-    Related source file is "/home/fan/code/mips/MIPSAPP/cla_16.v".
+    Related source file is "C:\Users\fan\Desktop\MIPShelloWorld\cla_16.v".
     Summary:
 	no macro.
 Unit <cla_16> synthesized.
 
 Synthesizing Unit <cla_8>.
-    Related source file is "/home/fan/code/mips/MIPSAPP/cla_8.v".
+    Related source file is "C:\Users\fan\Desktop\MIPShelloWorld\cla_8.v".
     Summary:
 	no macro.
 Unit <cla_8> synthesized.
 
 Synthesizing Unit <cla_4>.
-    Related source file is "/home/fan/code/mips/MIPSAPP/cla_4.v".
+    Related source file is "C:\Users\fan\Desktop\MIPShelloWorld\cla_4.v".
     Summary:
 	no macro.
 Unit <cla_4> synthesized.
 
 Synthesizing Unit <cla_2>.
-    Related source file is "/home/fan/code/mips/MIPSAPP/cla_2.v".
+    Related source file is "C:\Users\fan\Desktop\MIPShelloWorld\cla_2.v".
     Summary:
 	no macro.
 Unit <cla_2> synthesized.
 
 Synthesizing Unit <add>.
-    Related source file is "/home/fan/code/mips/MIPSAPP/add.v".
+    Related source file is "C:\Users\fan\Desktop\MIPShelloWorld\add.v".
     Summary:
 Unit <add> synthesized.
 
 Synthesizing Unit <g_p>.
-    Related source file is "/home/fan/code/mips/MIPSAPP/g_p.v".
+    Related source file is "C:\Users\fan\Desktop\MIPShelloWorld\g_p.v".
     Summary:
 	no macro.
 Unit <g_p> synthesized.
 
 Synthesizing Unit <shift>.
-    Related source file is "/home/fan/code/mips/MIPSAPP/shift.v".
+    Related source file is "C:\Users\fan\Desktop\MIPShelloWorld\shift.v".
     Found 32-bit shifter logical left for signal <d[31]_sa[4]_shift_left_0_OUT> created at line 29
     Found 32-bit shifter logical right for signal <d[31]_sa[4]_shift_right_1_OUT> created at line 31
     Found 32-bit shifter arithmetic right for signal <d[31]_sa[4]_shift_right_2_OUT> created at line 33
@@ -514,7 +524,7 @@ Synthesizing Unit <shift>.
 Unit <shift> synthesized.
 
 Synthesizing Unit <mccu>.
-    Related source file is "/home/fan/code/mips/MIPSAPP/mccu.v".
+    Related source file is "C:\Users\fan\Desktop\MIPShelloWorld\mccu.v".
         sif = 3'b000
         sid = 3'b001
         sexe = 3'b010
@@ -540,10 +550,188 @@ Synthesizing Unit <mccu>.
 	inferred   1 Finite State Machine(s).
 Unit <mccu> synthesized.
 
-Synthesizing Unit <BUS>.
-    Related source file is "/home/fan/code/mips/MIPSAPP/BUS.v".
+Synthesizing Unit <keyboard>.
+    Related source file is "C:\Users\fan\Desktop\MIPShelloWorld\keyboard.v".
+    Found 1-bit register for signal <PS2Df>.
+    Found 1-bit register for signal <PS2Cf>.
+    Found 8-bit register for signal <ps2d_filter>.
+    Found 8-bit register for signal <ascii>.
+    Found 8-bit register for signal <ps2c_filter>.
+    Found 11-bit register for signal <shift1>.
+    Found 10-bit register for signal <shift2<10:1>>.
     Summary:
-	inferred   8 Multiplexer(s).
+	inferred  47 D-type flip-flop(s).
+	inferred  38 Multiplexer(s).
+Unit <keyboard> synthesized.
+
+Synthesizing Unit <move>.
+    Related source file is "C:\Users\fan\Desktop\MIPShelloWorld\move.v".
+    Found 1-bit register for signal <move>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+Unit <move> synthesized.
+
+Synthesizing Unit <random_generator>.
+    Related source file is "C:\Users\fan\Desktop\MIPShelloWorld\random_generator.v".
+    Found 32-bit register for signal <cnt>.
+    Found 32-bit adder for signal <cnt[31]_GND_28_o_add_2_OUT> created at line 35.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  32 D-type flip-flop(s).
+Unit <random_generator> synthesized.
+
+Synthesizing Unit <mod_32u_7u>.
+    Related source file is "".
+    Found 39-bit adder for signal <GND_29_o_b[6]_add_1_OUT> created at line 0.
+    Found 38-bit adder for signal <GND_29_o_b[6]_add_3_OUT> created at line 0.
+    Found 37-bit adder for signal <GND_29_o_b[6]_add_5_OUT> created at line 0.
+    Found 36-bit adder for signal <GND_29_o_b[6]_add_7_OUT> created at line 0.
+    Found 35-bit adder for signal <GND_29_o_b[6]_add_9_OUT> created at line 0.
+    Found 34-bit adder for signal <GND_29_o_b[6]_add_11_OUT> created at line 0.
+    Found 33-bit adder for signal <GND_29_o_b[6]_add_13_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_b[6]_add_15_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_29_o_add_17_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_29_o_add_19_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_29_o_add_21_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_29_o_add_23_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_29_o_add_25_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_29_o_add_27_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_29_o_add_29_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_29_o_add_31_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_29_o_add_33_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_29_o_add_35_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_29_o_add_37_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_29_o_add_39_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_29_o_add_41_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_29_o_add_43_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_29_o_add_45_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_29_o_add_47_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_29_o_add_49_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_29_o_add_51_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_29_o_add_53_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_29_o_add_55_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_29_o_add_57_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_29_o_add_59_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_29_o_add_61_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_29_o_add_63_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_29_o_add_65_OUT> created at line 0.
+    Found 39-bit comparator lessequal for signal <BUS_0001> created at line 0
+    Found 38-bit comparator lessequal for signal <BUS_0002> created at line 0
+    Found 37-bit comparator lessequal for signal <BUS_0003> created at line 0
+    Found 36-bit comparator lessequal for signal <BUS_0004> created at line 0
+    Found 35-bit comparator lessequal for signal <BUS_0005> created at line 0
+    Found 34-bit comparator lessequal for signal <BUS_0006> created at line 0
+    Found 33-bit comparator lessequal for signal <BUS_0007> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0008> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0009> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0010> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0011> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0012> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0013> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0014> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0015> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0016> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0017> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0018> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0019> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0020> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0021> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0022> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0023> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0024> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0025> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0026> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0027> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0028> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0029> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0030> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0031> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0032> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0033> created at line 0
+    Summary:
+	inferred  33 Adder/Subtractor(s).
+	inferred  33 Comparator(s).
+	inferred 1025 Multiplexer(s).
+Unit <mod_32u_7u> synthesized.
+
+Synthesizing Unit <mod_32u_6u>.
+    Related source file is "".
+    Found 38-bit adder for signal <GND_30_o_b[5]_add_1_OUT> created at line 0.
+    Found 37-bit adder for signal <GND_30_o_b[5]_add_3_OUT> created at line 0.
+    Found 36-bit adder for signal <GND_30_o_b[5]_add_5_OUT> created at line 0.
+    Found 35-bit adder for signal <GND_30_o_b[5]_add_7_OUT> created at line 0.
+    Found 34-bit adder for signal <GND_30_o_b[5]_add_9_OUT> created at line 0.
+    Found 33-bit adder for signal <GND_30_o_b[5]_add_11_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_b[5]_add_13_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_30_o_add_15_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_30_o_add_17_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_30_o_add_19_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_30_o_add_21_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_30_o_add_23_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_30_o_add_25_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_30_o_add_27_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_30_o_add_29_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_30_o_add_31_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_30_o_add_33_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_30_o_add_35_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_30_o_add_37_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_30_o_add_39_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_30_o_add_41_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_30_o_add_43_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_30_o_add_45_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_30_o_add_47_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_30_o_add_49_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_30_o_add_51_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_30_o_add_53_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_30_o_add_55_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_30_o_add_57_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_30_o_add_59_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_30_o_add_61_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_30_o_add_63_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_30_o_add_65_OUT> created at line 0.
+    Found 38-bit comparator lessequal for signal <BUS_0001> created at line 0
+    Found 37-bit comparator lessequal for signal <BUS_0002> created at line 0
+    Found 36-bit comparator lessequal for signal <BUS_0003> created at line 0
+    Found 35-bit comparator lessequal for signal <BUS_0004> created at line 0
+    Found 34-bit comparator lessequal for signal <BUS_0005> created at line 0
+    Found 33-bit comparator lessequal for signal <BUS_0006> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0007> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0008> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0009> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0010> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0011> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0012> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0013> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0014> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0015> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0016> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0017> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0018> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0019> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0020> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0021> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0022> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0023> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0024> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0025> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0026> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0027> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0028> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0029> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0030> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0031> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0032> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0033> created at line 0
+    Summary:
+	inferred  33 Adder/Subtractor(s).
+	inferred  33 Comparator(s).
+	inferred 1025 Multiplexer(s).
+Unit <mod_32u_6u> synthesized.
+
+Synthesizing Unit <BUS>.
+    Related source file is "C:\Users\fan\Desktop\MIPShelloWorld\BUS.v".
+    Summary:
+	inferred  19 Multiplexer(s).
 Unit <BUS> synthesized.
 
 =========================================================================
@@ -555,42 +743,61 @@ Macro Statistics
  4x4-bit single-port Read Only RAM                     : 1
 # Multipliers                                          : 1
  10x7-bit multiplier                                   : 1
-# Adders/Subtractors                                   : 14
+# Adders/Subtractors                                   : 81
  10-bit adder                                          : 2
  10-bit subtractor                                     : 2
  11-bit subtractor                                     : 2
  17-bit adder                                          : 1
  2-bit adder                                           : 1
  3-bit adder                                           : 1
- 33-bit adder                                          : 4
+ 32-bit adder                                          : 54
+ 33-bit adder                                          : 6
+ 34-bit adder                                          : 2
+ 35-bit adder                                          : 2
+ 36-bit adder                                          : 2
+ 37-bit adder                                          : 2
+ 38-bit adder                                          : 2
+ 39-bit adder                                          : 1
  5-bit adder                                           : 1
-# Registers                                            : 21
- 1-bit register                                        : 5
- 10-bit register                                       : 2
+# Registers                                            : 31
+ 1-bit register                                        : 9
+ 10-bit register                                       : 3
+ 11-bit register                                       : 1
  2-bit register                                        : 1
  3-bit register                                        : 1
- 32-bit register                                       : 6
+ 32-bit register                                       : 7
  33-bit register                                       : 4
  5-bit register                                        : 1
+ 8-bit register                                        : 3
  992-bit register                                      : 1
-# Comparators                                          : 7
+# Comparators                                          : 73
  10-bit comparator greater                             : 4
  10-bit comparator lessequal                           : 2
  32-bit comparator greater                             : 1
-# Multiplexers                                         : 114
- 1-bit 2-to-1 multiplexer                              : 33
+ 32-bit comparator lessequal                           : 53
+ 33-bit comparator lessequal                           : 2
+ 34-bit comparator lessequal                           : 2
+ 35-bit comparator lessequal                           : 2
+ 36-bit comparator lessequal                           : 2
+ 37-bit comparator lessequal                           : 2
+ 38-bit comparator lessequal                           : 2
+ 39-bit comparator lessequal                           : 1
+# Multiplexers                                         : 2213
+ 1-bit 2-to-1 multiplexer                              : 2088
  1-bit 4-to-1 multiplexer                              : 4
  1-bit 8-to-1 multiplexer                              : 1
  16-bit 2-to-1 multiplexer                             : 1
  2-bit 2-to-1 multiplexer                              : 17
  3-bit 2-to-1 multiplexer                              : 1
- 32-bit 2-to-1 multiplexer                             : 47
+ 32-bit 2-to-1 multiplexer                             : 51
  32-bit 31-to-1 multiplexer                            : 2
  32-bit 4-to-1 multiplexer                             : 3
  32-bit 8-to-1 multiplexer                             : 1
  4-bit 2-to-1 multiplexer                              : 1
  5-bit 2-to-1 multiplexer                              : 1
- 8-bit 2-to-1 multiplexer                              : 2
+ 6-bit 2-to-1 multiplexer                              : 1
+ 7-bit 2-to-1 multiplexer                              : 1
+ 8-bit 2-to-1 multiplexer                              : 40
 # Logic shifters                                       : 3
  32-bit shifter arithmetic right                       : 1
  32-bit shifter logical left                           : 1
@@ -610,6 +817,8 @@ Reading core <ipcore_dir/vram.ngc>.
 Reading core <ipcore_dir/ram.ngc>.
 Loading core <vram> for timing and area information for instance <vram_mod>.
 Loading core <ram> for timing and area information for instance <ram_mod>.
+WARNING:Xst:1426 - The value init of the FF/Latch LED2 hinder the constant cleaning in the block top.
+   You should achieve better results by setting this init to 1.
 
 Synthesizing (advanced) Unit <clkdiv>.
 The following registers are absorbed into counter <cnt2>: 1 register on signal <cnt2>.
@@ -620,8 +829,12 @@ The following registers are absorbed into counter <_5mcnt>: 1 register on signal
 The following registers are absorbed into counter <_100cnt>: 1 register on signal <_100cnt>.
 Unit <clkdiv> synthesized (advanced).
 
+Synthesizing (advanced) Unit <random_generator>.
+The following registers are absorbed into counter <cnt>: 1 register on signal <cnt>.
+Unit <random_generator> synthesized (advanced).
+
 Synthesizing (advanced) Unit <top>.
-	Multiplier <Mmult_n0037> in block <top> and adder/subtractor <Madd_n0028_Madd> in block <top> are combined into a MAC<Maddsub_n0037>.
+	Multiplier <Mmult_n0040> in block <top> and adder/subtractor <Madd_n0031_Madd> in block <top> are combined into a MAC<Maddsub_n0040>.
 Unit <top> synthesized (advanced).
 
 Synthesizing (advanced) Unit <vga_640x480>.
@@ -664,34 +877,48 @@ Macro Statistics
  4x4-bit single-port distributed Read Only RAM         : 1
 # MACs                                                 : 1
  10x7-to-16-bit MAC                                    : 1
-# Adders/Subtractors                                   : 2
+# Adders/Subtractors                                   : 68
  10-bit subtractor borrow in                           : 2
-# Counters                                             : 9
+ 32-bit adder                                          : 64
+ 6-bit adder                                           : 1
+ 7-bit adder                                           : 1
+# Counters                                             : 10
  10-bit up counter                                     : 2
  2-bit up counter                                      : 1
  3-bit up counter                                      : 1
+ 32-bit up counter                                     : 1
  33-bit up counter                                     : 4
  5-bit up counter                                      : 1
-# Registers                                            : 1189
- Flip-Flops                                            : 1189
-# Comparators                                          : 7
+# Registers                                            : 1238
+ Flip-Flops                                            : 1238
+# Comparators                                          : 73
  10-bit comparator greater                             : 4
  10-bit comparator lessequal                           : 2
  32-bit comparator greater                             : 1
-# Multiplexers                                         : 114
- 1-bit 2-to-1 multiplexer                              : 33
+ 32-bit comparator lessequal                           : 53
+ 33-bit comparator lessequal                           : 2
+ 34-bit comparator lessequal                           : 2
+ 35-bit comparator lessequal                           : 2
+ 36-bit comparator lessequal                           : 2
+ 37-bit comparator lessequal                           : 2
+ 38-bit comparator lessequal                           : 2
+ 39-bit comparator lessequal                           : 1
+# Multiplexers                                         : 2213
+ 1-bit 2-to-1 multiplexer                              : 2088
  1-bit 4-to-1 multiplexer                              : 4
  1-bit 8-to-1 multiplexer                              : 1
  16-bit 2-to-1 multiplexer                             : 1
  2-bit 2-to-1 multiplexer                              : 17
  3-bit 2-to-1 multiplexer                              : 1
- 32-bit 2-to-1 multiplexer                             : 47
+ 32-bit 2-to-1 multiplexer                             : 51
  32-bit 31-to-1 multiplexer                            : 2
  32-bit 4-to-1 multiplexer                             : 3
  32-bit 8-to-1 multiplexer                             : 1
  4-bit 2-to-1 multiplexer                              : 1
  5-bit 2-to-1 multiplexer                              : 1
- 8-bit 2-to-1 multiplexer                              : 2
+ 6-bit 2-to-1 multiplexer                              : 1
+ 7-bit 2-to-1 multiplexer                              : 1
+ 8-bit 2-to-1 multiplexer                              : 40
 # Logic shifters                                       : 3
  32-bit shifter arithmetic right                       : 1
  32-bit shifter logical left                           : 1
@@ -706,6 +933,8 @@ Macro Statistics
 =========================================================================
 *                         Low Level Synthesis                           *
 =========================================================================
+WARNING:Xst:1426 - The value init of the FF/Latch LED2 hinder the constant cleaning in the block top.
+   You should achieve better results by setting this init to 1.
 Analyzing FSM <MFsm> for best encoding.
 Optimizing FSM <mycpu/control_unit/FSM_0> on signal <state[1:3]> with user encoding.
 -------------------
@@ -732,6 +961,7 @@ WARNING:Xst:2677 - Node <cnt2_29> of sequential type is unconnected in block <cl
 WARNING:Xst:2677 - Node <cnt2_30> of sequential type is unconnected in block <clkdiv>.
 WARNING:Xst:2677 - Node <cnt2_31> of sequential type is unconnected in block <clkdiv>.
 WARNING:Xst:2677 - Node <cnt2_32> of sequential type is unconnected in block <clkdiv>.
+WARNING:Xst:1293 - FF/Latch <ascii_7> has a constant value of 0 in block <keyboard>. This FF/Latch will be trimmed during the optimization process.
 
 Optimizing unit <dffe32> ...
 
@@ -740,6 +970,8 @@ Optimizing unit <dff32> ...
 Optimizing unit <top> ...
 
 Optimizing unit <clkdiv> ...
+
+Optimizing unit <keyboard> ...
 
 Optimizing unit <mccpu> ...
 
@@ -781,39 +1013,6 @@ WARNING:Xst:2677 - Node <clkdiv/cnt3_3> of sequential type is unconnected in blo
 WARNING:Xst:2677 - Node <clkdiv/cnt3_2> of sequential type is unconnected in block <top>.
 WARNING:Xst:2677 - Node <clkdiv/cnt3_1> of sequential type is unconnected in block <top>.
 WARNING:Xst:2677 - Node <clkdiv/cnt3_0> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <clkdiv/_100cnt_32> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <clkdiv/_100cnt_31> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <clkdiv/_100cnt_30> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <clkdiv/_100cnt_29> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <clkdiv/_100cnt_28> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <clkdiv/_100cnt_27> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <clkdiv/_100cnt_26> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <clkdiv/_100cnt_25> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <clkdiv/_100cnt_24> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <clkdiv/_100cnt_23> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <clkdiv/_100cnt_22> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <clkdiv/_100cnt_21> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <clkdiv/_100cnt_20> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <clkdiv/_100cnt_19> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <clkdiv/_100cnt_18> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <clkdiv/_100cnt_17> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <clkdiv/_100cnt_16> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <clkdiv/_100cnt_15> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <clkdiv/_100cnt_14> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <clkdiv/_100cnt_13> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <clkdiv/_100cnt_12> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <clkdiv/_100cnt_11> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <clkdiv/_100cnt_10> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <clkdiv/_100cnt_9> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <clkdiv/_100cnt_8> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <clkdiv/_100cnt_7> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <clkdiv/_100cnt_6> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <clkdiv/_100cnt_5> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <clkdiv/_100cnt_4> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <clkdiv/_100cnt_3> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <clkdiv/_100cnt_2> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <clkdiv/_100cnt_1> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <clkdiv/_100cnt_0> of sequential type is unconnected in block <top>.
 WARNING:Xst:2677 - Node <clkdiv/regi_32> of sequential type is unconnected in block <top>.
 WARNING:Xst:2677 - Node <clkdiv/regi_31> of sequential type is unconnected in block <top>.
 WARNING:Xst:2677 - Node <clkdiv/regi_30> of sequential type is unconnected in block <top>.
@@ -849,28 +1048,30 @@ WARNING:Xst:2677 - Node <clkdiv/regi_1> of sequential type is unconnected in blo
 WARNING:Xst:2677 - Node <clkdiv/regi_0> of sequential type is unconnected in block <top>.
 WARNING:Xst:2677 - Node <clkdiv/_1ms> of sequential type is unconnected in block <top>.
 WARNING:Xst:2677 - Node <clkdiv/_10ms> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <clkdiv/_100ms> of sequential type is unconnected in block <top>.
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block top, actual ratio is 39.
-FlipFlop mycpu/control_unit/state_FSM_FFd1 has been replicated 2 time(s)
+Found area constraint ratio of 100 (+ 5) on block top, actual ratio is 65.
 FlipFlop mycpu/control_unit/state_FSM_FFd2 has been replicated 2 time(s)
 FlipFlop mycpu/control_unit/state_FSM_FFd3 has been replicated 2 time(s)
-FlipFlop mycpu/ir/q_2 has been replicated 3 time(s)
-FlipFlop mycpu/ir/q_26 has been replicated 2 time(s)
-FlipFlop mycpu/ir/q_28 has been replicated 2 time(s)
-FlipFlop mycpu/ir/q_3 has been replicated 2 time(s)
-FlipFlop mycpu/ir/q_31 has been replicated 2 time(s)
+FlipFlop mycpu/ir/q_26 has been replicated 3 time(s)
+FlipFlop mycpu/ir/q_28 has been replicated 1 time(s)
+FlipFlop mycpu/ir/q_5 has been replicated 1 time(s)
 
 Final Macro Processing ...
+
+Processing Unit <top> :
+	Found 4-bit shift register for signal <key/shift2_8>.
+Unit <top> processed.
 
 =========================================================================
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 1254
- Flip-Flops                                            : 1254
+# Registers                                            : 1356
+ Flip-Flops                                            : 1356
+# Shift Registers                                      : 1
+ 4-bit shift register                                  : 1
 
 =========================================================================
 
@@ -893,34 +1094,38 @@ Top Level Output File Name         : top.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 3332
+# BELS                             : 6601
 #      GND                         : 3
-#      INV                         : 10
-#      LUT1                        : 36
-#      LUT2                        : 88
-#      LUT3                        : 1087
-#      LUT4                        : 188
-#      LUT5                        : 374
-#      LUT6                        : 1327
-#      MUXCY                       : 52
-#      MUXF7                       : 125
+#      INV                         : 47
+#      LUT1                        : 99
+#      LUT2                        : 97
+#      LUT3                        : 1393
+#      LUT4                        : 239
+#      LUT5                        : 1347
+#      LUT6                        : 1591
+#      MUXCY                       : 844
+#      MUXF7                       : 153
 #      VCC                         : 3
-#      XORCY                       : 39
-# FlipFlops/Latches                : 1265
-#      FD                          : 23
-#      FDC                         : 139
-#      FDCE                        : 1067
-#      FDE                         : 11
-#      FDR                         : 15
+#      XORCY                       : 785
+# FlipFlops/Latches                : 1372
+#      FD                          : 25
+#      FDC                         : 160
+#      FDC_1                       : 17
+#      FDCE                        : 1066
+#      FDE                         : 44
+#      FDPE                        : 2
+#      FDR                         : 48
 #      FDRE                        : 10
 # RAMS                             : 27
 #      RAMB16BWER                  : 26
 #      RAMB8BWER                   : 1
-# Clock Buffers                    : 3
-#      BUFG                        : 2
+# Shift Registers                  : 1
+#      SRLC16E                     : 1
+# Clock Buffers                    : 4
+#      BUFG                        : 3
 #      BUFGP                       : 1
-# IO Buffers                       : 28
-#      IBUF                        : 5
+# IO Buffers                       : 30
+#      IBUF                        : 7
 #      OBUF                        : 23
 # DSPs                             : 1
 #      DSP48A1                     : 1
@@ -932,25 +1137,28 @@ Selected Device : 6slx16csg324-3
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:            1265  out of  18224     6%  
- Number of Slice LUTs:                 3110  out of   9112    34%  
-    Number used as Logic:              3110  out of   9112    34%  
+ Number of Slice Registers:            1371  out of  18224     7%  
+ Number of Slice LUTs:                 4814  out of   9112    52%  
+    Number used as Logic:              4813  out of   9112    52%  
+    Number used as Memory:                1  out of   2176     0%  
+       Number used as SRL:                1
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:   3176
-   Number with an unused Flip Flop:    1911  out of   3176    60%  
-   Number with an unused LUT:            66  out of   3176     2%  
-   Number of fully used LUT-FF pairs:  1199  out of   3176    37%  
-   Number of unique control sets:        13
+ Number of LUT Flip Flop pairs used:   4894
+   Number with an unused Flip Flop:    3523  out of   4894    71%  
+   Number with an unused LUT:            80  out of   4894     1%  
+   Number of fully used LUT-FF pairs:  1291  out of   4894    26%  
+   Number of unique control sets:        23
 
 IO Utilization: 
- Number of IOs:                          37
- Number of bonded IOBs:                  29  out of    232    12%  
+ Number of IOs:                          39
+ Number of bonded IOBs:                  31  out of    232    13%  
+    IOB Flip Flops/Latches:               1
 
 Specific Feature Utilization:
  Number of Block RAM/FIFO:               27  out of     32    84%  
     Number using Block RAM only:         27
- Number of BUFG/BUFGCTRLs:                3  out of     16    18%  
+ Number of BUFG/BUFGCTRLs:                4  out of     16    25%  
  Number of DSP48A1s:                      1  out of     32     3%  
 
 ---------------------------
@@ -974,10 +1182,12 @@ Clock Information:
 -----------------------------------+----------------------------------------------------------------------------------------------------------------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)                                                                                                            | Load  |
 -----------------------------------+----------------------------------------------------------------------------------------------------------------------------------+-------+
-clkdiv/p_1                         | BUFG                                                                                                                             | 21    |
+clkdiv/_100ms                      | NONE(LED2)                                                                                                                       | 2     |
+clkdiv/p_1                         | BUFG                                                                                                                             | 46    |
+mclk                               | BUFGP                                                                                                                            | 131   |
 clkdiv/cnt2_18                     | NONE(debug/mod/s_0)                                                                                                              | 2     |
-mclk                               | BUFGP                                                                                                                            | 65    |
-clkdiv/clk5mhz                     | BUFG                                                                                                                             | 1204  |
+key/PS2Cf                          | BUFG                                                                                                                             | 23    |
+clkdiv/clk5mhz                     | BUFG                                                                                                                             | 1196  |
 ram_mod/N1                         | NONE(ram_mod/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[7].ram.r/s6_init.ram/SP.SIMPLE_PRIM18.ram)| 8     |
 -----------------------------------+----------------------------------------------------------------------------------------------------------------------------------+-------+
 INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
@@ -990,10 +1200,10 @@ Timing Summary:
 ---------------
 Speed Grade: -3
 
-   Minimum period: 15.336ns (Maximum Frequency: 65.207MHz)
-   Minimum input arrival time before clock: 5.294ns
-   Maximum output required time after clock: 15.660ns
-   Maximum combinational path delay: 10.971ns
+   Minimum period: 14.301ns (Maximum Frequency: 69.926MHz)
+   Minimum input arrival time before clock: 5.292ns
+   Maximum output required time after clock: 110.752ns
+   Maximum combinational path delay: 10.151ns
 
 Timing Details:
 ---------------
@@ -1002,7 +1212,7 @@ All values displayed in nanoseconds (ns)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clkdiv/p_1'
   Clock period: 4.121ns (frequency: 242.642MHz)
-  Total number of paths / destination ports: 340 / 51
+  Total number of paths / destination ports: 402 / 69
 -------------------------------------------------------------------------
 Delay:               4.121ns (Levels of Logic = 2)
   Source:            vga_gen/hc_5 (FF)
@@ -1023,6 +1233,30 @@ Delay:               4.121ns (Levels of Logic = 2)
                                        (31.2% logic, 68.8% route)
 
 =========================================================================
+Timing constraint: Default period analysis for Clock 'mclk'
+  Clock period: 5.558ns (frequency: 179.935MHz)
+  Total number of paths / destination ports: 2449 / 131
+-------------------------------------------------------------------------
+Delay:               5.558ns (Levels of Logic = 3)
+  Source:            clkdiv/_100cnt_3 (FF)
+  Destination:       clkdiv/_100cnt_32 (FF)
+  Source Clock:      mclk rising
+  Destination Clock: mclk rising
+
+  Data Path: clkdiv/_100cnt_3 to clkdiv/_100cnt_32
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              2   0.447   0.981  clkdiv/_100cnt_3 (clkdiv/_100cnt_3)
+     LUT6:I0->O            1   0.203   0.944  clkdiv/100cnt[32]__100ms_MUX_85_o<32>1 (clkdiv/100cnt[32]__100ms_MUX_85_o<32>)
+     LUT6:I0->O            1   0.203   0.827  clkdiv/100cnt[32]__100ms_MUX_85_o<32>5 (clkdiv/100cnt[32]__100ms_MUX_85_o<32>4)
+     LUT4:I0->O           34   0.203   1.320  clkdiv/100cnt[32]__100ms_MUX_85_o<32>7 (clkdiv/100cnt[32]__100ms_MUX_85_o)
+     FDR:R                     0.430          clkdiv/_100cnt_0
+    ----------------------------------------
+    Total                      5.558ns (1.486ns logic, 4.072ns route)
+                                       (26.7% logic, 73.3% route)
+
+=========================================================================
 Timing constraint: Default period analysis for Clock 'clkdiv/cnt2_18'
   Clock period: 2.291ns (frequency: 436.500MHz)
   Total number of paths / destination ports: 3 / 2
@@ -1038,40 +1272,39 @@ Delay:               2.291ns (Levels of Logic = 1)
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      FDC:C->Q             14   0.447   0.957  debug/mod/s_0 (debug/mod/s_0)
-     INV:I->O              1   0.206   0.579  debug/mod/Mcount_s_xor<0>11_INV_0 (Result<0>2)
+     INV:I->O              1   0.206   0.579  debug/mod/Mcount_s_xor<0>11_INV_0 (Result<0>3)
      FDC:D                     0.102          debug/mod/s_0
     ----------------------------------------
     Total                      2.291ns (0.755ns logic, 1.536ns route)
                                        (33.0% logic, 67.0% route)
 
 =========================================================================
-Timing constraint: Default period analysis for Clock 'mclk'
-  Clock period: 2.785ns (frequency: 359.066MHz)
-  Total number of paths / destination ports: 238 / 32
+Timing constraint: Default period analysis for Clock 'key/PS2Cf'
+  Clock period: 1.530ns (frequency: 653.637MHz)
+  Total number of paths / destination ports: 22 / 21
 -------------------------------------------------------------------------
-Delay:               2.785ns (Levels of Logic = 1)
-  Source:            clkdiv/_5mcnt_4 (FF)
-  Destination:       clkdiv/_5mcnt_4 (FF)
-  Source Clock:      mclk rising
-  Destination Clock: mclk rising
+Delay:               1.530ns (Levels of Logic = 0)
+  Source:            key/shift1_4 (FF)
+  Destination:       key/shift1_3 (FF)
+  Source Clock:      key/PS2Cf falling
+  Destination Clock: key/PS2Cf falling
 
-  Data Path: clkdiv/_5mcnt_4 to clkdiv/_5mcnt_4
+  Data Path: key/shift1_4 to key/shift1_3
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDR:C->Q              2   0.447   0.961  clkdiv/_5mcnt_4 (clkdiv/_5mcnt_4)
-     LUT5:I0->O            6   0.203   0.744  clkdiv/GND_4_o_clk5mhz_MUX_86_o<4>1 (clkdiv/GND_4_o_clk5mhz_MUX_86_o)
-     FDR:R                     0.430          clkdiv/_5mcnt_0
+     FDC_1:C->Q           15   0.447   0.981  key/shift1_4 (key/shift1_4)
+     FDC_1:D                   0.102          key/shift1_3
     ----------------------------------------
-    Total                      2.785ns (1.080ns logic, 1.705ns route)
-                                       (38.8% logic, 61.2% route)
+    Total                      1.530ns (0.549ns logic, 0.981ns route)
+                                       (35.9% logic, 64.1% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clkdiv/clk5mhz'
-  Clock period: 15.336ns (frequency: 65.207MHz)
-  Total number of paths / destination ports: 14058058 / 2271
+  Clock period: 14.301ns (frequency: 69.926MHz)
+  Total number of paths / destination ports: 13846333 / 2257
 -------------------------------------------------------------------------
-Delay:               15.336ns (Levels of Logic = 13)
+Delay:               14.301ns (Levels of Logic = 13)
   Source:            mycpu/ir/q_27 (FF)
   Destination:       mycpu/ip/q_16 (FF)
   Source Clock:      clkdiv/clk5mhz rising
@@ -1081,68 +1314,30 @@ Delay:               15.336ns (Levels of Logic = 13)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDCE:C->Q            19   0.447   1.176  mycpu/ir/q_27 (mycpu/ir/q_27)
-     LUT3:I1->O           17   0.203   1.028  mycpu/control_unit/Mmux_aluc4211 (mycpu/control_unit/Mmux_aluc421)
-     LUT6:I5->O           17   0.205   1.028  mycpu/control_unit/out1911 (mycpu/control_unit/out191)
-     LUT6:I5->O          116   0.205   1.920  mycpu/control_unit/alusrcb<0>1 (mycpu/alusrcb<0>)
-     LUT4:I3->O            9   0.205   0.934  mycpu/alu_a/Mmux_y151 (mycpu/alua<22>)
-     LUT6:I4->O            1   0.203   0.684  mycpu/aluint/select/Mmux_y305_SW2_F (N793)
-     LUT3:I1->O            2   0.203   0.617  mycpu/aluint/select/Mmux_y305_SW21 (N214)
-     LUT6:I5->O            2   0.205   0.721  mycpu/aluint/as32/as32/cla/cla1/cla0/cla1/g_p0/c_out1_SW4 (N379)
-     LUT5:I3->O            1   0.203   0.684  mycpu/aluint/Mmux_r151_SW2 (N585)
-     LUT5:I3->O            4   0.203   0.788  mycpu/aluint/Mmux_r151 (mycpu/alu_out<22>)
-     LUT6:I4->O            1   0.203   0.808  mycpu/aluint/z5_SW0_SW0 (N706)
-     LUT6:I3->O            2   0.205   0.721  mycpu/aluint/z6_SW0 (N170)
-     LUT6:I4->O           17   0.203   1.028  mycpu/aluint/z7 (mycpu/z)
+     FDCE:C->Q            17   0.447   1.132  mycpu/ir/q_27 (mycpu/ir/q_27)
+     LUT3:I1->O           10   0.203   0.857  mycpu/control_unit/Mmux_aluc4211 (mycpu/control_unit/Mmux_aluc421)
+     LUT5:I4->O            5   0.205   0.943  mycpu/control_unit/out19111 (mycpu/control_unit/out1911)
+     LUT6:I3->O           18   0.205   1.050  mycpu/control_unit/Mmux_alusrcb24_2 (mycpu/control_unit/Mmux_alusrcb24_1)
+     LUT4:I3->O           10   0.205   1.085  mycpu/alu_b/Mmux_y110 (mycpu/alub<0>)
+     LUT5:I2->O            7   0.205   1.002  mycpu/aluint/Sh1941 (mycpu/aluint/Sh194)
+     LUT6:I3->O            2   0.205   0.617  mycpu/aluint/Sh2381 (mycpu/aluint/Sh238)
+     LUT5:I4->O            1   0.205   0.580  mycpu/aluint/select/Mmux_y485 (mycpu/aluint/select/Mmux_y484)
+     LUT6:I5->O            2   0.205   0.617  mycpu/aluint/select/Mmux_y486 (mycpu/aluint/select/Mmux_y485)
+     LUT6:I5->O            1   0.205   0.684  mycpu/aluint/select/Mmux_y481_SW0 (N217)
+     LUT6:I4->O            3   0.203   0.651  mycpu/aluint/Mmux_r241 (mycpu/alu_out<30>)
+     LUT6:I5->O            2   0.205   0.845  mycpu/aluint/z7_SW0_SW0 (N267)
+     LUT6:I3->O           17   0.205   1.028  mycpu/aluint/z7 (mycpu/z)
      LUT6:I5->O            1   0.205   0.000  mycpu/ip/q_0_dpot (mycpu/ip/q_0_dpot)
      FDCE:D                    0.102          mycpu/ip/q_0
     ----------------------------------------
-    Total                     15.336ns (3.200ns logic, 12.136ns route)
-                                       (20.9% logic, 79.1% route)
-
-=========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'clkdiv/cnt2_18'
-  Total number of paths / destination ports: 2 / 2
--------------------------------------------------------------------------
-Offset:              3.927ns (Levels of Logic = 1)
-  Source:            btn<0> (PAD)
-  Destination:       debug/mod/s_0 (FF)
-  Destination Clock: clkdiv/cnt2_18 rising
-
-  Data Path: btn<0> to debug/mod/s_0
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     IBUF:I->O          1283   1.222   2.275  btn_0_IBUF (btn_0_IBUF)
-     FDC:CLR                   0.430          debug/mod/s_0
-    ----------------------------------------
-    Total                      3.927ns (1.652ns logic, 2.275ns route)
-                                       (42.1% logic, 57.9% route)
-
-=========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'clkdiv/clk5mhz'
-  Total number of paths / destination ports: 1204 / 1204
--------------------------------------------------------------------------
-Offset:              3.927ns (Levels of Logic = 1)
-  Source:            btn<0> (PAD)
-  Destination:       mycpu/ip/q_31 (FF)
-  Destination Clock: clkdiv/clk5mhz rising
-
-  Data Path: btn<0> to mycpu/ip/q_31
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     IBUF:I->O          1283   1.222   2.275  btn_0_IBUF (btn_0_IBUF)
-     FDCE:CLR                  0.430          mycpu/ip/q_0
-    ----------------------------------------
-    Total                      3.927ns (1.652ns logic, 2.275ns route)
-                                       (42.1% logic, 57.9% route)
+    Total                     14.301ns (3.210ns logic, 11.091ns route)
+                                       (22.4% logic, 77.6% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'mclk'
-  Total number of paths / destination ports: 108 / 108
+  Total number of paths / destination ports: 140 / 140
 -------------------------------------------------------------------------
-Offset:              5.294ns (Levels of Logic = 3)
+Offset:              5.292ns (Levels of Logic = 3)
   Source:            btn<0> (PAD)
   Destination:       vram_mod/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[18].ram.r/s6_init.ram/TRUE_DP.PRIM18.ram (RAM)
   Destination Clock: mclk rising
@@ -1151,63 +1346,236 @@ Offset:              5.294ns (Levels of Logic = 3)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O          1283   1.222   2.275  btn_0_IBUF (btn_0_IBUF)
-     INV:I->O             32   0.206   1.291  btn[0]_INV_162_o1_INV_0 (btn[0]_INV_162_o)
+     IBUF:I->O          1275   1.222   2.273  btn_0_IBUF (btn_0_IBUF)
+     INV:I->O             32   0.206   1.291  btn[0]_INV_2391_o1_INV_0 (btn[0]_INV_2391_o)
      begin scope: 'vram_mod:dinb<7>'
      RAMB16BWER:DIB0           0.300          U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[18].ram.r/s6_init.ram/TRUE_DP.PRIM18.ram
     ----------------------------------------
-    Total                      5.294ns (1.728ns logic, 3.566ns route)
-                                       (32.6% logic, 67.4% route)
+    Total                      5.292ns (1.728ns logic, 3.564ns route)
+                                       (32.7% logic, 67.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clkdiv/cnt2_18'
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Offset:              3.925ns (Levels of Logic = 1)
+  Source:            btn<0> (PAD)
+  Destination:       debug/mod/s_0 (FF)
+  Destination Clock: clkdiv/cnt2_18 rising
+
+  Data Path: btn<0> to debug/mod/s_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O          1275   1.222   2.273  btn_0_IBUF (btn_0_IBUF)
+     FDC:CLR                   0.430          debug/mod/s_0
+    ----------------------------------------
+    Total                      3.925ns (1.652ns logic, 2.273ns route)
+                                       (42.1% logic, 57.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clkdiv/p_1'
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Offset:              2.629ns (Levels of Logic = 1)
+  Source:            PS2D (PAD)
+  Destination:       key/ps2d_filter_7 (FF)
+  Destination Clock: clkdiv/p_1 rising
+
+  Data Path: PS2D to key/ps2d_filter_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            33   1.222   1.305  PS2D_IBUF (PS2D_IBUF)
+     FDC:D                     0.102          key/ps2d_filter_7
+    ----------------------------------------
+    Total                      2.629ns (1.324ns logic, 1.305ns route)
+                                       (50.4% logic, 49.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clkdiv/clk5mhz'
+  Total number of paths / destination ports: 1196 / 1196
+-------------------------------------------------------------------------
+Offset:              3.925ns (Levels of Logic = 1)
+  Source:            btn<0> (PAD)
+  Destination:       mycpu/ip/q_31 (FF)
+  Destination Clock: clkdiv/clk5mhz rising
+
+  Data Path: btn<0> to mycpu/ip/q_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O          1275   1.222   2.273  btn_0_IBUF (btn_0_IBUF)
+     FDCE:CLR                  0.430          mycpu/ip/q_0
+    ----------------------------------------
+    Total                      3.925ns (1.652ns logic, 2.273ns route)
+                                       (42.1% logic, 57.9% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clkdiv/p_1'
-  Total number of paths / destination ports: 302 / 10
+  Total number of paths / destination ports: 351 / 17
 -------------------------------------------------------------------------
-Offset:              8.292ns (Levels of Logic = 5)
-  Source:            vga_gen/vc_5 (FF)
-  Destination:       red<2> (PAD)
+Offset:              10.007ns (Levels of Logic = 8)
+  Source:            key/ascii_6 (FF)
+  Destination:       a_to_g<5> (PAD)
   Source Clock:      clkdiv/p_1 rising
 
-  Data Path: vga_gen/vc_5 to red<2>
+  Data Path: key/ascii_6 to a_to_g<5>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDRE:C->Q             9   0.447   1.174  vga_gen/vc_5 (vga_gen/vc_5)
-     LUT5:I0->O            2   0.203   0.981  SF011 (SF01)
-     LUT6:I0->O            1   0.203   0.924  blue<1>4 (blue<1>4)
-     LUT6:I1->O            1   0.203   0.580  blue<1>5 (blue<1>5)
-     LUT2:I1->O            8   0.205   0.802  blue<1>6 (blue_1_OBUF)
-     OBUF:I->O                 2.571          red_2_OBUF (red<2>)
+     FDC:C->Q              1   0.447   0.808  key/ascii_6 (key/ascii_6)
+     LUT5:I2->O            1   0.205   0.924  SoC_Bus/Mmux_bus2cpu361 (SoC_Bus/Mmux_bus2cpu36)
+     LUT6:I1->O            3   0.203   0.898  SoC_Bus/Mmux_bus2cpu362 (frommem<6>)
+     LUT6:I2->O            1   0.203   0.580  debug/Mmux_data281 (debug/Mmux_data28)
+     LUT6:I5->O            1   0.205   0.827  debug/Mmux_data282 (debug/data<6>)
+     LUT6:I2->O            1   0.203   0.000  debug/mod/Mmux_digit<0>_2_f7_41 (debug/mod/Mmux_digit<0>_2_f7_41)
+     MUXF7:I0->O           7   0.131   1.021  debug/mod/Mmux_digit<0>_2_f7_2_f7_0 (debug/mod/digit<2>)
+     LUT4:I0->O            1   0.203   0.579  debug/mod/Mram_a_to_g51 (a_to_g_5_OBUF)
+     OBUF:I->O                 2.571          a_to_g_5_OBUF (a_to_g<5>)
     ----------------------------------------
-    Total                      8.292ns (3.832ns logic, 4.460ns route)
-                                       (46.2% logic, 53.8% route)
+    Total                     10.007ns (4.371ns logic, 5.636ns route)
+                                       (43.7% logic, 56.3% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'mclk'
-  Total number of paths / destination ports: 1612 / 15
+  Total number of paths / destination ports: 70535163312920535000000000000000000000 / 15
 -------------------------------------------------------------------------
-Offset:              11.255ns (Levels of Logic = 9)
-  Source:            vram_mod/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[12].ram.r/s6_init.ram/TRUE_DP.PRIM18.ram (RAM)
+Offset:              110.752ns (Levels of Logic = 122)
+  Source:            ran/cnt_28 (FF)
   Destination:       a_to_g<6> (PAD)
   Source Clock:      mclk rising
 
-  Data Path: vram_mod/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[12].ram.r/s6_init.ram/TRUE_DP.PRIM18.ram to a_to_g<6>
+  Data Path: ran/cnt_28 to a_to_g<6>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     RAMB16BWER:CLKA->DOA0    1   1.850   0.808  U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[12].ram.r/s6_init.ram/TRUE_DP.PRIM18.ram (U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[12].ram.ram_douta<0>)
-     LUT4:I1->O            1   0.205   0.808  U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/Mmux_dout_mux51 (U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/Mmux_dout_mux5)
-     LUT6:I3->O            1   0.205   0.684  U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/Mmux_dout_mux52 (douta<4>)
-     end scope: 'vram_mod:douta<4>'
-     LUT4:I2->O            3   0.203   0.755  SoC_Bus/Mmux_bus2cpu271 (frommem<4>)
-     LUT6:I4->O            1   0.203   0.827  debug/Mmux_data273 (debug/data<4>)
+     FDE:C->Q             15   0.447   1.210  ran/cnt_28 (ran/cnt_28)
+     LUT4:I1->O            2   0.205   0.845  ran/cnt[31]_PWR_30_o_mod_6/BUS_0007_INV_1499_o1 (ran/cnt[31]_PWR_30_o_mod_6/BUS_0007_INV_1499_o)
+     LUT5:I2->O            5   0.205   0.819  ran/cnt[31]_PWR_30_o_mod_6/Mmux_a[29]_a[31]_MUX_3162_o131 (ran/cnt[31]_PWR_30_o_mod_6/Mmux_a[29]_a[31]_MUX_3162_o13)
+     LUT4:I2->O            3   0.203   0.879  ran/cnt[31]_PWR_30_o_mod_6/BUS_0009_INV_1565_o1 (ran/cnt[31]_PWR_30_o_mod_6/BUS_0009_INV_1565_o)
+     LUT4:I1->O            6   0.205   0.973  ran/cnt[31]_PWR_30_o_mod_6/Mmux_a[27]_a[31]_MUX_3164_o11 (ran/cnt[31]_PWR_30_o_mod_6/Madd_a[31]_GND_30_o_add_19_OUT_lut<27>)
+     LUT6:I3->O           10   0.205   1.201  ran/cnt[31]_PWR_30_o_mod_6/BUS_0010_INV_1598_o1 (ran/cnt[31]_PWR_30_o_mod_6/BUS_0010_INV_1598_o1)
+     LUT6:I1->O            6   0.203   1.089  ran/cnt[31]_PWR_30_o_mod_6/Mmux_a[28]_a[31]_MUX_3195_o11 (ran/cnt[31]_PWR_30_o_mod_6/a[28]_a[31]_MUX_3195_o)
+     LUT5:I0->O           11   0.203   0.883  ran/cnt[31]_PWR_30_o_mod_6/BUS_0011_INV_1631_o11 (ran/cnt[31]_PWR_30_o_mod_6/BUS_0011_INV_1631_o)
+     LUT6:I5->O            2   0.205   0.721  ran/cnt[31]_PWR_30_o_mod_6/Mmux_a[26]_a[31]_MUX_3229_o11 (ran/cnt[31]_PWR_30_o_mod_6/Madd_a[31]_GND_30_o_add_23_OUT_lut<26>)
+     LUT6:I4->O            4   0.203   1.048  ran/cnt[31]_PWR_30_o_mod_6/Mmux_a[27]_a[31]_MUX_3260_o111 (ran/cnt[31]_PWR_30_o_mod_6/Mmux_a[27]_a[31]_MUX_3260_o11)
+     LUT6:I0->O           14   0.203   1.186  ran/cnt[31]_PWR_30_o_mod_6/BUS_0012_INV_1664_o1 (ran/cnt[31]_PWR_30_o_mod_6/BUS_0012_INV_1664_o)
+     LUT4:I1->O            5   0.205   0.715  ran/cnt[31]_PWR_30_o_mod_6/Mmux_a[24]_a[31]_MUX_3263_o11 (ran/cnt[31]_PWR_30_o_mod_6/Madd_a[31]_GND_30_o_add_25_OUT_lut<24>)
+     LUT5:I4->O            5   0.205   1.079  ran/cnt[31]_PWR_30_o_mod_6/Mmux_a[26]_a[31]_MUX_3293_o111 (ran/cnt[31]_PWR_30_o_mod_6/Mmux_a[26]_a[31]_MUX_3293_o11)
+     LUT6:I0->O           18   0.203   1.154  ran/cnt[31]_PWR_30_o_mod_6/BUS_0013_INV_1697_o1 (ran/cnt[31]_PWR_30_o_mod_6/BUS_0013_INV_1697_o)
+     LUT4:I2->O            3   0.203   0.879  ran/cnt[31]_PWR_30_o_mod_6/Mmux_a[24]_a[31]_MUX_3295_o111 (ran/cnt[31]_PWR_30_o_mod_6/Mmux_a[24]_a[31]_MUX_3295_o11)
+     LUT4:I1->O           11   0.205   1.227  ran/cnt[31]_PWR_30_o_mod_6/Mmux_a[25]_a[31]_MUX_3294_o11 (ran/cnt[31]_PWR_30_o_mod_6/a[25]_a[31]_MUX_3294_o)
+     LUT6:I1->O           22   0.203   1.238  ran/cnt[31]_PWR_30_o_mod_6/BUS_0014_INV_1730_o1 (ran/cnt[31]_PWR_30_o_mod_6/BUS_0014_INV_1730_o)
+     LUT6:I4->O            3   0.203   0.651  ran/cnt[31]_PWR_30_o_mod_6/Mmux_a[31]_a[31]_MUX_3320_o111 (ran/cnt[31]_PWR_30_o_mod_6/Mmux_a[31]_a[31]_MUX_3320_o11)
+     LUT2:I1->O            2   0.205   0.981  ran/cnt[31]_PWR_30_o_mod_6/Mmux_a[31]_a[31]_MUX_3320_o12 (ran/cnt[31]_PWR_30_o_mod_6/a[31]_a[31]_MUX_3320_o)
+     LUT6:I0->O           20   0.203   1.321  ran/cnt[31]_PWR_30_o_mod_6/BUS_0015_INV_1763_o11 (ran/cnt[31]_PWR_30_o_mod_6/BUS_0015_INV_1763_o1)
+     LUT6:I3->O            6   0.205   0.992  ran/cnt[31]_PWR_30_o_mod_6/Mmux_a[20]_a[31]_MUX_3363_o11 (ran/cnt[31]_PWR_30_o_mod_6/a[20]_a[31]_MUX_3363_o)
+     LUT6:I2->O            1   0.203   0.000  ran/cnt[31]_PWR_30_o_mod_6/BUS_0016_INV_1796_o21_G (N881)
+     MUXF7:I1->O           1   0.140   0.808  ran/cnt[31]_PWR_30_o_mod_6/BUS_0016_INV_1796_o21 (ran/cnt[31]_PWR_30_o_mod_6/BUS_0016_INV_1796_o2)
+     LUT6:I3->O           41   0.205   1.764  ran/cnt[31]_PWR_30_o_mod_6/BUS_0016_INV_1796_o24 (ran/cnt[31]_PWR_30_o_mod_6/BUS_0016_INV_1796_o)
+     LUT5:I0->O            5   0.203   1.079  ran/cnt[31]_PWR_30_o_mod_6/Mmux_a[29]_a[31]_MUX_3386_o11 (ran/cnt[31]_PWR_30_o_mod_6/a[29]_a[31]_MUX_3386_o)
+     LUT6:I0->O            1   0.203   0.944  ran/cnt[31]_PWR_30_o_mod_6/BUS_0017_INV_1829_o21 (ran/cnt[31]_PWR_30_o_mod_6/BUS_0017_INV_1829_o2)
+     LUT6:I0->O           49   0.203   1.878  ran/cnt[31]_PWR_30_o_mod_6/BUS_0017_INV_1829_o23 (ran/cnt[31]_PWR_30_o_mod_6/BUS_0017_INV_1829_o)
+     LUT5:I0->O            2   0.203   0.961  ran/cnt[31]_PWR_30_o_mod_6/Mmux_a[22]_a[31]_MUX_3425_o11 (ran/cnt[31]_PWR_30_o_mod_6/a[22]_a[31]_MUX_3425_o)
+     LUT6:I1->O            1   0.203   0.000  ran/cnt[31]_PWR_30_o_mod_6/BUS_0018_INV_1862_o24_SW0_G (N891)
+     MUXF7:I1->O           1   0.140   0.924  ran/cnt[31]_PWR_30_o_mod_6/BUS_0018_INV_1862_o24_SW0 (N852)
+     LUT6:I1->O           36   0.203   1.693  ran/cnt[31]_PWR_30_o_mod_6/BUS_0018_INV_1862_o24 (ran/cnt[31]_PWR_30_o_mod_6/BUS_0018_INV_1862_o)
+     LUT5:I0->O            5   0.203   1.079  ran/cnt[31]_PWR_30_o_mod_6/Mmux_a[25]_a[31]_MUX_3454_o11 (ran/cnt[31]_PWR_30_o_mod_6/a[25]_a[31]_MUX_3454_o)
+     LUT6:I0->O            1   0.203   0.944  ran/cnt[31]_PWR_30_o_mod_6/BUS_0019_INV_1895_o21 (ran/cnt[31]_PWR_30_o_mod_6/BUS_0019_INV_1895_o2)
+     LUT6:I0->O           58   0.203   1.945  ran/cnt[31]_PWR_30_o_mod_6/BUS_0019_INV_1895_o23 (ran/cnt[31]_PWR_30_o_mod_6/BUS_0019_INV_1895_o)
+     LUT5:I0->O            2   0.203   0.864  ran/cnt[31]_PWR_30_o_mod_6/Mmux_a[20]_a[31]_MUX_3491_o11 (ran/cnt[31]_PWR_30_o_mod_6/a[20]_a[31]_MUX_3491_o)
+     LUT6:I2->O            1   0.203   0.000  ran/cnt[31]_PWR_30_o_mod_6/BUS_0020_INV_1928_o22_G (N885)
+     MUXF7:I1->O           2   0.140   0.721  ran/cnt[31]_PWR_30_o_mod_6/BUS_0020_INV_1928_o22 (ran/cnt[31]_PWR_30_o_mod_6/BUS_0020_INV_1928_o21)
+     LUT5:I3->O            1   0.203   0.000  ran/cnt[31]_PWR_30_o_mod_6/BUS_0020_INV_1928_o24_G (N893)
+     MUXF7:I1->O          35   0.140   1.679  ran/cnt[31]_PWR_30_o_mod_6/BUS_0020_INV_1928_o24 (ran/cnt[31]_PWR_30_o_mod_6/BUS_0020_INV_1928_o)
+     LUT5:I0->O            5   0.203   1.079  ran/cnt[31]_PWR_30_o_mod_6/Mmux_a[21]_a[31]_MUX_3522_o11 (ran/cnt[31]_PWR_30_o_mod_6/a[21]_a[31]_MUX_3522_o)
+     LUT6:I0->O           36   0.203   1.596  ran/cnt[31]_PWR_30_o_mod_6/BUS_0021_INV_1961_o21 (ran/cnt[31]_PWR_30_o_mod_6/BUS_0021_INV_1961_o2)
+     LUT5:I1->O            1   0.203   0.924  ran/cnt[31]_PWR_30_o_mod_6/Mmux_a[30]_a[31]_MUX_3545_o11 (ran/cnt[31]_PWR_30_o_mod_6/a[30]_a[31]_MUX_3545_o)
+     LUT5:I0->O            3   0.203   0.879  ran/cnt[31]_PWR_30_o_mod_6/BUS_0022_INV_1994_o31 (ran/cnt[31]_PWR_30_o_mod_6/BUS_0022_INV_1994_o3)
+     LUT5:I2->O           42   0.205   1.778  ran/cnt[31]_PWR_30_o_mod_6/BUS_0022_INV_1994_o34 (ran/cnt[31]_PWR_30_o_mod_6/BUS_0022_INV_1994_o)
+     LUT5:I0->O            5   0.203   1.079  ran/cnt[31]_PWR_30_o_mod_6/Mmux_a[29]_a[31]_MUX_3578_o11 (ran/cnt[31]_PWR_30_o_mod_6/a[29]_a[31]_MUX_3578_o)
+     LUT6:I0->O            1   0.203   0.944  ran/cnt[31]_PWR_30_o_mod_6/BUS_0023_INV_2027_o31 (ran/cnt[31]_PWR_30_o_mod_6/BUS_0023_INV_2027_o3)
+     LUT6:I0->O           79   0.203   2.083  ran/cnt[31]_PWR_30_o_mod_6/BUS_0023_INV_2027_o35 (ran/cnt[31]_PWR_30_o_mod_6/BUS_0023_INV_2027_o)
+     LUT5:I0->O            2   0.203   0.961  ran/cnt[31]_PWR_30_o_mod_6/Mmux_a[16]_a[31]_MUX_3623_o11 (ran/cnt[31]_PWR_30_o_mod_6/a[16]_a[31]_MUX_3623_o)
+     LUT5:I0->O            1   0.203   0.000  ran/cnt[31]_PWR_30_o_mod_6/Mcompar_BUS_0024_INV_2060_o_lut<1> (ran/cnt[31]_PWR_30_o_mod_6/Mcompar_BUS_0024_INV_2060_o_lut<1>)
+     MUXCY:S->O            1   0.172   0.000  ran/cnt[31]_PWR_30_o_mod_6/Mcompar_BUS_0024_INV_2060_o_cy<1> (ran/cnt[31]_PWR_30_o_mod_6/Mcompar_BUS_0024_INV_2060_o_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  ran/cnt[31]_PWR_30_o_mod_6/Mcompar_BUS_0024_INV_2060_o_cy<2> (ran/cnt[31]_PWR_30_o_mod_6/Mcompar_BUS_0024_INV_2060_o_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  ran/cnt[31]_PWR_30_o_mod_6/Mcompar_BUS_0024_INV_2060_o_cy<3> (ran/cnt[31]_PWR_30_o_mod_6/Mcompar_BUS_0024_INV_2060_o_cy<3>)
+     MUXCY:CI->O          46   0.213   1.835  ran/cnt[31]_PWR_30_o_mod_6/Mcompar_BUS_0024_INV_2060_o_cy<4> (ran/cnt[31]_PWR_30_o_mod_6/BUS_0024_INV_2060_o)
+     LUT5:I0->O            4   0.203   1.028  ran/cnt[31]_PWR_30_o_mod_6/Mmux_a[15]_a[31]_MUX_3656_o11 (ran/cnt[31]_PWR_30_o_mod_6/a[15]_a[31]_MUX_3656_o)
+     LUT5:I0->O            1   0.203   0.000  ran/cnt[31]_PWR_30_o_mod_6/Mcompar_BUS_0025_INV_2093_o_lut<1> (ran/cnt[31]_PWR_30_o_mod_6/Mcompar_BUS_0025_INV_2093_o_lut<1>)
+     MUXCY:S->O            1   0.172   0.000  ran/cnt[31]_PWR_30_o_mod_6/Mcompar_BUS_0025_INV_2093_o_cy<1> (ran/cnt[31]_PWR_30_o_mod_6/Mcompar_BUS_0025_INV_2093_o_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  ran/cnt[31]_PWR_30_o_mod_6/Mcompar_BUS_0025_INV_2093_o_cy<2> (ran/cnt[31]_PWR_30_o_mod_6/Mcompar_BUS_0025_INV_2093_o_cy<2>)
+     MUXCY:CI->O          41   0.213   1.420  ran/cnt[31]_PWR_30_o_mod_6/Mcompar_BUS_0025_INV_2093_o_cy<3> (ran/cnt[31]_PWR_30_o_mod_6/Mcompar_BUS_0025_INV_2093_o_cy<3>)
+     LUT3:I2->O            7   0.205   1.118  ran/cnt[31]_PWR_30_o_mod_6/Mcompar_BUS_0025_INV_2093_o_cy<4> (ran/cnt[31]_PWR_30_o_mod_6/BUS_0025_INV_2093_o)
+     LUT5:I0->O            5   0.203   0.819  ran/cnt[31]_PWR_30_o_mod_6/Mmux_a[12]_a[31]_MUX_3691_o11 (ran/cnt[31]_PWR_30_o_mod_6/a[12]_a[31]_MUX_3691_o)
+     LUT5:I3->O            1   0.203   0.000  ran/cnt[31]_PWR_30_o_mod_6/Mcompar_BUS_0026_INV_2126_o_lut<0> (ran/cnt[31]_PWR_30_o_mod_6/Mcompar_BUS_0026_INV_2126_o_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  ran/cnt[31]_PWR_30_o_mod_6/Mcompar_BUS_0026_INV_2126_o_cy<0> (ran/cnt[31]_PWR_30_o_mod_6/Mcompar_BUS_0026_INV_2126_o_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  ran/cnt[31]_PWR_30_o_mod_6/Mcompar_BUS_0026_INV_2126_o_cy<1> (ran/cnt[31]_PWR_30_o_mod_6/Mcompar_BUS_0026_INV_2126_o_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  ran/cnt[31]_PWR_30_o_mod_6/Mcompar_BUS_0026_INV_2126_o_cy<2> (ran/cnt[31]_PWR_30_o_mod_6/Mcompar_BUS_0026_INV_2126_o_cy<2>)
+     MUXCY:CI->O          44   0.213   1.463  ran/cnt[31]_PWR_30_o_mod_6/Mcompar_BUS_0026_INV_2126_o_cy<3> (ran/cnt[31]_PWR_30_o_mod_6/Mcompar_BUS_0026_INV_2126_o_cy<3>)
+     LUT4:I3->O           41   0.205   1.764  ran/cnt[31]_PWR_30_o_mod_6/Mcompar_BUS_0026_INV_2126_o_cy<4> (ran/cnt[31]_PWR_30_o_mod_6/BUS_0026_INV_2126_o)
+     LUT5:I0->O            5   0.203   0.819  ran/cnt[31]_PWR_30_o_mod_6/Mmux_a[11]_a[31]_MUX_3724_o11 (ran/cnt[31]_PWR_30_o_mod_6/a[11]_a[31]_MUX_3724_o)
+     LUT5:I3->O            1   0.203   0.000  ran/cnt[31]_PWR_30_o_mod_6/Mcompar_BUS_0027_INV_2159_o_lut<0> (ran/cnt[31]_PWR_30_o_mod_6/Mcompar_BUS_0027_INV_2159_o_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  ran/cnt[31]_PWR_30_o_mod_6/Mcompar_BUS_0027_INV_2159_o_cy<0> (ran/cnt[31]_PWR_30_o_mod_6/Mcompar_BUS_0027_INV_2159_o_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  ran/cnt[31]_PWR_30_o_mod_6/Mcompar_BUS_0027_INV_2159_o_cy<1> (ran/cnt[31]_PWR_30_o_mod_6/Mcompar_BUS_0027_INV_2159_o_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  ran/cnt[31]_PWR_30_o_mod_6/Mcompar_BUS_0027_INV_2159_o_cy<2> (ran/cnt[31]_PWR_30_o_mod_6/Mcompar_BUS_0027_INV_2159_o_cy<2>)
+     MUXCY:CI->O           1   0.213   0.580  ran/cnt[31]_PWR_30_o_mod_6/Mcompar_BUS_0027_INV_2159_o_cy<3> (ran/cnt[31]_PWR_30_o_mod_6/Mcompar_BUS_0027_INV_2159_o_cy<3>)
+     LUT5:I4->O           60   0.205   1.958  ran/cnt[31]_PWR_30_o_mod_6/Mcompar_BUS_0027_INV_2159_o_cy<4> (ran/cnt[31]_PWR_30_o_mod_6/BUS_0027_INV_2159_o)
+     LUT5:I0->O            6   0.203   1.089  ran/cnt[31]_PWR_30_o_mod_6/Mmux_a[12]_a[31]_MUX_3755_o11 (ran/cnt[31]_PWR_30_o_mod_6/a[12]_a[31]_MUX_3755_o)
+     LUT5:I0->O            1   0.203   0.000  ran/cnt[31]_PWR_30_o_mod_6/Mcompar_BUS_0028_INV_2192_o_lut<1> (ran/cnt[31]_PWR_30_o_mod_6/Mcompar_BUS_0028_INV_2192_o_lut<1>)
+     MUXCY:S->O            1   0.172   0.000  ran/cnt[31]_PWR_30_o_mod_6/Mcompar_BUS_0028_INV_2192_o_cy<1> (ran/cnt[31]_PWR_30_o_mod_6/Mcompar_BUS_0028_INV_2192_o_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  ran/cnt[31]_PWR_30_o_mod_6/Mcompar_BUS_0028_INV_2192_o_cy<2> (ran/cnt[31]_PWR_30_o_mod_6/Mcompar_BUS_0028_INV_2192_o_cy<2>)
+     MUXCY:CI->O           1   0.213   0.580  ran/cnt[31]_PWR_30_o_mod_6/Mcompar_BUS_0028_INV_2192_o_cy<3> (ran/cnt[31]_PWR_30_o_mod_6/Mcompar_BUS_0028_INV_2192_o_cy<3>)
+     LUT6:I5->O           98   0.205   2.209  ran/cnt[31]_PWR_30_o_mod_6/Mcompar_BUS_0028_INV_2192_o_cy<4> (ran/cnt[31]_PWR_30_o_mod_6/BUS_0028_INV_2192_o)
+     LUT5:I0->O            2   0.203   0.961  ran/cnt[31]_PWR_30_o_mod_6/Mmux_a[11]_a[31]_MUX_3788_o11 (ran/cnt[31]_PWR_30_o_mod_6/a[11]_a[31]_MUX_3788_o)
+     LUT5:I0->O            1   0.203   0.000  ran/cnt[31]_PWR_30_o_mod_6/Mcompar_BUS_0029_INV_2225_o_lut<1> (ran/cnt[31]_PWR_30_o_mod_6/Mcompar_BUS_0029_INV_2225_o_lut<1>)
+     MUXCY:S->O            1   0.172   0.000  ran/cnt[31]_PWR_30_o_mod_6/Mcompar_BUS_0029_INV_2225_o_cy<1> (ran/cnt[31]_PWR_30_o_mod_6/Mcompar_BUS_0029_INV_2225_o_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  ran/cnt[31]_PWR_30_o_mod_6/Mcompar_BUS_0029_INV_2225_o_cy<2> (ran/cnt[31]_PWR_30_o_mod_6/Mcompar_BUS_0029_INV_2225_o_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  ran/cnt[31]_PWR_30_o_mod_6/Mcompar_BUS_0029_INV_2225_o_cy<3> (ran/cnt[31]_PWR_30_o_mod_6/Mcompar_BUS_0029_INV_2225_o_cy<3>)
+     MUXCY:CI->O           1   0.213   0.580  ran/cnt[31]_PWR_30_o_mod_6/Mcompar_BUS_0029_INV_2225_o_cy<4> (ran/cnt[31]_PWR_30_o_mod_6/Mcompar_BUS_0029_INV_2225_o_cy<4>)
+     LUT6:I5->O           57   0.205   1.938  ran/cnt[31]_PWR_30_o_mod_6/Mcompar_BUS_0029_INV_2225_o_cy<5> (ran/cnt[31]_PWR_30_o_mod_6/BUS_0029_INV_2225_o)
+     LUT5:I0->O            4   0.203   1.028  ran/cnt[31]_PWR_30_o_mod_6/Mmux_a[10]_a[31]_MUX_3821_o11 (ran/cnt[31]_PWR_30_o_mod_6/a[10]_a[31]_MUX_3821_o)
+     LUT5:I0->O            1   0.203   0.000  ran/cnt[31]_PWR_30_o_mod_6/Mcompar_BUS_0030_INV_2258_o_lut<1> (ran/cnt[31]_PWR_30_o_mod_6/Mcompar_BUS_0030_INV_2258_o_lut<1>)
+     MUXCY:S->O            1   0.172   0.000  ran/cnt[31]_PWR_30_o_mod_6/Mcompar_BUS_0030_INV_2258_o_cy<1> (ran/cnt[31]_PWR_30_o_mod_6/Mcompar_BUS_0030_INV_2258_o_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  ran/cnt[31]_PWR_30_o_mod_6/Mcompar_BUS_0030_INV_2258_o_cy<2> (ran/cnt[31]_PWR_30_o_mod_6/Mcompar_BUS_0030_INV_2258_o_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  ran/cnt[31]_PWR_30_o_mod_6/Mcompar_BUS_0030_INV_2258_o_cy<3> (ran/cnt[31]_PWR_30_o_mod_6/Mcompar_BUS_0030_INV_2258_o_cy<3>)
+     MUXCY:CI->O          50   0.213   1.548  ran/cnt[31]_PWR_30_o_mod_6/Mcompar_BUS_0030_INV_2258_o_cy<4> (ran/cnt[31]_PWR_30_o_mod_6/Mcompar_BUS_0030_INV_2258_o_cy<4>)
+     LUT3:I2->O            6   0.205   1.089  ran/cnt[31]_PWR_30_o_mod_6/Mcompar_BUS_0030_INV_2258_o_cy<5> (ran/cnt[31]_PWR_30_o_mod_6/BUS_0030_INV_2258_o)
+     LUT5:I0->O            4   0.203   0.912  ran/cnt[31]_PWR_30_o_mod_6/Mmux_a[6]_a[31]_MUX_3857_o11 (ran/cnt[31]_PWR_30_o_mod_6/a[6]_a[31]_MUX_3857_o)
+     LUT5:I2->O            1   0.205   0.000  ran/cnt[31]_PWR_30_o_mod_6/Mcompar_BUS_0031_INV_2291_o_lut<0> (ran/cnt[31]_PWR_30_o_mod_6/Mcompar_BUS_0031_INV_2291_o_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  ran/cnt[31]_PWR_30_o_mod_6/Mcompar_BUS_0031_INV_2291_o_cy<0> (ran/cnt[31]_PWR_30_o_mod_6/Mcompar_BUS_0031_INV_2291_o_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  ran/cnt[31]_PWR_30_o_mod_6/Mcompar_BUS_0031_INV_2291_o_cy<1> (ran/cnt[31]_PWR_30_o_mod_6/Mcompar_BUS_0031_INV_2291_o_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  ran/cnt[31]_PWR_30_o_mod_6/Mcompar_BUS_0031_INV_2291_o_cy<2> (ran/cnt[31]_PWR_30_o_mod_6/Mcompar_BUS_0031_INV_2291_o_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  ran/cnt[31]_PWR_30_o_mod_6/Mcompar_BUS_0031_INV_2291_o_cy<3> (ran/cnt[31]_PWR_30_o_mod_6/Mcompar_BUS_0031_INV_2291_o_cy<3>)
+     MUXCY:CI->O          56   0.213   1.692  ran/cnt[31]_PWR_30_o_mod_6/Mcompar_BUS_0031_INV_2291_o_cy<4> (ran/cnt[31]_PWR_30_o_mod_6/Mcompar_BUS_0031_INV_2291_o_cy<4>)
+     LUT6:I4->O            2   0.203   0.961  ran/cnt[31]_PWR_30_o_mod_6/Mmux_a[8]_a[31]_MUX_3887_o11 (ran/cnt[31]_PWR_30_o_mod_6/a[8]_a[31]_MUX_3887_o)
+     LUT5:I0->O            1   0.203   0.000  ran/cnt[31]_PWR_30_o_mod_6/Mcompar_BUS_0032_INV_2324_o_lut<1> (ran/cnt[31]_PWR_30_o_mod_6/Mcompar_BUS_0032_INV_2324_o_lut<1>)
+     MUXCY:S->O            1   0.172   0.000  ran/cnt[31]_PWR_30_o_mod_6/Mcompar_BUS_0032_INV_2324_o_cy<1> (ran/cnt[31]_PWR_30_o_mod_6/Mcompar_BUS_0032_INV_2324_o_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  ran/cnt[31]_PWR_30_o_mod_6/Mcompar_BUS_0032_INV_2324_o_cy<2> (ran/cnt[31]_PWR_30_o_mod_6/Mcompar_BUS_0032_INV_2324_o_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  ran/cnt[31]_PWR_30_o_mod_6/Mcompar_BUS_0032_INV_2324_o_cy<3> (ran/cnt[31]_PWR_30_o_mod_6/Mcompar_BUS_0032_INV_2324_o_cy<3>)
+     MUXCY:CI->O           1   0.213   0.580  ran/cnt[31]_PWR_30_o_mod_6/Mcompar_BUS_0032_INV_2324_o_cy<4> (ran/cnt[31]_PWR_30_o_mod_6/Mcompar_BUS_0032_INV_2324_o_cy<4>)
+     LUT5:I4->O           31   0.205   1.622  ran/cnt[31]_PWR_30_o_mod_6/Mcompar_BUS_0032_INV_2324_o_cy<5> (ran/cnt[31]_PWR_30_o_mod_6/BUS_0032_INV_2324_o)
+     LUT5:I0->O            2   0.203   0.961  ran/cnt[31]_PWR_30_o_mod_6/Mmux_a[7]_a[31]_MUX_3920_o11 (ran/cnt[31]_PWR_30_o_mod_6/a[7]_a[31]_MUX_3920_o)
+     LUT5:I0->O            1   0.203   0.000  ran/cnt[31]_PWR_30_o_mod_6/Mcompar_BUS_0033_INV_2357_o_lut<1> (ran/cnt[31]_PWR_30_o_mod_6/Mcompar_BUS_0033_INV_2357_o_lut<1>)
+     MUXCY:S->O            1   0.172   0.000  ran/cnt[31]_PWR_30_o_mod_6/Mcompar_BUS_0033_INV_2357_o_cy<1> (ran/cnt[31]_PWR_30_o_mod_6/Mcompar_BUS_0033_INV_2357_o_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  ran/cnt[31]_PWR_30_o_mod_6/Mcompar_BUS_0033_INV_2357_o_cy<2> (ran/cnt[31]_PWR_30_o_mod_6/Mcompar_BUS_0033_INV_2357_o_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  ran/cnt[31]_PWR_30_o_mod_6/Mcompar_BUS_0033_INV_2357_o_cy<3> (ran/cnt[31]_PWR_30_o_mod_6/Mcompar_BUS_0033_INV_2357_o_cy<3>)
+     MUXCY:CI->O           1   0.213   0.580  ran/cnt[31]_PWR_30_o_mod_6/Mcompar_BUS_0033_INV_2357_o_cy<4> (ran/cnt[31]_PWR_30_o_mod_6/Mcompar_BUS_0033_INV_2357_o_cy<4>)
+     LUT6:I5->O            5   0.205   1.059  ran/cnt[31]_PWR_30_o_mod_6/Mcompar_BUS_0033_INV_2357_o_cy<5> (ran/cnt[31]_PWR_30_o_mod_6/BUS_0033_INV_2357_o)
+     LUT6:I1->O            2   0.203   0.721  ran/cnt[31]_PWR_30_o_mod_6/Mmux_o51 (ran_v<4>)
+     LUT6:I4->O            1   0.203   0.684  SoC_Bus/Mmux_bus2cpu321 (SoC_Bus/Mmux_bus2cpu32)
+     LUT5:I3->O            3   0.203   0.755  SoC_Bus/Mmux_bus2cpu322 (frommem<4>)
+     LUT6:I4->O            1   0.203   0.684  debug/Mmux_data261 (debug/Mmux_data26)
+     LUT2:I0->O            1   0.203   0.827  debug/Mmux_data264 (debug/data<4>)
      LUT6:I2->O            1   0.203   0.000  debug/mod/Mmux_digit<0>_4 (debug/mod/Mmux_digit<0>_4)
      MUXF7:I0->O           7   0.131   1.021  debug/mod/Mmux_digit<0>_2_f7 (debug/mod/digit<0>)
      LUT4:I0->O            1   0.203   0.579  debug/mod/Mram_a_to_g21 (a_to_g_2_OBUF)
      OBUF:I->O                 2.571          a_to_g_2_OBUF (a_to_g<2>)
     ----------------------------------------
-    Total                     11.255ns (5.774ns logic, 5.481ns route)
-                                       (51.3% logic, 48.7% route)
+    Total                    110.752ns (23.593ns logic, 87.159ns route)
+                                       (21.3% logic, 78.7% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clkdiv/cnt2_18'
@@ -1233,69 +1601,107 @@ Offset:              6.486ns (Levels of Logic = 4)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clkdiv/clk5mhz'
-  Total number of paths / destination ports: 29125 / 8
+  Total number of paths / destination ports: 23590 / 7
 -------------------------------------------------------------------------
-Offset:              15.660ns (Levels of Logic = 11)
+Offset:              15.716ns (Levels of Logic = 11)
   Source:            mycpu/control_unit/state_FSM_FFd3 (FF)
-  Destination:       a_to_g<6> (PAD)
+  Destination:       a_to_g<1> (PAD)
   Source Clock:      clkdiv/clk5mhz rising
 
-  Data Path: mycpu/control_unit/state_FSM_FFd3 to a_to_g<6>
+  Data Path: mycpu/control_unit/state_FSM_FFd3 to a_to_g<1>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDC:C->Q             66   0.447   1.882  mycpu/control_unit/state_FSM_FFd3 (mycpu/control_unit/state_FSM_FFd3)
-     LUT4:I1->O            2   0.205   0.981  mycpu/mem_address/Mmux_y161 (address<23>)
-     LUT6:I0->O            2   0.203   0.981  SoC_Bus/GND_25_o_GND_25_o_equal_3_o<31>12 (SoC_Bus/GND_25_o_GND_25_o_equal_3_o<31>12)
-     LUT6:I0->O            1   0.203   0.924  SoC_Bus/GND_25_o_GND_25_o_equal_3_o<31>_SW0 (N839)
-     LUT6:I1->O           99   0.203   1.871  SoC_Bus/GND_25_o_GND_25_o_equal_3_o<31> (SoC_Bus/GND_25_o_GND_25_o_equal_3_o)
-     LUT5:I4->O            8   0.205   1.031  debug/Mmux_data1101 (debug/Mmux_data110)
-     LUT3:I0->O            1   0.205   0.580  debug/Mmux_data272 (debug/Mmux_data271)
-     LUT6:I5->O            1   0.205   0.827  debug/Mmux_data273 (debug/data<4>)
-     LUT6:I2->O            1   0.203   0.000  debug/mod/Mmux_digit<0>_4 (debug/mod/Mmux_digit<0>_4)
+     FDC:C->Q             36   0.447   1.453  mycpu/control_unit/state_FSM_FFd3 (mycpu/control_unit/state_FSM_FFd3)
+     LUT2:I0->O            5   0.203   1.079  mycpu/control_unit/state__n0229<0>1 (mycpu/iord)
+     LUT6:I0->O            1   0.203   0.924  SoC_Bus/GND_31_o_GND_31_o_equal_3_o<31>11 (SoC_Bus/GND_31_o_GND_31_o_equal_3_o<31>11)
+     LUT5:I0->O            8   0.203   1.167  SoC_Bus/GND_31_o_GND_31_o_equal_3_o<31>16 (SoC_Bus/GND_31_o_GND_31_o_equal_3_o<31>1)
+     LUT6:I0->O           76   0.203   1.966  SoC_Bus/GND_31_o_GND_31_o_equal_3_o<31> (SoC_Bus/GND_31_o_GND_31_o_equal_3_o)
+     LUT4:I0->O            3   0.203   0.898  SoC_Bus/Mmux_bus2cpu371 (frommem<7>)
+     LUT6:I2->O            1   0.203   0.827  debug/Mmux_data291 (debug/Mmux_data29)
+     LUT5:I1->O            1   0.203   0.827  debug/Mmux_data292 (debug/data<7>)
+     LUT6:I2->O            1   0.203   0.000  debug/mod/Mmux_digit<0>_2_f7_42 (debug/mod/Mmux_digit<0>_2_f7_42)
+     MUXF7:I0->O           7   0.131   1.021  debug/mod/Mmux_digit<0>_2_f7_2_f7_1 (debug/mod/digit<3>)
+     LUT4:I0->O            1   0.203   0.579  debug/mod/Mram_a_to_g111 (a_to_g_1_OBUF)
+     OBUF:I->O                 2.571          a_to_g_1_OBUF (a_to_g<1>)
+    ----------------------------------------
+    Total                     15.716ns (4.976ns logic, 10.740ns route)
+                                       (31.7% logic, 68.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clkdiv/_100ms'
+  Total number of paths / destination ports: 15 / 8
+-------------------------------------------------------------------------
+Offset:              9.422ns (Levels of Logic = 9)
+  Source:            mv/move (FF)
+  Destination:       a_to_g<6> (PAD)
+  Source Clock:      clkdiv/_100ms rising
+
+  Data Path: mv/move to a_to_g<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             2   0.447   0.617  mv/move (mv/move)
+     LUT5:I4->O            1   0.205   0.684  SoC_Bus/Mmux_bus2cpu21 (SoC_Bus/Mmux_bus2cpu2)
+     LUT5:I3->O            1   0.203   0.684  SoC_Bus/Mmux_bus2cpu22 (SoC_Bus/Mmux_bus2cpu21)
+     LUT3:I1->O            3   0.203   0.755  SoC_Bus/Mmux_bus2cpu23 (frommem<0>)
+     LUT6:I4->O            1   0.203   0.000  debug/Mmux_data_4 (debug/Mmux_data_4)
+     MUXF7:I0->O           1   0.131   0.580  debug/Mmux_data_2_f7 (debug/data<0>)
+     LUT6:I5->O            1   0.205   0.000  debug/mod/Mmux_digit<0>_4 (debug/mod/Mmux_digit<0>_4)
      MUXF7:I0->O           7   0.131   1.021  debug/mod/Mmux_digit<0>_2_f7 (debug/mod/digit<0>)
      LUT4:I0->O            1   0.203   0.579  debug/mod/Mram_a_to_g21 (a_to_g_2_OBUF)
      OBUF:I->O                 2.571          a_to_g_2_OBUF (a_to_g<2>)
     ----------------------------------------
-    Total                     15.660ns (4.984ns logic, 10.676ns route)
-                                       (31.8% logic, 68.2% route)
+    Total                      9.422ns (4.502ns logic, 4.920ns route)
+                                       (47.8% logic, 52.2% route)
 
 =========================================================================
 Timing constraint: Default path analysis
-  Total number of paths / destination ports: 1596 / 7
+  Total number of paths / destination ports: 924 / 7
 -------------------------------------------------------------------------
-Delay:               10.971ns (Levels of Logic = 8)
-  Source:            sw<1> (PAD)
+Delay:               10.151ns (Levels of Logic = 8)
+  Source:            sw<3> (PAD)
   Destination:       a_to_g<6> (PAD)
 
-  Data Path: sw<1> to a_to_g<6>
+  Data Path: sw<3> to a_to_g<6>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            65   1.222   1.991  sw_1_IBUF (sw_1_IBUF)
-     LUT5:I0->O            8   0.203   1.031  debug/Mmux_data1101 (debug/Mmux_data110)
-     LUT3:I0->O            1   0.205   0.580  debug/Mmux_data272 (debug/Mmux_data271)
-     LUT6:I5->O            1   0.205   0.827  debug/Mmux_data273 (debug/data<4>)
+     IBUF:I->O            39   1.222   1.620  sw_3_IBUF (sw_3_IBUF)
+     LUT3:I0->O            1   0.205   0.580  debug/Mmux_data262 (debug/Mmux_data261)
+     LUT6:I5->O            1   0.205   0.580  debug/Mmux_data263 (debug/Mmux_data262)
+     LUT2:I1->O            1   0.205   0.827  debug/Mmux_data264 (debug/data<4>)
      LUT6:I2->O            1   0.203   0.000  debug/mod/Mmux_digit<0>_4 (debug/mod/Mmux_digit<0>_4)
      MUXF7:I0->O           7   0.131   1.021  debug/mod/Mmux_digit<0>_2_f7 (debug/mod/digit<0>)
      LUT4:I0->O            1   0.203   0.579  debug/mod/Mram_a_to_g21 (a_to_g_2_OBUF)
      OBUF:I->O                 2.571          a_to_g_2_OBUF (a_to_g<2>)
     ----------------------------------------
-    Total                     10.971ns (4.943ns logic, 6.028ns route)
-                                       (45.1% logic, 54.9% route)
+    Total                     10.151ns (4.945ns logic, 5.206ns route)
+                                       (48.7% logic, 51.3% route)
 
 =========================================================================
 
 Cross Clock Domains Report:
 --------------------------
 
+Clock to Setup on destination clock clkdiv/_100ms
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clkdiv/clk5mhz |   10.073|         |         |         |
+mclk           |    1.419|         |         |         |
+---------------+---------+---------+---------+---------+
+
 Clock to Setup on destination clock clkdiv/clk5mhz
 ---------------+---------+---------+---------+---------+
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clkdiv/clk5mhz |   15.336|         |         |         |
-mclk           |    4.865|         |         |         |
+clkdiv/_100ms  |    3.145|         |         |         |
+clkdiv/clk5mhz |   14.301|         |         |         |
+clkdiv/p_1     |    2.689|         |         |         |
+mclk           |  103.475|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock clkdiv/cnt2_18
@@ -1311,7 +1717,19 @@ Clock to Setup on destination clock clkdiv/p_1
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
+clkdiv/clk5mhz |    9.954|         |         |         |
 clkdiv/p_1     |    4.121|         |         |         |
+key/PS2Cf      |         |    4.678|         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock key/PS2Cf
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clkdiv/clk5mhz |         |         |    9.954|         |
+clkdiv/p_1     |         |         |    1.128|         |
+key/PS2Cf      |         |         |    1.530|         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock mclk
@@ -1319,23 +1737,22 @@ Clock to Setup on destination clock mclk
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clkdiv/clk5mhz |   10.358|         |         |         |
+clkdiv/clk5mhz |   10.052|         |         |         |
 clkdiv/p_1     |    9.139|         |         |         |
-mclk           |    2.785|         |         |         |
+mclk           |    5.558|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 53.00 secs
-Total CPU time to Xst completion: 53.11 secs
+Total REAL time to Xst completion: 74.00 secs
+Total CPU time to Xst completion: 74.64 secs
  
 --> 
 
-
-Total memory usage is 517456 kilobytes
+Total memory usage is 260544 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :  177 (   0 filtered)
-Number of infos    :   22 (   0 filtered)
+Number of warnings :  146 (   0 filtered)
+Number of infos    :   21 (   0 filtered)
 

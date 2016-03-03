@@ -5,77 +5,8 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="HDLCompiler" num="267" delta="unknown" >"E:/code/hardware/MIPSAPP/testcpu.v" Line 92: Cannot find port <arg fmt="%s" index="1">wn</arg> on this module
-</msg>
-
-<msg type="error" file="HDLCompiler" num="25" delta="unknown" >"E:/code/hardware/MIPSAPP/testcpu.v" Line 96: Module &lt;<arg fmt="%s" index="1">mccpu</arg>&gt; does not have a port named &lt;<arg fmt="%s" index="2">pc</arg>&gt;.
-</msg>
-
-<msg type="error" file="HDLCompiler" num="25" delta="unknown" >"E:/code/hardware/MIPSAPP/testcpu.v" Line 97: Module &lt;<arg fmt="%s" index="1">mccpu</arg>&gt; does not have a port named &lt;<arg fmt="%s" index="2">inst</arg>&gt;.
-</msg>
-
-<msg type="error" file="HDLCompiler" num="25" delta="unknown" >"E:/code/hardware/MIPSAPP/testcpu.v" Line 98: Module &lt;<arg fmt="%s" index="1">mccpu</arg>&gt; does not have a port named &lt;<arg fmt="%s" index="2">alu_out</arg>&gt;.
-</msg>
-
-<msg type="error" file="HDLCompiler" num="25" delta="unknown" >"E:/code/hardware/MIPSAPP/testcpu.v" Line 99: Module &lt;<arg fmt="%s" index="1">mccpu</arg>&gt; does not have a port named &lt;<arg fmt="%s" index="2">npc</arg>&gt;.
-</msg>
-
-<msg type="error" file="HDLCompiler" num="25" delta="unknown" >"E:/code/hardware/MIPSAPP/testcpu.v" Line 100: Module &lt;<arg fmt="%s" index="1">mccpu</arg>&gt; does not have a port named &lt;<arg fmt="%s" index="2">pcsource</arg>&gt;.
-</msg>
-
-<msg type="error" file="HDLCompiler" num="25" delta="unknown" >"E:/code/hardware/MIPSAPP/testcpu.v" Line 101: Module &lt;<arg fmt="%s" index="1">mccpu</arg>&gt; does not have a port named &lt;<arg fmt="%s" index="2">alua</arg>&gt;.
-</msg>
-
-<msg type="error" file="HDLCompiler" num="25" delta="unknown" >"E:/code/hardware/MIPSAPP/testcpu.v" Line 102: Module &lt;<arg fmt="%s" index="1">mccpu</arg>&gt; does not have a port named &lt;<arg fmt="%s" index="2">alub</arg>&gt;.
-</msg>
-
-<msg type="error" file="HDLCompiler" num="25" delta="unknown" >"E:/code/hardware/MIPSAPP/testcpu.v" Line 103: Module &lt;<arg fmt="%s" index="1">mccpu</arg>&gt; does not have a port named &lt;<arg fmt="%s" index="2">aluc</arg>&gt;.
-</msg>
-
-<msg type="error" file="HDLCompiler" num="25" delta="unknown" >"E:/code/hardware/MIPSAPP/testcpu.v" Line 104: Module &lt;<arg fmt="%s" index="1">mccpu</arg>&gt; does not have a port named &lt;<arg fmt="%s" index="2">z</arg>&gt;.
-</msg>
-
-<msg type="error" file="HDLCompiler" num="25" delta="unknown" >"E:/code/hardware/MIPSAPP/testcpu.v" Line 105: Module &lt;<arg fmt="%s" index="1">mccpu</arg>&gt; does not have a port named &lt;<arg fmt="%s" index="2">opa</arg>&gt;.
-</msg>
-
-<msg type="error" file="HDLCompiler" num="25" delta="unknown" >"E:/code/hardware/MIPSAPP/testcpu.v" Line 106: Module &lt;<arg fmt="%s" index="1">mccpu</arg>&gt; does not have a port named &lt;<arg fmt="%s" index="2">rega</arg>&gt;.
-</msg>
-
-<msg type="error" file="HDLCompiler" num="25" delta="unknown" >"E:/code/hardware/MIPSAPP/testcpu.v" Line 107: Module &lt;<arg fmt="%s" index="1">mccpu</arg>&gt; does not have a port named &lt;<arg fmt="%s" index="2">state</arg>&gt;.
-</msg>
-
-<msg type="error" file="HDLCompiler" num="25" delta="unknown" >"E:/code/hardware/MIPSAPP/testcpu.v" Line 108: Module &lt;<arg fmt="%s" index="1">mccpu</arg>&gt; does not have a port named &lt;<arg fmt="%s" index="2">selpc</arg>&gt;.
-</msg>
-
-<msg type="error" file="HDLCompiler" num="25" delta="unknown" >"E:/code/hardware/MIPSAPP/testcpu.v" Line 109: Module &lt;<arg fmt="%s" index="1">mccpu</arg>&gt; does not have a port named &lt;<arg fmt="%s" index="2">res</arg>&gt;.
-</msg>
-
-<msg type="error" file="HDLCompiler" num="25" delta="unknown" >"E:/code/hardware/MIPSAPP/testcpu.v" Line 110: Module &lt;<arg fmt="%s" index="1">mccpu</arg>&gt; does not have a port named &lt;<arg fmt="%s" index="2">wreg</arg>&gt;.
-</msg>
-
-<msg type="error" file="HDLCompiler" num="25" delta="unknown" >"E:/code/hardware/MIPSAPP/testcpu.v" Line 111: Module &lt;<arg fmt="%s" index="1">mccpu</arg>&gt; does not have a port named &lt;<arg fmt="%s" index="2">wn</arg>&gt;.
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="1016" delta="unknown" >"E:/code/hardware/MIPSAPP/testcpu.v" Line 92: Port <arg fmt="%s" index="1">madr</arg> is not connected to this instance
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"E:/code/hardware/MIPSAPP/mccpu.v" Line 47: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">d</arg>&gt;. Formal port size is <arg fmt="%d" index="2">32</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"E:/code/hardware/MIPSAPP/mccpu.v" Line 57: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">a0</arg>&gt;. Formal port size is <arg fmt="%d" index="2">32</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"E:/code/hardware/MIPSAPP/mccpu.v" Line 71: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">r</arg>&gt;. Formal port size is <arg fmt="%d" index="2">32</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"E:/code/hardware/MIPSAPP/mccpu.v" Line 93: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">state</arg>&gt;. Formal port size is <arg fmt="%d" index="2">3</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="1007" delta="unknown" >"E:/code/hardware/MIPSAPP/testcpu.v" Line 87: Element index <arg fmt="%d" index="1">32</arg> into <arg fmt="%s" index="2">rom</arg> is out of bounds
-</msg>
-
-<msg type="error" file="Simulator" num="778" delta="unknown" >Static elaboration of top level Verilog design unit(s) in library <arg fmt="%s" index="1">work</arg> failed
-</msg>
+<msg type="fatal" file="Simulator" num="0" delta="unknown" srcfile="../src/Fuse.cpp" srcline="209" srcrcs="1.133" >Failed to compile one of the generated C files.
+Please recompile with -mt off -v 1 switch to identify which design unit failed.</msg>
 
 </messages>
 

@@ -1,0 +1,9 @@
+[Inputs]
+mclk
+[Outputs]
+=ran_h[31:0]=
+=ran_v[31:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel random_generator
+

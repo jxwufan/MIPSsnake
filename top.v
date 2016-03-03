@@ -19,8 +19,10 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 module top(input mclk,
-			  input sw[7:0],
-			  input btn[4:0],
+			  input [7:0] sw,
+			  input [4:0] btn,
+			  input PS2C,
+			  input PS2D,
 			  output reg [2:0] red,                                                                                             
 			  output reg [2:0] green,
 			  output reg [1:0] blue,
@@ -54,12 +56,24 @@ module top(input mclk,
 	 wire [31:0] ram2bus;
 	 wire ram_w;
 	 wire vram_w;
+	 wire key_w;
 	 wire [31:0] bus2ram;
 	 wire [7:0] bus2vram;
 	 wire [11:0] ram_address;
 	 wire [15:0] vram_address;
 	 wire [7:0] color;
 	 wire [2:0] state;
+	 
+	 //key
+	 wire [7:0] ascii;
+	 
+	 //move
+	 wire move;
+	 wire move_w;
+	 
+	 //ran
+	 wire [31:0] ran_h;
+	 wire [31:0] ran_v;
 	 
 	 initial begin
 		LED2 <= 0;
@@ -73,10 +87,10 @@ debuger debug (
     .input1(frommem), 
     .input2(pc), 
     .input3(ram_address), 
-    .input4(ram2bus), 
-    .input5(bus2cpu), 
-    .input6(address), 
-    .input7(bus2vram), 
+    .input4(vram2bus), 
+    .input5(ran_h), 
+    .input6(ran_v), 
+    .input7(move), 
     .cclk(clk190), 
     .clr(btn[0]), 
     .a_to_g(a_to_g), 
@@ -131,6 +145,27 @@ debuger debug (
     .wreg(wreg)
     );
 
+	keyboard key (
+    .clk25(clk25), 
+    .clr(key_w), 
+    .PS2C(PS2C), 
+    .PS2D(PS2D), 
+    .ascii(ascii)
+    );
+
+	 move mv (
+    .clk(clk100ms), 
+    .clr(move_w), 
+    .move(move)
+    );
+	 
+	 random_generator ran (
+	 .PS2D(PS2D),
+    .mclk(mclk), 
+    .ran_h(ran_h), 
+    .ran_v(ran_v)
+    );
+
 
 	 
 	 BUS SoC_Bus (
@@ -138,9 +173,15 @@ debuger debug (
     .cpu2bus(tomem), 
     .cpu_address(address), 
     .vram2bus(vram2bus), 
-    .ram2bus(ram2bus), 
+    .ram2bus(ram2bus),
+	 .key2bus(ascii),	
+	 .move2bus(move),
+	 .ran_h(ran_h),
+	 .ran_v(ran_v),
     .ram_w(ram_w), 
-    .vram_w(vram_w), 
+    .vram_w(vram_w),
+	 .key_w(key_w),
+	 .move_w(move_w),
     .bus2cpu(frommem), 
     .bus2ram(bus2ram), 
     .bus2vram(bus2vram), 
@@ -178,19 +219,8 @@ debuger debug (
 		  .dina(tomem), // input [31 : 0] dina
 		  .douta(frommem) // output [31 : 0] douta
 		);*/
-					
-	always @(*) begin
-		if (x >= 320 && x <= 327) begin
-			if (y == 280) test <= 'h7c;
-			else if (y == 281) test <= 'h86;
-			else if (y == 282) test <= 'h8a;
-			else if (y == 283) test <= 'h92;
-			else if (y == 284) test <= 'ha2;
-			else if (y == 285) test <= 'hc2;
-			else if (y == 286) test <= 'h7c;
-			else test <= 0;
-		end
-		else test <= 0;
+	
+		always @(*) begin
 		if (vidon) begin
 			red <= {3{color[{~x[2:0]}]}};
 			green <= {3{color[{~x[2:0]}]}};
@@ -202,8 +232,8 @@ debuger debug (
 		end
 	end
 	
-	always @(*) begin
-		LED2 <= vram_w;
+	always @(posedge clk100ms) begin
+		LED2 <= 1;
 	end
 
 endmodule

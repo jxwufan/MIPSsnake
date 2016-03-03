@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Sat Jun 20 22:14:18 2015
+// Written by: Map P.20131013 on Sun Sep 13 19:15:20 2015
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -11,7 +11,8 @@ COMP "a_to_g<3>" LOCATE = SITE "U18" LEVEL 1;
 COMP "a_to_g<4>" LOCATE = SITE "U17" LEVEL 1;
 COMP "a_to_g<5>" LOCATE = SITE "T18" LEVEL 1;
 COMP "a_to_g<6>" LOCATE = SITE "T17" LEVEL 1;
-COMP "LED2" LOCATE = SITE "V16" LEVEL 1;
+COMP "PS2C" LOCATE = SITE "L12" LEVEL 1;
+COMP "PS2D" LOCATE = SITE "J13" LEVEL 1;
 COMP "mclk" LOCATE = SITE "V10" LEVEL 1;
 COMP "blue<0>" LOCATE = SITE "R7" LEVEL 1;
 COMP "blue<1>" LOCATE = SITE "T7" LEVEL 1;
@@ -40,6 +41,7 @@ COMP "red<2>" LOCATE = SITE "N7" LEVEL 1;
 COMP "green<0>" LOCATE = SITE "P8" LEVEL 1;
 COMP "green<1>" LOCATE = SITE "T6" LEVEL 1;
 COMP "green<2>" LOCATE = SITE "V6" LEVEL 1;
+COMP "LED2" LOCATE = SITE "V16" LEVEL 1;
 PIN
         vram_mod/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[18].ram.r/s6_init.ram/TRUE_DP.PRIM18.ram_pins<28>
         = BEL
@@ -270,16 +272,36 @@ PIN
         = BEL
         "ram_mod/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[6].ram.r/s6_init.ram/SP.SIMPLE_PRIM18.ram"
         PINNAME CLKA;
-TIMEGRP sys_clk_pin = BEL "clkdiv/_5mcnt_4" BEL "clkdiv/_5mcnt_3" BEL
+TIMEGRP sys_clk_pin = BEL "ran/cnt_0" BEL "ran/cnt_1" BEL "ran/cnt_2" BEL
+        "ran/cnt_3" BEL "ran/cnt_4" BEL "ran/cnt_5" BEL "ran/cnt_6" BEL
+        "ran/cnt_7" BEL "ran/cnt_8" BEL "ran/cnt_9" BEL "ran/cnt_10" BEL
+        "ran/cnt_11" BEL "ran/cnt_12" BEL "ran/cnt_13" BEL "ran/cnt_14" BEL
+        "ran/cnt_15" BEL "ran/cnt_16" BEL "ran/cnt_17" BEL "ran/cnt_18" BEL
+        "ran/cnt_19" BEL "ran/cnt_20" BEL "ran/cnt_21" BEL "ran/cnt_22" BEL
+        "ran/cnt_23" BEL "ran/cnt_24" BEL "ran/cnt_25" BEL "ran/cnt_26" BEL
+        "ran/cnt_27" BEL "ran/cnt_28" BEL "ran/cnt_29" BEL "ran/cnt_30" BEL
+        "ran/cnt_31" BEL "clkdiv/_5mcnt_4" BEL "clkdiv/_5mcnt_3" BEL
         "clkdiv/_5mcnt_2" BEL "clkdiv/_5mcnt_1" BEL "clkdiv/_5mcnt_0" BEL
-        "clkdiv/cnt2_18" BEL "clkdiv/cnt2_17" BEL "clkdiv/cnt2_16" BEL
-        "clkdiv/cnt2_15" BEL "clkdiv/cnt2_14" BEL "clkdiv/cnt2_13" BEL
-        "clkdiv/cnt2_12" BEL "clkdiv/cnt2_11" BEL "clkdiv/cnt2_10" BEL
-        "clkdiv/cnt2_9" BEL "clkdiv/cnt2_8" BEL "clkdiv/cnt2_7" BEL
-        "clkdiv/cnt2_6" BEL "clkdiv/cnt2_5" BEL "clkdiv/cnt2_4" BEL
-        "clkdiv/cnt2_3" BEL "clkdiv/cnt2_2" BEL "clkdiv/cnt2_1" BEL
-        "clkdiv/cnt2_0" BEL "clkdiv/p_1" BEL "clkdiv/p_0" BEL "clkdiv/clk5mhz"
-        BEL "mclk_BUFGP/BUFG" BEL
+        "clkdiv/_100cnt_32" BEL "clkdiv/_100cnt_31" BEL "clkdiv/_100cnt_30"
+        BEL "clkdiv/_100cnt_29" BEL "clkdiv/_100cnt_28" BEL
+        "clkdiv/_100cnt_27" BEL "clkdiv/_100cnt_26" BEL "clkdiv/_100cnt_25"
+        BEL "clkdiv/_100cnt_24" BEL "clkdiv/_100cnt_23" BEL
+        "clkdiv/_100cnt_22" BEL "clkdiv/_100cnt_21" BEL "clkdiv/_100cnt_20"
+        BEL "clkdiv/_100cnt_19" BEL "clkdiv/_100cnt_18" BEL
+        "clkdiv/_100cnt_17" BEL "clkdiv/_100cnt_16" BEL "clkdiv/_100cnt_15"
+        BEL "clkdiv/_100cnt_14" BEL "clkdiv/_100cnt_13" BEL
+        "clkdiv/_100cnt_12" BEL "clkdiv/_100cnt_11" BEL "clkdiv/_100cnt_10"
+        BEL "clkdiv/_100cnt_9" BEL "clkdiv/_100cnt_8" BEL "clkdiv/_100cnt_7"
+        BEL "clkdiv/_100cnt_6" BEL "clkdiv/_100cnt_5" BEL "clkdiv/_100cnt_4"
+        BEL "clkdiv/_100cnt_3" BEL "clkdiv/_100cnt_2" BEL "clkdiv/_100cnt_1"
+        BEL "clkdiv/_100cnt_0" BEL "clkdiv/cnt2_18" BEL "clkdiv/cnt2_17" BEL
+        "clkdiv/cnt2_16" BEL "clkdiv/cnt2_15" BEL "clkdiv/cnt2_14" BEL
+        "clkdiv/cnt2_13" BEL "clkdiv/cnt2_12" BEL "clkdiv/cnt2_11" BEL
+        "clkdiv/cnt2_10" BEL "clkdiv/cnt2_9" BEL "clkdiv/cnt2_8" BEL
+        "clkdiv/cnt2_7" BEL "clkdiv/cnt2_6" BEL "clkdiv/cnt2_5" BEL
+        "clkdiv/cnt2_4" BEL "clkdiv/cnt2_3" BEL "clkdiv/cnt2_2" BEL
+        "clkdiv/cnt2_1" BEL "clkdiv/cnt2_0" BEL "clkdiv/p_1" BEL "clkdiv/p_0"
+        BEL "clkdiv/clk5mhz" BEL "clkdiv/_100ms" BEL "mclk_BUFGP/BUFG" BEL
         "vram_mod/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/sel_pipe_0"
         BEL
         "vram_mod/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/sel_pipe_1"

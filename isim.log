@@ -1,52 +1,13 @@
 ISim log file
-Running: E:\code\hardware\MIPSAPP\testsoc_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb E:/code/hardware/MIPSAPP/testsoc_isim_beh.wdb 
-ISim P.20131013 (signature 0x8ef4fb42)
+Running: G:\code\hardware\MIPShelloWorld\testcpu_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb G:/code/hardware/MIPShelloWorld/testcpu_isim_beh.wdb 
+ISim P.20131013 (signature 0x7708f090)
 WARNING: A WEBPACK license was found.
 WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
 WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
 This is a Lite version of ISim.
-WARNING: File "E:/code/hardware/MIPSAPP/mccpu.v" Line 48.  For instance cpu/rc/, width 32 of formal port d is not equal to width 1 of actual signal alu_out.
-WARNING: File "E:/code/hardware/MIPSAPP/mccpu.v" Line 48.  For instance cpu/nextpc/, width 32 of formal port a0 is not equal to width 1 of actual signal alu_out.
-WARNING: File "E:/code/hardware/MIPSAPP/mccpu.v" Line 48.  For instance cpu/aluint/, width 32 of formal port r is not equal to width 1 of actual signal alu_out.
-WARNING: File "E:/code/hardware/MIPSAPP/mccpu.v" Line 94.  For instance cpu/control_unit/, width 3 of formal port state is not equal to width 1 of actual signal state.
-WARNING:  For instance uut/cpu/, width 1 of formal port resetn is not equal to width 32 of actual constant.
-WARNING: File "E:/code/hardware/MIPSAPP/top.v" Line 70.  For instance uut/cpu/, width 32 of formal port pc is not equal to width 1 of actual signal pc.
-WARNING: File "E:/code/hardware/MIPSAPP/top.v" Line 39.  For instance uut/SoC_Bus/, width 8 of formal port ram2bus is not equal to width 32 of actual signal ram2bus.
-WARNING:  For instance uut/vram_mod/, width 1 of formal port wea is not equal to width 32 of actual constant.
-WARNING:  For instance uut/vram_mod/, width 8 of formal port dina is not equal to width 7 of actual constant.
-WARNING:  For instance uut/vram_mod/, width 16 of formal port addrb is not equal to width 32 of actual constant.
-WARNING:  For instance uut/vram_mod/, width 8 of formal port dinb is not equal to width 32 of actual constant.
 Time resolution is 1 ps
 # onerror resume
 # wave add /
 # run 1000 ns
 Simulator is doing circuit initialization process.
- Block Memory Generator CORE Generator module loading initial data...
- Block Memory Generator data initialization complete.
-Block Memory Generator CORE Generator module testsoc.uut.vram_mod.inst.\native_mem_module.blk_mem_gen_v7_3_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
- Block Memory Generator CORE Generator module loading initial data...
- Block Memory Generator data initialization complete.
-Block Memory Generator CORE Generator module testsoc.uut.ram_mod.inst.\native_mem_module.blk_mem_gen_v7_3_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
 Finished circuit initialization process.
-blk_mem_gen_v7_3 collision detected at time: 120000, A write address: 0, B  ra`d address: 0
-blk_mem_gen_v7_3 collision detected at time: 140000, A write address: zzzZ, B  ra`d address: 0
-blk_mem_gen_v7_3 collision detected at time: 240000, A write address: 0, B  ra`d address: 0
-blk_mem_gen_v7_3 collision detected at time: 260000, A write address: 0, B  ra`d address: 0
-blk_mem_gen_v7_3 collision detected at time: 280000, A write address: 0, B  ra`d address: 0
-blk_mem_gen_v7_3 collision detected at time: 300000, A write address: zzzZ, B  ra`d address: 0
-blk_mem_gen_v7_3 collision detected at time: 400000, A write address: 0, B  ra`d address: 0
-blk_mem_gen_v7_3 collision detected at time: 420000, A write address: 0, B  ra`d address: 0
-blk_mem_gen_v7_3 collision detected at time: 440000, A write address: 0, B  ra`d address: 0
-blk_mem_gen_v7_3 collision detected at time: 460000, A write address: zzzZ, B  ra`d address: 0
-blk_mem_gen_v7_3 collision detected at time: 560000, A write address: 0, B  ra`d address: 0
-blk_mem_gen_v7_3 collision detected at time: 580000, A write address: 0, B  ra`d address: 0
-blk_mem_gen_v7_3 collision detected at time: 600000, A write address: 0, B  ra`d address: 0
-blk_mem_gen_v7_3 collision detected at time: 620000, A write address: zzzZ, B  ra`d address: 0
-blk_mem_gen_v7_3 collision detected at time: 720000, A write address: 0, B  ra`d address: 0
-blk_mem_gen_v7_3 collision detected at time: 740000, A write address: 0, B  ra`d address: 0
-blk_mem_gen_v7_3 collision detected at time: 760000, A write address: 0, B  ra`d address: 0
-blk_mem_gen_v7_3 collision detected at time: 780000, A write address: zzzZ, B  ra`d address: 0
-blk_mem_gen_v7_3 collision detected at time: 880000, A write address: 0, B  ra`d address: 0
-blk_mem_gen_v7_3 collision detected at time: 900000, A write address: 0, B  ra`d address: 0
-blk_mem_gen_v7_3 collision detected at time: 920000, A write address: 0, B  ra`d address: 0
-blk_mem_gen_v7_3 collision detected at time: 940000, A write address: zzzZ, B  ra`d address: 0

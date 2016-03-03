@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <symbol version="7" name="vram">
     <symboltype>BLOCK</symboltype>
-    <timestamp>2015-6-17T3:26:28</timestamp>
+    <timestamp>2015-9-4T10:40:33</timestamp>
     <pin polarity="Input" x="0" y="80" name="addra[15:0]" />
     <pin polarity="Input" x="0" y="112" name="dina[7:0]" />
     <pin polarity="Input" x="0" y="208" name="wea[0:0]" />

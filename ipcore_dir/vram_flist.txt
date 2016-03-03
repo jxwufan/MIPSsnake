@@ -4,6 +4,7 @@ summary.log
 vram.asy
 vram.gise
 vram.ngc
+vram.sym
 vram.v
 vram.veo
 vram.xco

@@ -1,0 +1,162 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 3.00 secs
+Total CPU time to Xst completion: 2.10 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 3.00 secs
+Total CPU time to Xst completion: 2.10 secs
+ 
+--> Reading design: testBus.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "testBus.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "testBus"
+Output Format                      : NGC
+Target Device                      : xc6slx16-3-csg324
+
+---- Source Options
+Top Module Name                    : testBus
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"ipcore_dir"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "G:\code\hardware\MIPShelloWorld\BUS.v" into library work
+Parsing module <BUS>.
+WARNING:HDLCompiler:327 - "G:\code\hardware\MIPShelloWorld\BUS.v" Line 52: Concatenation with unsized literal; will interpret as 32 bits
+Analyzing Verilog file "G:\code\hardware\MIPShelloWorld\testBus.v" into library work
+Parsing module <testBus>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <testBus>.
+WARNING:HDLCompiler:872 - "G:\code\hardware\MIPShelloWorld\testBus.v" Line 59: Using initial value of mem_w since it is never assigned
+WARNING:HDLCompiler:327 - "G:\code\hardware\MIPShelloWorld\BUS.v" Line 52: Concatenation with unsized literal; will interpret as 32 bits
+
+Elaborating module <BUS>.
+WARNING:HDLCompiler:189 - "G:\code\hardware\MIPShelloWorld\testBus.v" Line 49: Size mismatch in connection of port <ram2bus>. Formal port size is 32-bit while actual signal size is 8-bit.
+WARNING:HDLCompiler:1127 - "G:\code\hardware\MIPShelloWorld\testBus.v" Line 50: Assignment to ram_w ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "G:\code\hardware\MIPShelloWorld\testBus.v" Line 51: Assignment to vram_w ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "G:\code\hardware\MIPShelloWorld\testBus.v" Line 52: Assignment to bus2cpu ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "G:\code\hardware\MIPShelloWorld\testBus.v" Line 53: Assignment to bus2ram ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "G:\code\hardware\MIPShelloWorld\testBus.v" Line 54: Assignment to bus2vram ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "G:\code\hardware\MIPShelloWorld\testBus.v" Line 55: Assignment to ram_address ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "G:\code\hardware\MIPShelloWorld\testBus.v" Line 56: Assignment to vram_address ignored, since the identifier is never used
+WARNING:Xst:2972 - "G:\code\hardware\MIPShelloWorld\testBus.v" line 44. All outputs of instance <uut> of block <BUS> are unconnected in block <testBus>. Underlying logic will be removed.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <testBus>.
+    Related source file is "G:\code\hardware\MIPShelloWorld\testBus.v".
+INFO:Xst:3210 - "G:\code\hardware\MIPShelloWorld\testBus.v" line 44: Output port <bus2cpu> of the instance <uut> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "G:\code\hardware\MIPShelloWorld\testBus.v" line 44: Output port <bus2ram> of the instance <uut> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "G:\code\hardware\MIPShelloWorld\testBus.v" line 44: Output port <bus2vram> of the instance <uut> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "G:\code\hardware\MIPShelloWorld\testBus.v" line 44: Output port <ram_address> of the instance <uut> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "G:\code\hardware\MIPShelloWorld\testBus.v" line 44: Output port <vram_address> of the instance <uut> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "G:\code\hardware\MIPShelloWorld\testBus.v" line 44: Output port <ram_w> of the instance <uut> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "G:\code\hardware\MIPShelloWorld\testBus.v" line 44: Output port <vram_w> of the instance <uut> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <testBus> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+

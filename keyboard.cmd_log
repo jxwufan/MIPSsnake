@@ -1,0 +1,1 @@
+vhdtdtfi -lang verilog -prj MIPSAPP -o C:/Users/fan/Desktop/MIPShelloWorld/keyboard.tfi -lib work C:/Users/fan/Desktop/MIPShelloWorld//keyboard.v -module keyboard -template D:/Xilinx/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror 
